@@ -70,16 +70,100 @@
     <Compile Include="Classes\TablesOnlyPK\PlanesSet.cs" />
     <Compile Include="Classes\TablesOnlyPK\PositionsSet.cs" />
     <Compile Include="Classes\TablesOnlyPK\TicketStatusSet.cs" />
+    <Compile Include="Forms\FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormEnter.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormEnter.Designer.cs">
       <DependentUpon>FormEnter.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\InsertForms\AddAviacompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertForms\AddAviacompany.Designer.cs">
+      <DependentUpon>AddAviacompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InsertForms\AddCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertForms\AddCity.Designer.cs">
+      <DependentUpon>AddCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InsertForms\AddClassPlace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertForms\AddClassPlace.Designer.cs">
+      <DependentUpon>AddClassPlace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InsertForms\AddPlane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertForms\AddPlane.Designer.cs">
+      <DependentUpon>AddPlane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InsertForms\AddPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertForms\AddPosition.Designer.cs">
+      <DependentUpon>AddPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InsertForms\AddTicketStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertForms\AddTicketStatus.Designer.cs">
+      <DependentUpon>AddTicketStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UpdateForms\ChangeAviacompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UpdateForms\ChangeAviacompany.Designer.cs">
+      <DependentUpon>ChangeAviacompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UpdateForms\ChangeCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UpdateForms\ChangeCity.Designer.cs">
+      <DependentUpon>ChangeCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UpdateForms\ChangeClassPlace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UpdateForms\ChangeClassPlace.Designer.cs">
+      <DependentUpon>ChangeClassPlace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UpdateForms\ChangePlane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UpdateForms\ChangePlane.Designer.cs">
+      <DependentUpon>ChangePlane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UpdateForms\ChangePosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UpdateForms\ChangePosition.Designer.cs">
+      <DependentUpon>ChangePosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UpdateForms\ChangeTicketStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UpdateForms\ChangeTicketStatus.Designer.cs">
+      <DependentUpon>ChangeTicketStatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormEnter.resx">
       <DependentUpon>FormEnter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertForms\AddAviacompany.resx">
+      <DependentUpon>AddAviacompany.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

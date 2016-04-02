@@ -27,7 +27,6 @@ namespace DiplomaNegoda.Classes.TablesOnlyPK
         public ArrayList GetTableData(SqlDataReader DataReader)//получаем данные из таблицы, method SELECT
         {
             ArrayList allProd = new ArrayList();
-            sqlConn.Open();
             if (DataReader.HasRows)
             {
                 foreach (DbDataRecord result in DataReader)
@@ -41,8 +40,14 @@ namespace DiplomaNegoda.Classes.TablesOnlyPK
 
         public SqlDataReader CreateDataReaderVariable()//создаём перменную для сохранения возвращаемой информации из БД; используем её например в GetTableData()
         {
+            sqlConn.Open();
             SqlDataReader dataReader = sqlComm.ExecuteReader();
             return dataReader;
+        }
+
+        public void SetCommandText()
+        {
+            sqlComm.CommandText = "SELECT * FROM [" + nameofTable + "]";
         }
 
         public void InsertIntoTable(string Name) //method INSERT
