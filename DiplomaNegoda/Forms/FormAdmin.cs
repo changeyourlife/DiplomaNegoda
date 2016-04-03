@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DiplomaNegoda.Classes.TablesOnlyPK;
+using DiplomaNegoda.Forms.InsertForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,21 +17,23 @@ namespace DiplomaNegoda.Forms
         public FormAdmin()
         {
             InitializeComponent();
+            FormEnter ObjectFormEnter = this.Owner as FormEnter;
         }
 
         private void FormAdmin_Shown(object sender, EventArgs e)
         {
-            Classes.TablesOnlyPK.AviacompaniesSet ObjectAviacompaniesSet = new Classes.TablesOnlyPK.AviacompaniesSet();
+            AviacompaniesSet ObjectAviacompaniesSet = new AviacompaniesSet();
             tabControl1.SelectedIndex = 0;
             DGVaviacompanies.AutoGenerateColumns = true;
-            ObjectAviacompaniesSet.SetCommandText();
+            ObjectAviacompaniesSet.SetCommandTextSelect();
             DGVaviacompanies.DataSource = ObjectAviacompaniesSet.GetTableData(ObjectAviacompaniesSet.CreateDataReaderVariable());
         }
 
         private void ButtonAddAviacompany_Click(object sender, EventArgs e)
         {
-            InsertForms.AddAviacompany formAddAviacompany = new InsertForms.AddAviacompany();
-            formAddAviacompany.Show();
+            FormAddAviacompany ObjectAddAviacompany = new FormAddAviacompany();
+            ObjectAddAviacompany.Owner = this;
+            ObjectAddAviacompany.ShowDialog();
         }
 
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
@@ -38,53 +42,49 @@ namespace DiplomaNegoda.Forms
             {
                 case 0:
                     {
-                        Classes.TablesOnlyPK.AviacompaniesSet ObjectAviacompaniesSet = new Classes.TablesOnlyPK.AviacompaniesSet();
-                        DGVaviacompanies.AutoGenerateColumns = true;
-                        ObjectAviacompaniesSet.SetCommandText();
-                        DGVaviacompanies.DataSource = ObjectAviacompaniesSet.GetTableData(ObjectAviacompaniesSet.CreateDataReaderVariable());
+                        RefreshAviacompaniesSetDGV();
                         break;
                     }
                 case 1:
                     {
-                        Classes.TablesOnlyPK.CitiesSet ObjectCitiesSet = new Classes.TablesOnlyPK.CitiesSet();
-                        DGVcities.AutoGenerateColumns = true;
-                        ObjectCitiesSet.SetCommandText();
-                        DGVcities.DataSource = ObjectCitiesSet.GetTableData(ObjectCitiesSet.CreateDataReaderVariable());
+                        RefreshCitiesSetDGV();
                         break;
                     }
                 case 2:
                     {
-                        Classes.TablesOnlyPK.ClassPlaceSet ObjectClassPlaceSet = new Classes.TablesOnlyPK.ClassPlaceSet();
-                        DGVclassPlace.AutoGenerateColumns = true;
-                        ObjectClassPlaceSet.SetCommandText();
-                        DGVclassPlace.DataSource = ObjectClassPlaceSet.GetTableData(ObjectClassPlaceSet.CreateDataReaderVariable());
+                        RefreshClassPlaceSetDGV();
                         break;
                     }
                 case 3:
                     {
-                        Classes.TablesOnlyPK.PlanesSet ObjectPlanesSet = new Classes.TablesOnlyPK.PlanesSet();
-                        DGVplanes.AutoGenerateColumns = true;
-                        ObjectPlanesSet.SetCommandText();
-                        DGVplanes.DataSource = ObjectPlanesSet.GetTableData(ObjectPlanesSet.CreateDataReaderVariable());
+                        RefreshPlanesSetDGV();
                         break;
                     }
                 case 4:
                     {
-                        Classes.TablesOnlyPK.PositionsSet ObjectPositionsSet = new Classes.TablesOnlyPK.PositionsSet();
-                        DGVpositions.AutoGenerateColumns = true;
-                        ObjectPositionsSet.SetCommandText();
-                        DGVpositions.DataSource = ObjectPositionsSet.GetTableData(ObjectPositionsSet.CreateDataReaderVariable());
+                        RefreshPositionsSetDGV();
                         break;
                     }
                 case 5:
                     {
-                        Classes.TablesOnlyPK.TicketStatusSet ObjectTicketStatusSet = new Classes.TablesOnlyPK.TicketStatusSet();
-                        DGVticketStatus.AutoGenerateColumns = true;
-                        ObjectTicketStatusSet.SetCommandText();
-                        DGVticketStatus.DataSource = ObjectTicketStatusSet.GetTableData(ObjectTicketStatusSet.CreateDataReaderVariable());
+                        RefreshTicketStatusSetDGV();
                         break;
                     }
             }
+        }
+
+        private void ButtonDeleteAviacompany_Click(object sender, EventArgs e)
+        {
+            AviacompaniesSet ObjectAviacompaniesSet = new AviacompaniesSet();
+            ObjectAviacompaniesSet.DeleteFromTable(DGVaviacompanies[0, DGVaviacompanies.CurrentCellAddress.Y].Value.ToString()); //DGVaviacompanie[X=column, Y=row]
+            this.RefreshAviacompaniesSetDGV();
+        }
+
+        private void ButtonChangeAviacompany_Click(object sender, EventArgs e)
+        {
+            UpdateForms.FormChangeAviacompany ObjectFormChangeAviacompany = new UpdateForms.FormChangeAviacompany(DGVaviacompanies[0, DGVaviacompanies.CurrentCellAddress.Y].Value.ToString(), DGVaviacompanies[1, DGVaviacompanies.CurrentCellAddress.Y].Value.ToString());
+            ObjectFormChangeAviacompany.Owner = this;
+            ObjectFormChangeAviacompany.ShowDialog();
         }
     }
 }

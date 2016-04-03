@@ -1,6 +1,6 @@
 ﻿namespace DiplomaNegoda.Forms.UpdateForms
 {
-    partial class ChangeAviacompany
+    partial class FormChangeClassPlace
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "ChangeAviacompany";
+            this.Text = "ChangeClassPlace";
         }
 
         #endregion

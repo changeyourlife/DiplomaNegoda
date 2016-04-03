@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DiplomaNegoda.Forms.InsertForms
 {
-    public partial class AddClassPlace : Form
+    public partial class FormAddPosition : Form
     {
-        public AddClassPlace()
+        public FormAddPosition()
         {
             InitializeComponent();
         }

@@ -54,16 +54,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\DataBase.cs" />
-    <Compile Include="Classes\DBConnection.cs" />
+    <Compile Include="Classes\DBLookUpComboBox.cs" />
+    <Compile Include="Other\StaticFormsValues.cs" />
+    <Compile Include="Other\DataBase.cs" />
+    <Compile Include="Other\DBConnection.cs" />
     <Compile Include="Classes\Login.cs" />
     <Compile Include="Classes\OperationOnDB\DBCreateTable.cs" />
     <Compile Include="Classes\OperationOnDB\DBIsTableExist.cs" />
     <Compile Include="Classes\OperationOnDB\DBRequestParam.cs" />
-    <Compile Include="Classes\OperationsOnTable\RowDelete.cs" />
-    <Compile Include="Classes\OperationsOnTable\RowInsert.cs" />
-    <Compile Include="Classes\OperationsOnTable\TableShow.cs" />
-    <Compile Include="Classes\OperationsOnTable\RowUpdate.cs" />
+    <Compile Include="Other\OperationsOnTable\RowDelete.cs" />
+    <Compile Include="Other\OperationsOnTable\RowInsert.cs" />
+    <Compile Include="Other\OperationsOnTable\TableShow.cs" />
+    <Compile Include="Other\OperationsOnTable\RowUpdate.cs" />
     <Compile Include="Classes\TablesOnlyPK\AviacompaniesSet.cs" />
     <Compile Include="Classes\TablesOnlyPK\CitiesSet.cs" />
     <Compile Include="Classes\TablesOnlyPK\ClassPlaceSet.cs" />
@@ -82,77 +84,77 @@
     <Compile Include="Forms\FormEnter.Designer.cs">
       <DependentUpon>FormEnter.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\InsertForms\AddAviacompany.cs">
+    <Compile Include="Forms\InsertForms\FormAddAviacompany.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\InsertForms\AddAviacompany.Designer.cs">
-      <DependentUpon>AddAviacompany.cs</DependentUpon>
+    <Compile Include="Forms\InsertForms\FormAddAviacompany.Designer.cs">
+      <DependentUpon>FormAddAviacompany.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\InsertForms\AddCity.cs">
+    <Compile Include="Forms\InsertForms\FormAddCity.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\InsertForms\AddCity.Designer.cs">
-      <DependentUpon>AddCity.cs</DependentUpon>
+    <Compile Include="Forms\InsertForms\FormAddCity.Designer.cs">
+      <DependentUpon>FormAddCity.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\InsertForms\AddClassPlace.cs">
+    <Compile Include="Forms\InsertForms\FormAddClassPlace.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\InsertForms\AddClassPlace.Designer.cs">
-      <DependentUpon>AddClassPlace.cs</DependentUpon>
+    <Compile Include="Forms\InsertForms\FormAddClassPlace.Designer.cs">
+      <DependentUpon>FormAddClassPlace.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\InsertForms\AddPlane.cs">
+    <Compile Include="Forms\InsertForms\FormAddPlane.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\InsertForms\AddPlane.Designer.cs">
-      <DependentUpon>AddPlane.cs</DependentUpon>
+    <Compile Include="Forms\InsertForms\FormAddPlane.Designer.cs">
+      <DependentUpon>FormAddPlane.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\InsertForms\AddPosition.cs">
+    <Compile Include="Forms\InsertForms\FormAddPosition.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\InsertForms\AddPosition.Designer.cs">
-      <DependentUpon>AddPosition.cs</DependentUpon>
+    <Compile Include="Forms\InsertForms\FormAddPosition.Designer.cs">
+      <DependentUpon>FormAddPosition.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\InsertForms\AddTicketStatus.cs">
+    <Compile Include="Forms\InsertForms\FormAddTicketStatus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\InsertForms\AddTicketStatus.Designer.cs">
-      <DependentUpon>AddTicketStatus.cs</DependentUpon>
+    <Compile Include="Forms\InsertForms\FormAddTicketStatus.Designer.cs">
+      <DependentUpon>FormAddTicketStatus.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UpdateForms\ChangeAviacompany.cs">
+    <Compile Include="Forms\UpdateForms\FormChangeAviacompany.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\UpdateForms\ChangeAviacompany.Designer.cs">
-      <DependentUpon>ChangeAviacompany.cs</DependentUpon>
+    <Compile Include="Forms\UpdateForms\FormChangeAviacompany.Designer.cs">
+      <DependentUpon>FormChangeAviacompany.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UpdateForms\ChangeCity.cs">
+    <Compile Include="Forms\UpdateForms\FormChangeCity.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\UpdateForms\ChangeCity.Designer.cs">
-      <DependentUpon>ChangeCity.cs</DependentUpon>
+    <Compile Include="Forms\UpdateForms\FormChangeCity.Designer.cs">
+      <DependentUpon>FormChangeCity.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UpdateForms\ChangeClassPlace.cs">
+    <Compile Include="Forms\UpdateForms\FormChangeClassPlace.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\UpdateForms\ChangeClassPlace.Designer.cs">
-      <DependentUpon>ChangeClassPlace.cs</DependentUpon>
+    <Compile Include="Forms\UpdateForms\FormChangeClassPlace.Designer.cs">
+      <DependentUpon>FormChangeClassPlace.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UpdateForms\ChangePlane.cs">
+    <Compile Include="Forms\UpdateForms\FormChangePlane.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\UpdateForms\ChangePlane.Designer.cs">
-      <DependentUpon>ChangePlane.cs</DependentUpon>
+    <Compile Include="Forms\UpdateForms\FormChangePlane.Designer.cs">
+      <DependentUpon>FormChangePlane.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UpdateForms\ChangePosition.cs">
+    <Compile Include="Forms\UpdateForms\FormChangePosition.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\UpdateForms\ChangePosition.Designer.cs">
-      <DependentUpon>ChangePosition.cs</DependentUpon>
+    <Compile Include="Forms\UpdateForms\FormChangePosition.Designer.cs">
+      <DependentUpon>FormChangePosition.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UpdateForms\ChangeTicketStatus.cs">
+    <Compile Include="Forms\UpdateForms\FormChangeTicketStatus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\UpdateForms\ChangeTicketStatus.Designer.cs">
-      <DependentUpon>ChangeTicketStatus.cs</DependentUpon>
+    <Compile Include="Forms\UpdateForms\FormChangeTicketStatus.Designer.cs">
+      <DependentUpon>FormChangeTicketStatus.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -162,8 +164,11 @@
     <EmbeddedResource Include="Forms\FormEnter.resx">
       <DependentUpon>FormEnter.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\InsertForms\AddAviacompany.resx">
-      <DependentUpon>AddAviacompany.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\InsertForms\FormAddAviacompany.resx">
+      <DependentUpon>FormAddAviacompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateForms\FormChangeAviacompany.resx">
+      <DependentUpon>FormChangeAviacompany.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

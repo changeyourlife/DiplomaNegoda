@@ -41,18 +41,18 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.Size = new System.Drawing.Size(36, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Логин:";
+            this.label1.Text = "Login:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(5, 51);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 13);
+            this.label2.Size = new System.Drawing.Size(56, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Пароль:";
+            this.label2.Text = "Password:";
             // 
             // textBoxLogin
             // 
@@ -74,7 +74,7 @@
             this.ButtonEnter.Name = "ButtonEnter";
             this.ButtonEnter.Size = new System.Drawing.Size(75, 23);
             this.ButtonEnter.TabIndex = 4;
-            this.ButtonEnter.Text = "Вход";
+            this.ButtonEnter.Text = "Enter";
             this.ButtonEnter.UseVisualStyleBackColor = true;
             this.ButtonEnter.Click += new System.EventHandler(this.ButtonEnter_Click);
             // 
@@ -84,7 +84,7 @@
             this.ButtonClose.Name = "ButtonClose";
             this.ButtonClose.Size = new System.Drawing.Size(75, 23);
             this.ButtonClose.TabIndex = 5;
-            this.ButtonClose.Text = "Закрыть";
+            this.ButtonClose.Text = "Close";
             this.ButtonClose.UseVisualStyleBackColor = true;
             this.ButtonClose.Click += new System.EventHandler(this.ButtonClose_Click);
             // 
@@ -99,8 +99,10 @@
             this.Controls.Add(this.textBoxLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormEnter";
-            this.Text = "Форма входа";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Enter form";
             this.ResumeLayout(false);
             this.PerformLayout();
 

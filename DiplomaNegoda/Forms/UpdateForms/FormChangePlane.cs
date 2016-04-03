@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DiplomaNegoda.Forms.InsertForms
+namespace DiplomaNegoda.Forms.UpdateForms
 {
-    public partial class AddCity : Form
+    public partial class FormChangePlane : Form
     {
-        public AddCity()
+        public FormChangePlane()
         {
             InitializeComponent();
         }

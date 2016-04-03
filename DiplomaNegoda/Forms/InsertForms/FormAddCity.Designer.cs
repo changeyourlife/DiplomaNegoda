@@ -1,6 +1,6 @@
 ﻿namespace DiplomaNegoda.Forms.InsertForms
 {
-    partial class AddTicketStatus
+    partial class FormAddCity
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "AddTicketStatus";
+            this.Text = "AddCity";
         }
 
         #endregion

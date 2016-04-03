@@ -23,9 +23,9 @@ namespace DiplomaNegoda.Classes.TablesOnlyPK
             sqlComm = sqlConn.CreateCommand();
         }
 
-        public ArrayList GetTableData(SqlDataReader DataReader)//получаем данные из таблицы, method SELECT
+        public List<DbDataRecord> GetTableData(SqlDataReader DataReader)//получаем данные из таблицы, method SELECT
         {
-            ArrayList allProd = new ArrayList();
+            List<DbDataRecord> allProd = new List<DbDataRecord>();
             if (DataReader.HasRows)
             {
                 foreach (DbDataRecord result in DataReader)
@@ -44,7 +44,7 @@ namespace DiplomaNegoda.Classes.TablesOnlyPK
             return dataReader;
         }
 
-        public void SetCommandText()
+        public void SetCommandTextSelect()
         {
             sqlComm.CommandText = "SELECT * FROM [" + nameofTable + "]";
         }

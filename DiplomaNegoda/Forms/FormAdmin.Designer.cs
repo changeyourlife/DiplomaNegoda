@@ -111,6 +111,7 @@
             this.ButtonDeleteAviacompany.TabIndex = 3;
             this.ButtonDeleteAviacompany.Text = "Delete Aviacompany";
             this.ButtonDeleteAviacompany.UseVisualStyleBackColor = true;
+            this.ButtonDeleteAviacompany.Click += new System.EventHandler(this.ButtonDeleteAviacompany_Click);
             // 
             // ButtonChangeAviacompany
             // 
@@ -120,6 +121,7 @@
             this.ButtonChangeAviacompany.TabIndex = 2;
             this.ButtonChangeAviacompany.Text = "Change Aviacompany";
             this.ButtonChangeAviacompany.UseVisualStyleBackColor = true;
+            this.ButtonChangeAviacompany.Click += new System.EventHandler(this.ButtonChangeAviacompany_Click);
             // 
             // ButtonAddAviacompany
             // 
@@ -391,6 +393,7 @@
             this.ClientSize = new System.Drawing.Size(1164, 465);
             this.Controls.Add(this.tabControl1);
             this.Name = "FormAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAdmin";
             this.Shown += new System.EventHandler(this.FormAdmin_Shown);
             this.tabControl1.ResumeLayout(false);
@@ -443,5 +446,59 @@
         private System.Windows.Forms.Button ButtonChangeTicketStatus;
         private System.Windows.Forms.Button ButtonAddTicketStatus;
         private System.Windows.Forms.DataGridView DGVticketStatus;
+
+        public bool RefreshAviacompaniesSetDGV()
+        {
+            Classes.TablesOnlyPK.AviacompaniesSet ObjectAviacompaniesSet = new Classes.TablesOnlyPK.AviacompaniesSet();
+            DGVaviacompanies.AutoGenerateColumns = true;
+            ObjectAviacompaniesSet.SetCommandTextSelect();
+            DGVaviacompanies.DataSource = ObjectAviacompaniesSet.GetTableData(ObjectAviacompaniesSet.CreateDataReaderVariable());
+            return true;
+        }
+
+        public bool RefreshCitiesSetDGV()
+        {
+            Classes.TablesOnlyPK.CitiesSet ObjectCitiesSet = new Classes.TablesOnlyPK.CitiesSet();
+            DGVcities.AutoGenerateColumns = true;
+            ObjectCitiesSet.SetCommandTextSelect();
+            DGVcities.DataSource = ObjectCitiesSet.GetTableData(ObjectCitiesSet.CreateDataReaderVariable());
+            return true;
+        }
+
+        public bool RefreshClassPlaceSetDGV()
+        {
+            Classes.TablesOnlyPK.ClassPlaceSet ObjectClassPlaceSet = new Classes.TablesOnlyPK.ClassPlaceSet();
+            DGVclassPlace.AutoGenerateColumns = true;
+            ObjectClassPlaceSet.SetCommandTextSelect();
+            DGVclassPlace.DataSource = ObjectClassPlaceSet.GetTableData(ObjectClassPlaceSet.CreateDataReaderVariable());
+            return true;
+        }
+
+        public bool RefreshPlanesSetDGV()
+        {
+            Classes.TablesOnlyPK.PlanesSet ObjectPlanesSet = new Classes.TablesOnlyPK.PlanesSet();
+            DGVplanes.AutoGenerateColumns = true;
+            ObjectPlanesSet.SetCommandTextSelect();
+            DGVplanes.DataSource = ObjectPlanesSet.GetTableData(ObjectPlanesSet.CreateDataReaderVariable());
+            return true;
+        }
+
+        public bool RefreshPositionsSetDGV()
+        {
+            Classes.TablesOnlyPK.PositionsSet ObjectPositionsSet = new Classes.TablesOnlyPK.PositionsSet();
+            DGVpositions.AutoGenerateColumns = true;
+            ObjectPositionsSet.SetCommandTextSelect();
+            DGVpositions.DataSource = ObjectPositionsSet.GetTableData(ObjectPositionsSet.CreateDataReaderVariable());
+            return true;
+        }
+
+        public bool RefreshTicketStatusSetDGV()
+        {
+            Classes.TablesOnlyPK.TicketStatusSet ObjectTicketStatusSet = new Classes.TablesOnlyPK.TicketStatusSet();
+            DGVticketStatus.AutoGenerateColumns = true;
+            ObjectTicketStatusSet.SetCommandTextSelect();
+            DGVticketStatus.DataSource = ObjectTicketStatusSet.GetTableData(ObjectTicketStatusSet.CreateDataReaderVariable());
+            return true;
+        }
     }
 }

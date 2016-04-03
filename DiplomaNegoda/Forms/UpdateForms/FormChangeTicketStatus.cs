@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DiplomaNegoda.Forms.UpdateForms
 {
-    public partial class ChangePlane : Form
+    public partial class FormChangeTicketStatus : Form
     {
-        public ChangePlane()
+        public FormChangeTicketStatus()
         {
             InitializeComponent();
         }

@@ -10,17 +10,31 @@ using System.Windows.Forms;
 
 namespace DiplomaNegoda.Forms.InsertForms
 {
-    public partial class AddAviacompany : Form
+    public partial class FormAddAviacompany : Form
     {
-        public AddAviacompany()
+        public FormAddAviacompany()
         {
             InitializeComponent();
+            FormAdmin ObjectFormAdmin = this.Owner as FormAdmin;
         }
 
         private void ButtonAddAviacompany_Click(object sender, EventArgs e)
         {
+            //insert in DB
             Classes.TablesOnlyPK.AviacompaniesSet ObjectAviacompaniesSet = new Classes.TablesOnlyPK.AviacompaniesSet();
             ObjectAviacompaniesSet.InsertIntoTable(TextBoxName.Text);
+
+            //refresh DFVaviacompanies
+            FormAdmin ObjectFormAdmin = Owner as FormAdmin;
+            if (ObjectFormAdmin != null)
+            {
+                ObjectFormAdmin.RefreshAviacompaniesSetDGV();
+            }
+        }
+
+        private void AddAviacompany_Shown(object sender, EventArgs e)
+        {
+            TextBoxName.Clear();
         }
     }
 }

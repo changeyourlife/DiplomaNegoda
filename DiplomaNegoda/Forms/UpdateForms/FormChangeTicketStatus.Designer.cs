@@ -1,6 +1,6 @@
 ﻿namespace DiplomaNegoda.Forms.UpdateForms
 {
-    partial class ChangePlane
+    partial class FormChangeTicketStatus
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "ChangePlane";
+            this.Text = "ChangeTicketStatus";
         }
 
         #endregion

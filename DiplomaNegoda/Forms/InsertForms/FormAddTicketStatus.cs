@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DiplomaNegoda.Forms.UpdateForms
+namespace DiplomaNegoda.Forms.InsertForms
 {
-    public partial class ChangeTicketStatus : Form
+    public partial class FormAddTicketStatus : Form
     {
-        public ChangeTicketStatus()
+        public FormAddTicketStatus()
         {
             InitializeComponent();
         }

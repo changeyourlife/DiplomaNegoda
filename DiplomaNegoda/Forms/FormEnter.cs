@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DiplomaNegoda.Classes;
+using DiplomaNegoda.Forms;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,7 +24,7 @@ namespace DiplomaNegoda
         private void ButtonEnter_Click(object sender, EventArgs e)
         {
             List<DbDataRecord> arrList = new List<DbDataRecord>();
-            Classes.Login ObjectLogin = new Classes.Login(); //create object of class "Login"
+            Login ObjectLogin = new Login(); //create object of class "Login"
             ObjectLogin.SetLoginPasswordForEnter(textBoxLogin.Text, textBoxPassword.Text);
             arrList = ObjectLogin.Enter(ObjectLogin.CreateDataReaderVariable());
             
@@ -33,8 +35,9 @@ namespace DiplomaNegoda
                 if (arrList[0].GetValue(4).ToString().Equals("1"))
                 {
                     MessageBox.Show("YOU ADMIN");
-                    Forms.FormAdmin formAdmin = new Forms.FormAdmin();
-                    formAdmin.Show();
+                    FormAdmin ObjectFormAdmin = new FormAdmin();
+                    ObjectFormAdmin.Owner= this;
+                    ObjectFormAdmin.ShowDialog();
                 }
                 else if (arrList[0].GetValue(4).ToString().Equals("2"))
                 {

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DiplomaNegoda.Forms.UpdateForms
 {
-    public partial class ChangeCity : Form
+    public partial class FormChangeCity : Form
     {
-        public ChangeCity()
+        public FormChangeCity()
         {
             InitializeComponent();
         }

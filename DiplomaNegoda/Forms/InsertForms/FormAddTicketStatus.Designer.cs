@@ -1,6 +1,6 @@
-﻿namespace DiplomaNegoda.Forms.UpdateForms
+﻿namespace DiplomaNegoda.Forms.InsertForms
 {
-    partial class ChangeTicketStatus
+    partial class FormAddTicketStatus
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "ChangeTicketStatus";
+            this.Text = "AddTicketStatus";
         }
 
         #endregion

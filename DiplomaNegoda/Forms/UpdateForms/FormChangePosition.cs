@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DiplomaNegoda.Forms.UpdateForms
 {
-    public partial class ChangePosition : Form
+    public partial class FormChangePosition : Form
     {
-        public ChangePosition()
+        public FormChangePosition()
         {
             InitializeComponent();
         }

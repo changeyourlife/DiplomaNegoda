@@ -1,6 +1,6 @@
 ﻿namespace DiplomaNegoda.Forms.InsertForms
 {
-    partial class AddAviacompany
+    partial class FormAddAviacompany
     {
         /// <summary>
         /// Required designer variable.
@@ -79,7 +79,9 @@
             this.Controls.Add(this.TextBoxName);
             this.Controls.Add(this.LabelName);
             this.Name = "AddAviacompany";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddAviacompany";
+            this.Shown += new System.EventHandler(this.AddAviacompany_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
