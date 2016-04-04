@@ -30,18 +30,18 @@ namespace DiplomaNegoda
             
             if (arrList.Count != 0)
             {
-                MessageBox.Show("NOT NULL");
+                //MessageBox.Show("NOT NULL");
                 //if (arrList[0].)
                 if (arrList[0].GetValue(4).ToString().Equals("1"))
                 {
-                    MessageBox.Show("YOU ADMIN");
+                    //MessageBox.Show("YOU ADMIN");
                     FormAdmin ObjectFormAdmin = new FormAdmin();
                     ObjectFormAdmin.Owner= this;
                     ObjectFormAdmin.ShowDialog();
                 }
                 else if (arrList[0].GetValue(4).ToString().Equals("2"))
                 {
-                    MessageBox.Show("YOU KAS");
+                    //MessageBox.Show("YOU KAS");
                 }
             else
             {

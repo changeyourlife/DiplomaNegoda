@@ -59,6 +59,11 @@
             this.ButtonChangeTicketStatus = new System.Windows.Forms.Button();
             this.ButtonAddTicketStatus = new System.Windows.Forms.Button();
             this.DGVticketStatus = new System.Windows.Forms.DataGridView();
+            this.TabAccountsSet = new System.Windows.Forms.TabPage();
+            this.ButtonDeleteAccount = new System.Windows.Forms.Button();
+            this.ButtonChangeAccount = new System.Windows.Forms.Button();
+            this.ButtonAddAccount = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.TabAviacompaniesSet.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVaviacompanies)).BeginInit();
@@ -72,6 +77,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.DGVpositions)).BeginInit();
             this.TabTicketStatusSet.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVticketStatus)).BeginInit();
+            this.TabAccountsSet.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -82,6 +89,7 @@
             this.tabControl1.Controls.Add(this.TabPlanesSet);
             this.tabControl1.Controls.Add(this.TabPositionsSet);
             this.tabControl1.Controls.Add(this.TabTicketStatusSet);
+            this.tabControl1.Controls.Add(this.TabAccountsSet);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -386,6 +394,56 @@
             this.DGVticketStatus.Size = new System.Drawing.Size(1120, 336);
             this.DGVticketStatus.TabIndex = 20;
             // 
+            // TabAccountsSet
+            // 
+            this.TabAccountsSet.Controls.Add(this.ButtonDeleteAccount);
+            this.TabAccountsSet.Controls.Add(this.ButtonChangeAccount);
+            this.TabAccountsSet.Controls.Add(this.ButtonAddAccount);
+            this.TabAccountsSet.Controls.Add(this.dataGridView1);
+            this.TabAccountsSet.Location = new System.Drawing.Point(4, 22);
+            this.TabAccountsSet.Name = "TabAccountsSet";
+            this.TabAccountsSet.Padding = new System.Windows.Forms.Padding(3);
+            this.TabAccountsSet.Size = new System.Drawing.Size(1132, 415);
+            this.TabAccountsSet.TabIndex = 6;
+            this.TabAccountsSet.Text = "Accounts";
+            this.TabAccountsSet.UseVisualStyleBackColor = true;
+            // 
+            // ButtonDeleteAccount
+            // 
+            this.ButtonDeleteAccount.Location = new System.Drawing.Point(841, 348);
+            this.ButtonDeleteAccount.Name = "ButtonDeleteAccount";
+            this.ButtonDeleteAccount.Size = new System.Drawing.Size(285, 61);
+            this.ButtonDeleteAccount.TabIndex = 27;
+            this.ButtonDeleteAccount.Text = "Delete Account";
+            this.ButtonDeleteAccount.UseVisualStyleBackColor = true;
+            // 
+            // ButtonChangeAccount
+            // 
+            this.ButtonChangeAccount.Location = new System.Drawing.Point(436, 348);
+            this.ButtonChangeAccount.Name = "ButtonChangeAccount";
+            this.ButtonChangeAccount.Size = new System.Drawing.Size(285, 61);
+            this.ButtonChangeAccount.TabIndex = 26;
+            this.ButtonChangeAccount.Text = "Change Account";
+            this.ButtonChangeAccount.UseVisualStyleBackColor = true;
+            // 
+            // ButtonAddAccount
+            // 
+            this.ButtonAddAccount.Location = new System.Drawing.Point(6, 348);
+            this.ButtonAddAccount.Name = "ButtonAddAccount";
+            this.ButtonAddAccount.Size = new System.Drawing.Size(285, 61);
+            this.ButtonAddAccount.TabIndex = 25;
+            this.ButtonAddAccount.Text = "Add Account";
+            this.ButtonAddAccount.UseVisualStyleBackColor = true;
+            this.ButtonAddAccount.Click += new System.EventHandler(this.ButtonAddAccount_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 6);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1120, 336);
+            this.dataGridView1.TabIndex = 24;
+            // 
             // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -409,6 +467,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.DGVpositions)).EndInit();
             this.TabTicketStatusSet.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGVticketStatus)).EndInit();
+            this.TabAccountsSet.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -500,5 +560,11 @@
             DGVticketStatus.DataSource = ObjectTicketStatusSet.GetTableData(ObjectTicketStatusSet.CreateDataReaderVariable());
             return true;
         }
+
+        private System.Windows.Forms.TabPage TabAccountsSet;
+        private System.Windows.Forms.Button ButtonDeleteAccount;
+        private System.Windows.Forms.Button ButtonChangeAccount;
+        private System.Windows.Forms.Button ButtonAddAccount;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

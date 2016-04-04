@@ -55,6 +55,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\DBLookUpComboBox.cs" />
+    <Compile Include="Classes\TablesOnlyFK\AccountsSet.cs" />
+    <Compile Include="Forms\InsertForms\FormAddAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertForms\FormAddAccount.Designer.cs">
+      <DependentUpon>FormAddAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Other\StaticFormsValues.cs" />
     <Compile Include="Other\DataBase.cs" />
     <Compile Include="Other\DBConnection.cs" />
@@ -164,6 +171,9 @@
     <EmbeddedResource Include="Forms\FormEnter.resx">
       <DependentUpon>FormEnter.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertForms\FormAddAccount.resx">
+      <DependentUpon>FormAddAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\InsertForms\FormAddAviacompany.resx">
       <DependentUpon>FormAddAviacompany.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,9 +203,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\TablesOnlyFK\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

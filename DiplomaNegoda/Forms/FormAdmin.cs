@@ -86,5 +86,12 @@ namespace DiplomaNegoda.Forms
             ObjectFormChangeAviacompany.Owner = this;
             ObjectFormChangeAviacompany.ShowDialog();
         }
+
+        private void ButtonAddAccount_Click(object sender, EventArgs e)
+        {
+            FormAddAccount ObjectAddAccount = new FormAddAccount();
+            ObjectAddAccount.Owner = this;
+            ObjectAddAccount.ShowDialog();
+        }
     }
 }
