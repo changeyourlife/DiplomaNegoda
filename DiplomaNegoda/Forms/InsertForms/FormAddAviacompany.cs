@@ -28,7 +28,7 @@ namespace DiplomaNegoda.Forms.InsertForms
             FormAdmin ObjectFormAdmin = Owner as FormAdmin;
             if (ObjectFormAdmin != null)
             {
-                ObjectFormAdmin.RefreshAviacompaniesSetDGV();
+                ObjectFormAdmin.RefreshAccountsSetDGV();
             }
         }
 

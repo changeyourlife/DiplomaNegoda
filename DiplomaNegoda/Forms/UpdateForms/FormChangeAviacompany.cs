@@ -31,7 +31,7 @@ namespace DiplomaNegoda.Forms.UpdateForms
             FormAdmin ObjectFormAdmin = Owner as FormAdmin;
             if (ObjectFormAdmin != null)
             {
-                ObjectFormAdmin.RefreshAviacompaniesSetDGV();
+                ObjectFormAdmin.RefreshAccountsSetDGV();
             }
         }
 

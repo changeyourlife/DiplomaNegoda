@@ -116,6 +116,7 @@
             this.ButtonAddAccount.TabIndex = 8;
             this.ButtonAddAccount.Text = "Add";
             this.ButtonAddAccount.UseVisualStyleBackColor = true;
+            this.ButtonAddAccount.Click += new System.EventHandler(this.ButtonAddAccount_Click);
             // 
             // ButtonClose
             // 

@@ -8,12 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DiplomaNegoda.Classes.TablesOnlyFK
+namespace DiplomaNegoda.Classes.TablesOnlyPK
 {
     class AccountsSet
     {
         public const string nameOfDB = "airport"; //имя БД
-        public const string nameofTable = "AviacompaniesSet";
+        public const string nameofTable = "AccountsSet";
         public static string connectString = @"Data Source=(local);Initial Catalog=" + nameOfDB + ";Integrated Security=True"; //строка подключения
         public static SqlConnection sqlConn = new SqlConnection(connectString); //переменная соединения с БД
         public static SqlCommand sqlComm = new SqlCommand("", sqlConn); //переменная запроса
@@ -49,25 +49,37 @@ namespace DiplomaNegoda.Classes.TablesOnlyFK
             sqlComm.CommandText = "SELECT * FROM [" + nameofTable + "]";
         }
 
-        public void InsertIntoTable(string Name) //method INSERT
+        public void InsertIntoTable(string WorkerID, string Login, string Password, string PositionID) //method INSERT
         {
-            sqlComm.CommandText = @"INSERT INTO [" + nameofTable + "] (Name) VALUES (@NAME);";
-            sqlComm.Parameters.Add("@NAME", SqlDbType.VarChar);
-            sqlComm.Parameters["@NAME"].Value = Name;
+            sqlComm.CommandText = @"INSERT INTO [" + nameofTable + "] (WorkerID, Login, Password, PositionID) VALUES (@WORKERID, @LOGIN, @PASSWORD, @POSITIONID);";
+            sqlComm.Parameters.Add("@WORKERID", SqlDbType.VarChar);
+            sqlComm.Parameters["@WORKERID"].Value = WorkerID;
+            sqlComm.Parameters.Add("@LOGIN", SqlDbType.VarChar);
+            sqlComm.Parameters["@LOGIN"].Value = Login;
+            sqlComm.Parameters.Add("@PASSWORD", SqlDbType.VarChar);
+            sqlComm.Parameters["@PASSWORD"].Value = Password;
+            sqlComm.Parameters.Add("@POSITIONID", SqlDbType.VarChar);
+            sqlComm.Parameters["@POSITIONID"].Value = PositionID;
             sqlConn.Open();
             sqlComm.ExecuteNonQuery();
             SQLCOMMclear();
             sqlConn.Close();
         }
 
-        public void UpdateRowInTable(string iD, string Name) //method UPDATE
+        public void UpdateRowInTable(string iD, string WorkerID, string Login, string Password, string PositionID) //method UPDATE
         {
             sqlComm = sqlConn.CreateCommand();
-            sqlComm.CommandText = @"UPDATE [" + nameofTable + "] SET Name=@NAME WHERE Id=@ID";
+            sqlComm.CommandText = @"UPDATE [" + nameofTable + "] SET WorkerID=@WORKERID, Login=@LOGIN, Password=@PASSWORD, PositionID=@POSITIONID WHERE Id=@ID";
             sqlComm.Parameters.Add("@ID", SqlDbType.VarChar);
             sqlComm.Parameters["@ID"].Value = iD;
-            sqlComm.Parameters.Add("@NAME", SqlDbType.VarChar);
-            sqlComm.Parameters["@NAME"].Value = Name;
+            sqlComm.Parameters.Add("@WORKERID", SqlDbType.VarChar);
+            sqlComm.Parameters["@WORKERID"].Value = WorkerID;
+            sqlComm.Parameters.Add("@LOGIN", SqlDbType.VarChar);
+            sqlComm.Parameters["@LOGIN"].Value = Login;
+            sqlComm.Parameters.Add("@PASSWORD", SqlDbType.VarChar);
+            sqlComm.Parameters["@PASSWORD"].Value = Password;
+            sqlComm.Parameters.Add("@POSITIONID", SqlDbType.VarChar);
+            sqlComm.Parameters["@POSITIONID"].Value = PositionID;
             sqlConn.Open();
             sqlComm.ExecuteNonQuery();
             SQLCOMMclear();

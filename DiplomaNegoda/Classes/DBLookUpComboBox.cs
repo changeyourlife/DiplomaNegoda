@@ -16,8 +16,8 @@ namespace DiplomaNegoda.Classes
         public static string connectString = @"Data Source=(local);Initial Catalog=" + nameOfDB + ";Integrated Security=True"; //строка подключения
         public static SqlConnection sqlConn = new SqlConnection(connectString); //переменная соединения с БД
         public static SqlCommand sqlComm = new SqlCommand("", sqlConn); //переменная запроса
-        public static List<string> iD = new List<string>();
-        public static List<string> textInComboBox = new List<string>();
+        public List<string> iD = new List<string>();
+        public List<string> textInComboBox = new List<string>();
 
         public DBLookUpComboBox()
         {

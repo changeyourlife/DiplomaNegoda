@@ -1,4 +1,6 @@
-﻿namespace DiplomaNegoda.Forms
+﻿using DiplomaNegoda.Classes.TablesOnlyPK;
+
+namespace DiplomaNegoda.Forms
 {
     partial class FormAdmin
     {
@@ -63,7 +65,7 @@
             this.ButtonDeleteAccount = new System.Windows.Forms.Button();
             this.ButtonChangeAccount = new System.Windows.Forms.Button();
             this.ButtonAddAccount = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DGVaccounts = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.TabAviacompaniesSet.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVaviacompanies)).BeginInit();
@@ -78,7 +80,7 @@
             this.TabTicketStatusSet.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVticketStatus)).BeginInit();
             this.TabAccountsSet.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVaccounts)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -399,7 +401,7 @@
             this.TabAccountsSet.Controls.Add(this.ButtonDeleteAccount);
             this.TabAccountsSet.Controls.Add(this.ButtonChangeAccount);
             this.TabAccountsSet.Controls.Add(this.ButtonAddAccount);
-            this.TabAccountsSet.Controls.Add(this.dataGridView1);
+            this.TabAccountsSet.Controls.Add(this.DGVaccounts);
             this.TabAccountsSet.Location = new System.Drawing.Point(4, 22);
             this.TabAccountsSet.Name = "TabAccountsSet";
             this.TabAccountsSet.Padding = new System.Windows.Forms.Padding(3);
@@ -436,13 +438,13 @@
             this.ButtonAddAccount.UseVisualStyleBackColor = true;
             this.ButtonAddAccount.Click += new System.EventHandler(this.ButtonAddAccount_Click);
             // 
-            // dataGridView1
+            // DGVaccounts
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 6);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1120, 336);
-            this.dataGridView1.TabIndex = 24;
+            this.DGVaccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVaccounts.Location = new System.Drawing.Point(6, 6);
+            this.DGVaccounts.Name = "DGVaccounts";
+            this.DGVaccounts.Size = new System.Drawing.Size(1120, 336);
+            this.DGVaccounts.TabIndex = 24;
             // 
             // FormAdmin
             // 
@@ -468,7 +470,7 @@
             this.TabTicketStatusSet.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGVticketStatus)).EndInit();
             this.TabAccountsSet.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVaccounts)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -509,7 +511,7 @@
 
         public bool RefreshAviacompaniesSetDGV()
         {
-            Classes.TablesOnlyPK.AviacompaniesSet ObjectAviacompaniesSet = new Classes.TablesOnlyPK.AviacompaniesSet();
+            AviacompaniesSet ObjectAviacompaniesSet = new AviacompaniesSet();
             DGVaviacompanies.AutoGenerateColumns = true;
             ObjectAviacompaniesSet.SetCommandTextSelect();
             DGVaviacompanies.DataSource = ObjectAviacompaniesSet.GetTableData(ObjectAviacompaniesSet.CreateDataReaderVariable());
@@ -518,7 +520,7 @@
 
         public bool RefreshCitiesSetDGV()
         {
-            Classes.TablesOnlyPK.CitiesSet ObjectCitiesSet = new Classes.TablesOnlyPK.CitiesSet();
+            CitiesSet ObjectCitiesSet = new CitiesSet();
             DGVcities.AutoGenerateColumns = true;
             ObjectCitiesSet.SetCommandTextSelect();
             DGVcities.DataSource = ObjectCitiesSet.GetTableData(ObjectCitiesSet.CreateDataReaderVariable());
@@ -527,7 +529,7 @@
 
         public bool RefreshClassPlaceSetDGV()
         {
-            Classes.TablesOnlyPK.ClassPlaceSet ObjectClassPlaceSet = new Classes.TablesOnlyPK.ClassPlaceSet();
+            ClassPlaceSet ObjectClassPlaceSet = new ClassPlaceSet();
             DGVclassPlace.AutoGenerateColumns = true;
             ObjectClassPlaceSet.SetCommandTextSelect();
             DGVclassPlace.DataSource = ObjectClassPlaceSet.GetTableData(ObjectClassPlaceSet.CreateDataReaderVariable());
@@ -536,7 +538,7 @@
 
         public bool RefreshPlanesSetDGV()
         {
-            Classes.TablesOnlyPK.PlanesSet ObjectPlanesSet = new Classes.TablesOnlyPK.PlanesSet();
+            PlanesSet ObjectPlanesSet = new PlanesSet();
             DGVplanes.AutoGenerateColumns = true;
             ObjectPlanesSet.SetCommandTextSelect();
             DGVplanes.DataSource = ObjectPlanesSet.GetTableData(ObjectPlanesSet.CreateDataReaderVariable());
@@ -545,7 +547,7 @@
 
         public bool RefreshPositionsSetDGV()
         {
-            Classes.TablesOnlyPK.PositionsSet ObjectPositionsSet = new Classes.TablesOnlyPK.PositionsSet();
+            PositionsSet ObjectPositionsSet = new PositionsSet();
             DGVpositions.AutoGenerateColumns = true;
             ObjectPositionsSet.SetCommandTextSelect();
             DGVpositions.DataSource = ObjectPositionsSet.GetTableData(ObjectPositionsSet.CreateDataReaderVariable());
@@ -554,10 +556,19 @@
 
         public bool RefreshTicketStatusSetDGV()
         {
-            Classes.TablesOnlyPK.TicketStatusSet ObjectTicketStatusSet = new Classes.TablesOnlyPK.TicketStatusSet();
+            TicketStatusSet ObjectTicketStatusSet = new TicketStatusSet();
             DGVticketStatus.AutoGenerateColumns = true;
             ObjectTicketStatusSet.SetCommandTextSelect();
             DGVticketStatus.DataSource = ObjectTicketStatusSet.GetTableData(ObjectTicketStatusSet.CreateDataReaderVariable());
+            return true;
+        }
+
+        public bool RefreshAccountsSetDGV()
+        {
+            AccountsSet ObjectAccountsSet = new AccountsSet();
+            DGVaccounts.AutoGenerateColumns = true;
+            ObjectAccountsSet.SetCommandTextSelect();
+            DGVaccounts.DataSource = ObjectAccountsSet.GetTableData(ObjectAccountsSet.CreateDataReaderVariable());
             return true;
         }
 
@@ -565,6 +576,6 @@
         private System.Windows.Forms.Button ButtonDeleteAccount;
         private System.Windows.Forms.Button ButtonChangeAccount;
         private System.Windows.Forms.Button ButtonAddAccount;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DGVaccounts;
     }
 }

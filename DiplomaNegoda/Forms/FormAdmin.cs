@@ -42,7 +42,7 @@ namespace DiplomaNegoda.Forms
             {
                 case 0:
                     {
-                        RefreshAviacompaniesSetDGV();
+                        RefreshAccountsSetDGV();
                         break;
                     }
                 case 1:
@@ -68,6 +68,11 @@ namespace DiplomaNegoda.Forms
                 case 5:
                     {
                         RefreshTicketStatusSetDGV();
+                        break;
+                    }
+                case 6:
+                    {
+                        RefreshAccountsSetDGV();
                         break;
                     }
             }
