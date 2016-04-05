@@ -95,5 +95,17 @@ namespace DiplomaNegoda.Classes
             }
 
         }
+
+        public int ReturnIndexOfElementID(string IDValueOfCell)
+        {
+            for (int i=0; i<iD.Count; i++)
+            {
+                if (iD[i] == IDValueOfCell)
+                {
+                    return i;
+                }
+            }
+            return 0;
+        }
     }
 }

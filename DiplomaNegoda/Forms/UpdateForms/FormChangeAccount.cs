@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DiplomaNegoda.Classes.TablesOnlyPK;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,38 +8,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DiplomaNegoda.Classes.TablesOnlyPK;
 
-namespace DiplomaNegoda.Forms.InsertForms
+namespace DiplomaNegoda.Forms.UpdateForms
 {
-    public partial class FormAddAccount : Form
+    public partial class FormChangeAccount : Form
     {
         Classes.DBLookUpComboBox ObjectDBLUCBWorkersSet = new Classes.DBLookUpComboBox();
         Classes.DBLookUpComboBox ObjectDBLUCBPositionsSet = new Classes.DBLookUpComboBox();
-        public FormAddAccount()
+        public string iDRow, login, password, iDWorkersSet, iDPositionsSet;
+
+        public FormChangeAccount(string IDRow, string IDWorkersSet, string Login, string Password, string IDPositionsSet)
         {
             InitializeComponent();
+            iDRow = IDRow;
+            login = Login;
+            password = Password;
+            iDWorkersSet = IDWorkersSet;
+            iDPositionsSet = IDPositionsSet;
         }
 
-        private void FormAddAccount_Shown(object sender, EventArgs e)
+        private void FormChangeAccount_Shown(object sender, EventArgs e)
         {
             ObjectDBLUCBWorkersSet.SetMasStringsValues(ObjectDBLUCBWorkersSet.GetDataForComboBox("[dbo].[WorkersSet]"));
             ObjectDBLUCBWorkersSet.HookOnComboBox(ComboBoxWorker);
-            ComboBoxWorker.SelectedIndex = 0;
+            ComboBoxWorker.SelectedIndex = ObjectDBLUCBWorkersSet.ReturnIndexOfElementID(iDWorkersSet);
 
-            
+            TextBoxLogin.Text = login;
+
+            TextBoxPassword.Text = password;
+
             ObjectDBLUCBPositionsSet.SetMasStringsValues(ObjectDBLUCBPositionsSet.GetDataForComboBox("[dbo].[PositionsSet]"));
             ObjectDBLUCBPositionsSet.HookOnComboBox(ComboBoxPosition);
-            ComboBoxPosition.SelectedIndex = 0;
+            ComboBoxPosition.SelectedIndex = ObjectDBLUCBPositionsSet.ReturnIndexOfElementID(iDPositionsSet); ;
         }
 
-        private void ButtonAddAccount_Click(object sender, EventArgs e)
+        private void ButtonChangeAccount_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show(ObjectDBLUCBWorkersSet.iD[ComboBoxWorker.SelectedIndex]);
-
             //insert in DB
             AccountsSet ObjectAviacompaniesSet = new AccountsSet();
-            ObjectAviacompaniesSet.InsertIntoTable(ObjectDBLUCBWorkersSet.iD[ComboBoxWorker.SelectedIndex], TextBoxLogin.Text, TextBoxPassword.Text, ObjectDBLUCBPositionsSet.iD[ComboBoxPosition.SelectedIndex]);
+            ObjectAviacompaniesSet.UpdateRowInTable(iDRow, ObjectDBLUCBWorkersSet.iD[ComboBoxWorker.SelectedIndex], TextBoxLogin.Text, TextBoxPassword.Text, ObjectDBLUCBPositionsSet.iD[ComboBoxPosition.SelectedIndex]);
 
             //refresh DFVaviacompanies
             FormAdmin ObjectFormAdmin = Owner as FormAdmin;

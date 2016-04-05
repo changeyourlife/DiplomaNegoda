@@ -418,6 +418,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonDeleteAccount.TabIndex = 27;
             this.ButtonDeleteAccount.Text = "Delete Account";
             this.ButtonDeleteAccount.UseVisualStyleBackColor = true;
+            this.ButtonDeleteAccount.Click += new System.EventHandler(this.ButtonDeleteAccount_Click);
             // 
             // ButtonChangeAccount
             // 
@@ -427,6 +428,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonChangeAccount.TabIndex = 26;
             this.ButtonChangeAccount.Text = "Change Account";
             this.ButtonChangeAccount.UseVisualStyleBackColor = true;
+            this.ButtonChangeAccount.Click += new System.EventHandler(this.ButtonChangeAccount_Click);
             // 
             // ButtonAddAccount
             // 

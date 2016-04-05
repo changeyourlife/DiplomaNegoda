@@ -1,5 +1,6 @@
 ﻿using DiplomaNegoda.Classes.TablesOnlyPK;
 using DiplomaNegoda.Forms.InsertForms;
+using DiplomaNegoda.Forms.UpdateForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -87,7 +88,7 @@ namespace DiplomaNegoda.Forms
 
         private void ButtonChangeAviacompany_Click(object sender, EventArgs e)
         {
-            UpdateForms.FormChangeAviacompany ObjectFormChangeAviacompany = new UpdateForms.FormChangeAviacompany(DGVaviacompanies[0, DGVaviacompanies.CurrentCellAddress.Y].Value.ToString(), DGVaviacompanies[1, DGVaviacompanies.CurrentCellAddress.Y].Value.ToString());
+            FormChangeAviacompany ObjectFormChangeAviacompany = new FormChangeAviacompany(DGVaviacompanies[0, DGVaviacompanies.CurrentCellAddress.Y].Value.ToString(), DGVaviacompanies[1, DGVaviacompanies.CurrentCellAddress.Y].Value.ToString());
             ObjectFormChangeAviacompany.Owner = this;
             ObjectFormChangeAviacompany.ShowDialog();
         }
@@ -97,6 +98,22 @@ namespace DiplomaNegoda.Forms
             FormAddAccount ObjectAddAccount = new FormAddAccount();
             ObjectAddAccount.Owner = this;
             ObjectAddAccount.ShowDialog();
+        }
+
+        private void ButtonChangeAccount_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show(DGVaccounts.CurrentCellAddress.X.ToString() + DGVaccounts.CurrentCellAddress.Y.ToString());
+            //MessageBox.Show(DGVaccounts[3, DGVaccounts.CurrentCellAddress.Y].Value.ToString());
+            FormChangeAccount ObjectChangeAccount = new FormChangeAccount(DGVaccounts[0, DGVaccounts.CurrentCellAddress.Y].Value.ToString(), DGVaccounts[1, DGVaccounts.CurrentCellAddress.Y].Value.ToString(), DGVaccounts[2, DGVaccounts.CurrentCellAddress.Y].Value.ToString(), DGVaccounts[3, DGVaccounts.CurrentCellAddress.Y].Value.ToString(), DGVaccounts[4, DGVaccounts.CurrentCellAddress.Y].Value.ToString());
+            ObjectChangeAccount.Owner = this;
+            ObjectChangeAccount.ShowDialog();
+        }
+
+        private void ButtonDeleteAccount_Click(object sender, EventArgs e)
+        {
+            AccountsSet ObjectAccountsSet = new AccountsSet();
+            ObjectAccountsSet.DeleteFromTable(DGVaccounts[0, DGVaccounts.CurrentCellAddress.Y].Value.ToString()); //DGVaviacompanie[X=column, Y=row]
+            this.RefreshAccountsSetDGV();
         }
     }
 }

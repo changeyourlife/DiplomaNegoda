@@ -41,7 +41,7 @@ namespace DiplomaNegoda
                 }
                 else if (arrList[0].GetValue(4).ToString().Equals("2"))
                 {
-                    //MessageBox.Show("YOU KAS");
+                    MessageBox.Show("YOU KAS");
                 }
             else
             {
