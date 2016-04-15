@@ -11,15 +11,15 @@ using System.Threading.Tasks;
 
 namespace DiplomaNegoda.Classes.TablesOnlyPK
 {
-    class TicketStatusSet
+    class PlaceStatusSet
     {
         public const string nameOfDB = "airport"; //имя БД
-        public const string nameofTable = "TicketStatusSet";
+        public const string nameofTable = "PlaceStatusSet";
         public static string connectString = @"Data Source=(local);Initial Catalog=" + nameOfDB + ";Integrated Security=True"; //строка подключения
         public static SqlConnection sqlConn = new SqlConnection(connectString); //переменная соединения с БД
         public static SqlCommand sqlComm = new SqlCommand("", sqlConn); //переменная запроса
 
-        public TicketStatusSet()
+        public PlaceStatusSet()
         {
             sqlComm = sqlConn.CreateCommand();
         }
@@ -47,14 +47,14 @@ namespace DiplomaNegoda.Classes.TablesOnlyPK
 
         public void SetCommandTextSelect()
         {
-            sqlComm.CommandText = "SELECT * FROM [" + nameofTable + "]";
+            sqlComm.CommandText = "SELECT *, Name AS Статус FROM [" + nameofTable + "]";
         }
 
         public void InsertIntoTable(string Name) //method INSERT
         {
-            sqlComm.CommandText = @"INSERT INTO [" + nameofTable + "] (TicketStatus) VALUES (@TICKETSTATUS);";
-            sqlComm.Parameters.Add("@TICKETSTATUS", SqlDbType.VarChar);
-            sqlComm.Parameters["@TICKETSTATUS"].Value = Name;
+            sqlComm.CommandText = @"INSERT INTO [" + nameofTable + "] (Name) VALUES (@NAME);";
+            sqlComm.Parameters.Add("@NAME", SqlDbType.VarChar);
+            sqlComm.Parameters["@NAME"].Value = Name;
             sqlConn.Open();
             sqlComm.ExecuteNonQuery();
             SQLCOMMclear();
@@ -64,11 +64,11 @@ namespace DiplomaNegoda.Classes.TablesOnlyPK
         public void UpdateRowInTable(string iD, string Name) //method UPDATE
         {
             sqlComm = sqlConn.CreateCommand();
-            sqlComm.CommandText = @"UPDATE [" + nameofTable + "] SET TicketStatus=@TICKETSTATUS WHERE Id=@ID";
+            sqlComm.CommandText = @"UPDATE [" + nameofTable + "] SET Name=@NAME WHERE Id=@ID";
             sqlComm.Parameters.Add("@ID", SqlDbType.VarChar);
             sqlComm.Parameters["@ID"].Value = iD;
-            sqlComm.Parameters.Add("@TICKETSTATUS", SqlDbType.VarChar);
-            sqlComm.Parameters["@TICKETSTATUS"].Value = Name;
+            sqlComm.Parameters.Add("@NAME", SqlDbType.VarChar);
+            sqlComm.Parameters["@NAME"].Value = Name;
             sqlConn.Open();
             sqlComm.ExecuteNonQuery();
             SQLCOMMclear();

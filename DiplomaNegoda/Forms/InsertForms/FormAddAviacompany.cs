@@ -15,7 +15,6 @@ namespace DiplomaNegoda.Forms.InsertForms
         public FormAddAviacompany()
         {
             InitializeComponent();
-            FormAdmin ObjectFormAdmin = this.Owner as FormAdmin;
         }
 
         private void ButtonAddAviacompany_Click(object sender, EventArgs e)
@@ -28,7 +27,7 @@ namespace DiplomaNegoda.Forms.InsertForms
             FormAdmin ObjectFormAdmin = Owner as FormAdmin;
             if (ObjectFormAdmin != null)
             {
-                ObjectFormAdmin.RefreshAccountsSetDGV();
+                ObjectFormAdmin.RefreshAviacompaniesSetDGV();
             }
         }
 

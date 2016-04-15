@@ -10,15 +10,15 @@ using System.Threading.Tasks;
 
 namespace DiplomaNegoda.Classes.TablesOnlyPK
 {
-    class AccountsSet
+    class PlanesSet
     {
         public const string nameOfDB = "airport"; //имя БД
-        public const string nameofTable = "AccountsSet";
+        public const string nameofTable = "PlanesSet";
         public static string connectString = @"Data Source=(local);Initial Catalog=" + nameOfDB + ";Integrated Security=True"; //строка подключения
         public static SqlConnection sqlConn = new SqlConnection(connectString); //переменная соединения с БД
         public static SqlCommand sqlComm = new SqlCommand("", sqlConn); //переменная запроса
 
-        public AccountsSet()
+        public PlanesSet()
         {
             sqlComm = sqlConn.CreateCommand();
         }
@@ -46,40 +46,36 @@ namespace DiplomaNegoda.Classes.TablesOnlyPK
 
         public void SetCommandTextSelect()
         {
-            sqlComm.CommandText = "SELECT * FROM [" + nameofTable + "]";
+            sqlComm.CommandText = "SELECT *, Model AS [Модель], CountOfplacesEco AS [Кол-во мест эконом класса], CountOfPlacesBusiness AS [Кол-во мест бизнес класса], CountOfPlacesAll AS [Всего мест] FROM [" + nameofTable + "]";
         }
 
-        public void InsertIntoTable(string WorkerID, string Login, string Password, string PositionID) //method INSERT
+        public void InsertIntoTable(string Model, string Eco, string Buis) //method INSERT
         {
-            sqlComm.CommandText = @"INSERT INTO [" + nameofTable + "] (WorkerID, Login, Password, PositionID) VALUES (@WORKERID, @LOGIN, @PASSWORD, @POSITIONID);";
-            sqlComm.Parameters.Add("@WORKERID", SqlDbType.VarChar);
-            sqlComm.Parameters["@WORKERID"].Value = WorkerID;
-            sqlComm.Parameters.Add("@LOGIN", SqlDbType.VarChar);
-            sqlComm.Parameters["@LOGIN"].Value = Login;
-            sqlComm.Parameters.Add("@PASSWORD", SqlDbType.VarChar);
-            sqlComm.Parameters["@PASSWORD"].Value = Password;
-            sqlComm.Parameters.Add("@POSITIONID", SqlDbType.VarChar);
-            sqlComm.Parameters["@POSITIONID"].Value = PositionID;
+            sqlComm.CommandText = @"INSERT INTO [" + nameofTable + "] (Model, CountOfPlacesEco, CountOfPlacesBusiness) VALUES (@MODEL, @ECO, @BUIS);";
+            sqlComm.Parameters.Add("@MODEL", SqlDbType.VarChar);
+            sqlComm.Parameters["@MODEL"].Value = Model;
+            sqlComm.Parameters.Add("@ECO", SqlDbType.VarChar);
+            sqlComm.Parameters["@ECO"].Value = Eco;
+            sqlComm.Parameters.Add("@BUIS", SqlDbType.VarChar);
+            sqlComm.Parameters["@BUIS"].Value = Buis;
             sqlConn.Open();
             sqlComm.ExecuteNonQuery();
             SQLCOMMclear();
             sqlConn.Close();
         }
 
-        public void UpdateRowInTable(string iD, string WorkerID, string Login, string Password, string PositionID) //method UPDATE
+        public void UpdateRowInTable(string iD, string Model, string Eco, string Buis) //method UPDATE
         {
             sqlComm = sqlConn.CreateCommand();
-            sqlComm.CommandText = @"UPDATE [" + nameofTable + "] SET WorkerID=@WORKERID, Login=@LOGIN, Password=@PASSWORD, PositionID=@POSITIONID WHERE Id=@ID";
+            sqlComm.CommandText = @"UPDATE [" + nameofTable + "] SET Model=@MODEL, CountOfPlacesEco=@ECO, CountOfPlacesBusiness=@BUIS WHERE Id=@ID";
             sqlComm.Parameters.Add("@ID", SqlDbType.VarChar);
             sqlComm.Parameters["@ID"].Value = iD;
-            sqlComm.Parameters.Add("@WORKERID", SqlDbType.VarChar);
-            sqlComm.Parameters["@WORKERID"].Value = WorkerID;
-            sqlComm.Parameters.Add("@LOGIN", SqlDbType.VarChar);
-            sqlComm.Parameters["@LOGIN"].Value = Login;
-            sqlComm.Parameters.Add("@PASSWORD", SqlDbType.VarChar);
-            sqlComm.Parameters["@PASSWORD"].Value = Password;
-            sqlComm.Parameters.Add("@POSITIONID", SqlDbType.VarChar);
-            sqlComm.Parameters["@POSITIONID"].Value = PositionID;
+            sqlComm.Parameters.Add("@MODEL", SqlDbType.VarChar);
+            sqlComm.Parameters["@MODEL"].Value = Model;
+            sqlComm.Parameters.Add("@ECO", SqlDbType.VarChar);
+            sqlComm.Parameters["@ECO"].Value = Int32.Parse(Eco);
+            sqlComm.Parameters.Add("@BUIS", SqlDbType.VarChar);
+            sqlComm.Parameters["@BUIS"].Value = Int32.Parse(Buis);
             sqlConn.Open();
             sqlComm.ExecuteNonQuery();
             SQLCOMMclear();

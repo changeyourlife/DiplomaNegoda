@@ -37,8 +37,8 @@ namespace DiplomaNegoda.Forms.InsertForms
             //MessageBox.Show(ObjectDBLUCBWorkersSet.iD[ComboBoxWorker.SelectedIndex]);
 
             //insert in DB
-            AccountsSet ObjectAviacompaniesSet = new AccountsSet();
-            ObjectAviacompaniesSet.InsertIntoTable(ObjectDBLUCBWorkersSet.iD[ComboBoxWorker.SelectedIndex], TextBoxLogin.Text, TextBoxPassword.Text, ObjectDBLUCBPositionsSet.iD[ComboBoxPosition.SelectedIndex]);
+            AccountsSet ObjectAccountsSet = new AccountsSet();
+            ObjectAccountsSet.InsertIntoTable(ObjectDBLUCBWorkersSet.iD[ComboBoxWorker.SelectedIndex], TextBoxLogin.Text, TextBoxPassword.Text, ObjectDBLUCBPositionsSet.iD[ComboBoxPosition.SelectedIndex]);
 
             //refresh DFVaviacompanies
             FormAdmin ObjectFormAdmin = Owner as FormAdmin;

@@ -28,11 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.ButtonClose = new System.Windows.Forms.Button();
+            this.ButtonChangeClassPlace = new System.Windows.Forms.Button();
+            this.TextBoxName = new System.Windows.Forms.TextBox();
+            this.LabelName = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // ButtonClose
+            // 
+            this.ButtonClose.Location = new System.Drawing.Point(353, 32);
+            this.ButtonClose.Name = "ButtonClose";
+            this.ButtonClose.Size = new System.Drawing.Size(75, 23);
+            this.ButtonClose.TabIndex = 23;
+            this.ButtonClose.Text = "Close";
+            this.ButtonClose.UseVisualStyleBackColor = true;
+            // 
+            // ButtonChangeClassPlace
+            // 
+            this.ButtonChangeClassPlace.Location = new System.Drawing.Point(15, 32);
+            this.ButtonChangeClassPlace.Name = "ButtonChangeClassPlace";
+            this.ButtonChangeClassPlace.Size = new System.Drawing.Size(75, 23);
+            this.ButtonChangeClassPlace.TabIndex = 22;
+            this.ButtonChangeClassPlace.Text = "Change";
+            this.ButtonChangeClassPlace.UseVisualStyleBackColor = true;
+            this.ButtonChangeClassPlace.Click += new System.EventHandler(this.ButtonChangeClassPlace_Click);
+            // 
+            // TextBoxName
+            // 
+            this.TextBoxName.Location = new System.Drawing.Point(57, 6);
+            this.TextBoxName.Name = "TextBoxName";
+            this.TextBoxName.Size = new System.Drawing.Size(371, 20);
+            this.TextBoxName.TabIndex = 21;
+            // 
+            // LabelName
+            // 
+            this.LabelName.AutoSize = true;
+            this.LabelName.Location = new System.Drawing.Point(12, 9);
+            this.LabelName.Name = "LabelName";
+            this.LabelName.Size = new System.Drawing.Size(38, 13);
+            this.LabelName.TabIndex = 20;
+            this.LabelName.Text = "Name:";
+            // 
+            // FormChangeClassPlace
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(438, 69);
+            this.Controls.Add(this.ButtonClose);
+            this.Controls.Add(this.ButtonChangeClassPlace);
+            this.Controls.Add(this.TextBoxName);
+            this.Controls.Add(this.LabelName);
+            this.Name = "FormChangeClassPlace";
             this.Text = "ChangeClassPlace";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button ButtonClose;
+        private System.Windows.Forms.Button ButtonChangeClassPlace;
+        private System.Windows.Forms.TextBox TextBoxName;
+        private System.Windows.Forms.Label LabelName;
     }
 }

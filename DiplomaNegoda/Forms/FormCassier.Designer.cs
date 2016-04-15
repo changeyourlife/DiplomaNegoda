@@ -1,6 +1,6 @@
-﻿namespace DiplomaNegoda.Forms.UpdateForms
+﻿namespace DiplomaNegoda.Forms
 {
-    partial class FormChangeTicketStatus
+    partial class FormCassier
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // FormCassier
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "ChangeTicketStatus";
+            this.ClientSize = new System.Drawing.Size(1214, 590);
+            this.Name = "FormCassier";
+            this.Text = "FormCassier";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DiplomaNegoda.Classes.TablesOnlyPK;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,22 @@ namespace DiplomaNegoda.Forms.InsertForms
         public FormAddCity()
         {
             InitializeComponent();
+        }
+
+        private void ButtonAddCity_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show(ObjectDBLUCBWorkersSet.iD[ComboBoxWorker.SelectedIndex]);
+
+            //insert in DB
+            CitiesSet ObjectCitiesSet = new CitiesSet();
+            ObjectCitiesSet.InsertIntoTable(TextBoxName.Text);
+
+            //refresh DGV
+            FormAdmin ObjectFormAdmin = Owner as FormAdmin;
+            if (ObjectFormAdmin != null)
+            {
+                ObjectFormAdmin.RefreshCitiesSetDGV();
+            }
         }
     }
 }

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace DiplomaNegoda.Classes.OperationOnDB
 {
-    class DBCreateTable
+    class DBCreateTableWithTickets
     {
+
     }
 }

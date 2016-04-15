@@ -16,7 +16,7 @@ namespace DiplomaNegoda.Forms.UpdateForms
         public FormChangeAviacompany(string iD, string Name)
         {
             InitializeComponent();
-            FormAdmin ObjectFormAdmin = this.Owner as FormAdmin;
+            //FormAdmin ObjectFormAdmin = this.Owner as FormAdmin;
             ID = iD;
             TextBoxName.Text = Name;
         }

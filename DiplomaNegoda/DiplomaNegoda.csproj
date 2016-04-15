@@ -55,12 +55,40 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\DBLookUpComboBox.cs" />
-    <Compile Include="Classes\TablesOnlyFK\AccountsSet.cs" />
+    <Compile Include="Classes\Tables\AccountsSet.cs" />
+    <Compile Include="Classes\Tables\FlightsArchiveSet.cs" />
+    <Compile Include="Classes\Tables\FlightsCurrentSet.cs" />
+    <Compile Include="Classes\Tables\TicketsSet.cs" />
+    <Compile Include="Classes\Tables\WorkersSet.cs" />
+    <Compile Include="Forms\FormCassier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCassier.Designer.cs">
+      <DependentUpon>FormCassier.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\InsertForms\FormAddAccount.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\InsertForms\FormAddAccount.Designer.cs">
       <DependentUpon>FormAddAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InsertForms\FormAddFlightCurrent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertForms\FormAddFlightCurrent.Designer.cs">
+      <DependentUpon>FormAddFlightCurrent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InsertForms\FormAddTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertForms\FormAddTicket.Designer.cs">
+      <DependentUpon>FormAddTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InsertForms\FormAddWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertForms\FormAddWorker.Designer.cs">
+      <DependentUpon>FormAddWorker.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UpdateForms\FormChangeAccount.cs">
       <SubType>Form</SubType>
@@ -68,23 +96,41 @@
     <Compile Include="Forms\UpdateForms\FormChangeAccount.Designer.cs">
       <DependentUpon>FormChangeAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UpdateForms\FormChangeFlightCurrent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UpdateForms\FormChangeFlightCurrent.Designer.cs">
+      <DependentUpon>FormChangeFlightCurrent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UpdateForms\FormChangeTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UpdateForms\FormChangeTicket.Designer.cs">
+      <DependentUpon>FormChangeTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UpdateForms\FormChangeWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UpdateForms\FormChangeWorker.Designer.cs">
+      <DependentUpon>FormChangeWorker.cs</DependentUpon>
+    </Compile>
     <Compile Include="Other\StaticFormsValues.cs" />
     <Compile Include="Other\DataBase.cs" />
     <Compile Include="Other\DBConnection.cs" />
     <Compile Include="Classes\Login.cs" />
-    <Compile Include="Classes\OperationOnDB\DBCreateTable.cs" />
+    <Compile Include="Classes\OperationOnDB\DBCreateTableWithTickets.cs" />
     <Compile Include="Classes\OperationOnDB\DBIsTableExist.cs" />
     <Compile Include="Classes\OperationOnDB\DBRequestParam.cs" />
     <Compile Include="Other\OperationsOnTable\RowDelete.cs" />
     <Compile Include="Other\OperationsOnTable\RowInsert.cs" />
     <Compile Include="Other\OperationsOnTable\TableShow.cs" />
     <Compile Include="Other\OperationsOnTable\RowUpdate.cs" />
-    <Compile Include="Classes\TablesOnlyPK\AviacompaniesSet.cs" />
-    <Compile Include="Classes\TablesOnlyPK\CitiesSet.cs" />
-    <Compile Include="Classes\TablesOnlyPK\ClassPlaceSet.cs" />
-    <Compile Include="Classes\TablesOnlyPK\PlanesSet.cs" />
-    <Compile Include="Classes\TablesOnlyPK\PositionsSet.cs" />
-    <Compile Include="Classes\TablesOnlyPK\TicketStatusSet.cs" />
+    <Compile Include="Classes\Tables\AviacompaniesSet.cs" />
+    <Compile Include="Classes\Tables\CitiesSet.cs" />
+    <Compile Include="Classes\Tables\ClassPlaceSet.cs" />
+    <Compile Include="Classes\Tables\PlanesSet.cs" />
+    <Compile Include="Classes\Tables\PositionsSet.cs" />
+    <Compile Include="Classes\Tables\PlaceStatusSet.cs" />
     <Compile Include="Forms\FormAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,11 +173,11 @@
     <Compile Include="Forms\InsertForms\FormAddPosition.Designer.cs">
       <DependentUpon>FormAddPosition.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\InsertForms\FormAddTicketStatus.cs">
+    <Compile Include="Forms\InsertForms\FormAddPlaceStatus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\InsertForms\FormAddTicketStatus.Designer.cs">
-      <DependentUpon>FormAddTicketStatus.cs</DependentUpon>
+    <Compile Include="Forms\InsertForms\FormAddPlaceStatus.Designer.cs">
+      <DependentUpon>FormAddPlaceStatus.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UpdateForms\FormChangeAviacompany.cs">
       <SubType>Form</SubType>
@@ -163,16 +209,19 @@
     <Compile Include="Forms\UpdateForms\FormChangePosition.Designer.cs">
       <DependentUpon>FormChangePosition.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UpdateForms\FormChangeTicketStatus.cs">
+    <Compile Include="Forms\UpdateForms\FormChangePlaceStatus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\UpdateForms\FormChangeTicketStatus.Designer.cs">
-      <DependentUpon>FormChangeTicketStatus.cs</DependentUpon>
+    <Compile Include="Forms\UpdateForms\FormChangePlaceStatus.Designer.cs">
+      <DependentUpon>FormChangePlaceStatus.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCassier.resx">
+      <DependentUpon>FormCassier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormEnter.resx">
       <DependentUpon>FormEnter.cs</DependentUpon>
@@ -183,11 +232,59 @@
     <EmbeddedResource Include="Forms\InsertForms\FormAddAviacompany.resx">
       <DependentUpon>FormAddAviacompany.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertForms\FormAddCity.resx">
+      <DependentUpon>FormAddCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertForms\FormAddClassPlace.resx">
+      <DependentUpon>FormAddClassPlace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertForms\FormAddFlightCurrent.resx">
+      <DependentUpon>FormAddFlightCurrent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertForms\FormAddPlane.resx">
+      <DependentUpon>FormAddPlane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertForms\FormAddPosition.resx">
+      <DependentUpon>FormAddPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertForms\FormAddTicket.resx">
+      <DependentUpon>FormAddTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertForms\FormAddPlaceStatus.resx">
+      <DependentUpon>FormAddPlaceStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertForms\FormAddWorker.resx">
+      <DependentUpon>FormAddWorker.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\UpdateForms\FormChangeAccount.resx">
       <DependentUpon>FormChangeAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UpdateForms\FormChangeAviacompany.resx">
       <DependentUpon>FormChangeAviacompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateForms\FormChangeCity.resx">
+      <DependentUpon>FormChangeCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateForms\FormChangeClassPlace.resx">
+      <DependentUpon>FormChangeClassPlace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateForms\FormChangeFlightCurrent.resx">
+      <DependentUpon>FormChangeFlightCurrent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateForms\FormChangePlane.resx">
+      <DependentUpon>FormChangePlane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateForms\FormChangePosition.resx">
+      <DependentUpon>FormChangePosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateForms\FormChangeTicket.resx">
+      <DependentUpon>FormChangeTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateForms\FormChangePlaceStatus.resx">
+      <DependentUpon>FormChangePlaceStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateForms\FormChangeWorker.resx">
+      <DependentUpon>FormChangeWorker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

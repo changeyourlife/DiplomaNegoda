@@ -12,9 +12,27 @@ namespace DiplomaNegoda.Forms.UpdateForms
 {
     public partial class FormChangeClassPlace : Form
     {
-        public FormChangeClassPlace()
+        public string ID;
+        public FormChangeClassPlace(string iD, string Name)
         {
             InitializeComponent();
+            //FormAdmin ObjectFormAdmin = this.Owner as FormAdmin;
+            ID = iD;
+            TextBoxName.Text = Name;
+        }
+
+        private void ButtonChangeClassPlace_Click(object sender, EventArgs e)
+        {
+            //update DB
+            Classes.TablesOnlyPK.ClassPlaceSet ObjectClassPlaceSet = new Classes.TablesOnlyPK.ClassPlaceSet();
+            ObjectClassPlaceSet.UpdateRowInTable(ID, TextBoxName.Text);
+
+            //refresh DGV
+            FormAdmin ObjectFormAdmin = Owner as FormAdmin;
+            if (ObjectFormAdmin != null)
+            {
+                ObjectFormAdmin.RefreshClassPlaceSetDGV();
+            }
         }
     }
 }

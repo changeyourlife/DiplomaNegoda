@@ -39,14 +39,14 @@ namespace DiplomaNegoda.Forms.UpdateForms
 
             ObjectDBLUCBPositionsSet.SetMasStringsValues(ObjectDBLUCBPositionsSet.GetDataForComboBox("[dbo].[PositionsSet]"));
             ObjectDBLUCBPositionsSet.HookOnComboBox(ComboBoxPosition);
-            ComboBoxPosition.SelectedIndex = ObjectDBLUCBPositionsSet.ReturnIndexOfElementID(iDPositionsSet); ;
+            ComboBoxPosition.SelectedIndex = ObjectDBLUCBPositionsSet.ReturnIndexOfElementID(iDPositionsSet);
         }
 
         private void ButtonChangeAccount_Click(object sender, EventArgs e)
         {
             //insert in DB
-            AccountsSet ObjectAviacompaniesSet = new AccountsSet();
-            ObjectAviacompaniesSet.UpdateRowInTable(iDRow, ObjectDBLUCBWorkersSet.iD[ComboBoxWorker.SelectedIndex], TextBoxLogin.Text, TextBoxPassword.Text, ObjectDBLUCBPositionsSet.iD[ComboBoxPosition.SelectedIndex]);
+            AccountsSet ObjectAccountsSet = new AccountsSet();
+            ObjectAccountsSet.UpdateRowInTable(iDRow, ObjectDBLUCBWorkersSet.iD[ComboBoxWorker.SelectedIndex], TextBoxLogin.Text, TextBoxPassword.Text, ObjectDBLUCBPositionsSet.iD[ComboBoxPosition.SelectedIndex]);
 
             //refresh DFVaviacompanies
             FormAdmin ObjectFormAdmin = Owner as FormAdmin;

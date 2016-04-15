@@ -28,11 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.ButtonClose = new System.Windows.Forms.Button();
+            this.ButtonAddCity = new System.Windows.Forms.Button();
+            this.TextBoxName = new System.Windows.Forms.TextBox();
+            this.LabelName = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // ButtonClose
+            // 
+            this.ButtonClose.Location = new System.Drawing.Point(350, 32);
+            this.ButtonClose.Name = "ButtonClose";
+            this.ButtonClose.Size = new System.Drawing.Size(75, 23);
+            this.ButtonClose.TabIndex = 19;
+            this.ButtonClose.Text = "Close";
+            this.ButtonClose.UseVisualStyleBackColor = true;
+            // 
+            // ButtonAddCity
+            // 
+            this.ButtonAddCity.Location = new System.Drawing.Point(12, 32);
+            this.ButtonAddCity.Name = "ButtonAddCity";
+            this.ButtonAddCity.Size = new System.Drawing.Size(75, 23);
+            this.ButtonAddCity.TabIndex = 18;
+            this.ButtonAddCity.Text = "Add";
+            this.ButtonAddCity.UseVisualStyleBackColor = true;
+            this.ButtonAddCity.Click += new System.EventHandler(this.ButtonAddCity_Click);
+            // 
+            // TextBoxName
+            // 
+            this.TextBoxName.Location = new System.Drawing.Point(54, 6);
+            this.TextBoxName.Name = "TextBoxName";
+            this.TextBoxName.Size = new System.Drawing.Size(371, 20);
+            this.TextBoxName.TabIndex = 15;
+            // 
+            // LabelName
+            // 
+            this.LabelName.AutoSize = true;
+            this.LabelName.Location = new System.Drawing.Point(9, 9);
+            this.LabelName.Name = "LabelName";
+            this.LabelName.Size = new System.Drawing.Size(38, 13);
+            this.LabelName.TabIndex = 12;
+            this.LabelName.Text = "Name:";
+            // 
+            // FormAddCity
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(431, 66);
+            this.Controls.Add(this.ButtonClose);
+            this.Controls.Add(this.ButtonAddCity);
+            this.Controls.Add(this.TextBoxName);
+            this.Controls.Add(this.LabelName);
+            this.Name = "FormAddCity";
             this.Text = "AddCity";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button ButtonClose;
+        private System.Windows.Forms.Button ButtonAddCity;
+        private System.Windows.Forms.TextBox TextBoxName;
+        private System.Windows.Forms.Label LabelName;
     }
 }

@@ -46,7 +46,7 @@ namespace DiplomaNegoda.Classes.TablesOnlyPK
 
         public void SetCommandTextSelect()
         {
-            sqlComm.CommandText = "SELECT * FROM [" + nameofTable + "]";
+            sqlComm.CommandText = "SELECT *, Name AS Город FROM [" + nameofTable + "]";
         }
 
         public void InsertIntoTable(string Name) //method INSERT

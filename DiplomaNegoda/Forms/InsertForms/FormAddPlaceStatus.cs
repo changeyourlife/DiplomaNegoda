@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace DiplomaNegoda.Forms.InsertForms
 {
-    public partial class FormAddPosition : Form
+    public partial class FormAddPlaceStatus : Form
     {
-        public FormAddPosition()
+        public FormAddPlaceStatus()
         {
             InitializeComponent();
         }
 
-        private void ButtonAddPosition_Click(object sender, EventArgs e)
+        private void ButtonAddTicketStatus_Click(object sender, EventArgs e)
         {
             //insert in DB
-            Classes.TablesOnlyPK.PositionsSet ObjectPositionsSet = new Classes.TablesOnlyPK.PositionsSet();
-            ObjectPositionsSet.InsertIntoTable(TextBoxName.Text);
+            Classes.TablesOnlyPK.PlaceStatusSet ObjectTicketStatusSet = new Classes.TablesOnlyPK.PlaceStatusSet();
+            ObjectTicketStatusSet.InsertIntoTable(TextBoxName.Text);
 
             //refresh DFVaviacompanies
             FormAdmin ObjectFormAdmin = Owner as FormAdmin;
             if (ObjectFormAdmin != null)
             {
-                ObjectFormAdmin.RefreshPositionsSetDGV();
+                ObjectFormAdmin.RefreshPlaceStatusSetDGV();
             }
         }
     }

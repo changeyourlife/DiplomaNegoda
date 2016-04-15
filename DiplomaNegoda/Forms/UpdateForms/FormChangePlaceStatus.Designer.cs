@@ -1,6 +1,6 @@
-﻿namespace DiplomaNegoda.Forms.InsertForms
+﻿namespace DiplomaNegoda.Forms.UpdateForms
 {
-    partial class FormAddPosition
+    partial class FormChangePlaceStatus
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.ButtonCloseForm = new System.Windows.Forms.Button();
-            this.ButtonAddPosition = new System.Windows.Forms.Button();
+            this.ButtonChangeTicketStatus = new System.Windows.Forms.Button();
             this.TextBoxName = new System.Windows.Forms.TextBox();
             this.LabelName = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -39,26 +39,26 @@
             this.ButtonCloseForm.Location = new System.Drawing.Point(228, 32);
             this.ButtonCloseForm.Name = "ButtonCloseForm";
             this.ButtonCloseForm.Size = new System.Drawing.Size(75, 23);
-            this.ButtonCloseForm.TabIndex = 7;
+            this.ButtonCloseForm.TabIndex = 15;
             this.ButtonCloseForm.Text = "Close";
             this.ButtonCloseForm.UseVisualStyleBackColor = true;
             // 
-            // ButtonAddPosition
+            // ButtonChangeTicketStatus
             // 
-            this.ButtonAddPosition.Location = new System.Drawing.Point(15, 32);
-            this.ButtonAddPosition.Name = "ButtonAddPosition";
-            this.ButtonAddPosition.Size = new System.Drawing.Size(75, 23);
-            this.ButtonAddPosition.TabIndex = 6;
-            this.ButtonAddPosition.Text = "Add";
-            this.ButtonAddPosition.UseVisualStyleBackColor = true;
-            this.ButtonAddPosition.Click += new System.EventHandler(this.ButtonAddPosition_Click);
+            this.ButtonChangeTicketStatus.Location = new System.Drawing.Point(15, 32);
+            this.ButtonChangeTicketStatus.Name = "ButtonChangeTicketStatus";
+            this.ButtonChangeTicketStatus.Size = new System.Drawing.Size(75, 23);
+            this.ButtonChangeTicketStatus.TabIndex = 14;
+            this.ButtonChangeTicketStatus.Text = "Change";
+            this.ButtonChangeTicketStatus.UseVisualStyleBackColor = true;
+            this.ButtonChangeTicketStatus.Click += new System.EventHandler(this.ButtonChangeTicketStatus_Click);
             // 
             // TextBoxName
             // 
             this.TextBoxName.Location = new System.Drawing.Point(59, 6);
             this.TextBoxName.Name = "TextBoxName";
             this.TextBoxName.Size = new System.Drawing.Size(244, 20);
-            this.TextBoxName.TabIndex = 5;
+            this.TextBoxName.TabIndex = 13;
             // 
             // LabelName
             // 
@@ -66,20 +66,20 @@
             this.LabelName.Location = new System.Drawing.Point(12, 9);
             this.LabelName.Name = "LabelName";
             this.LabelName.Size = new System.Drawing.Size(38, 13);
-            this.LabelName.TabIndex = 4;
+            this.LabelName.TabIndex = 12;
             this.LabelName.Text = "Name:";
             // 
-            // FormAddPosition
+            // FormChangeTicketStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(312, 66);
+            this.ClientSize = new System.Drawing.Size(314, 63);
             this.Controls.Add(this.ButtonCloseForm);
-            this.Controls.Add(this.ButtonAddPosition);
+            this.Controls.Add(this.ButtonChangeTicketStatus);
             this.Controls.Add(this.TextBoxName);
             this.Controls.Add(this.LabelName);
-            this.Name = "FormAddPosition";
-            this.Text = "AddPosition";
+            this.Name = "FormChangeTicketStatus";
+            this.Text = "ChangeTicketStatus";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -88,7 +88,7 @@
         #endregion
 
         private System.Windows.Forms.Button ButtonCloseForm;
-        private System.Windows.Forms.Button ButtonAddPosition;
+        private System.Windows.Forms.Button ButtonChangeTicketStatus;
         private System.Windows.Forms.TextBox TextBoxName;
         private System.Windows.Forms.Label LabelName;
     }
