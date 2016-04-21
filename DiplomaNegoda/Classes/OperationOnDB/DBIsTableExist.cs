@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,32 +10,24 @@ namespace DiplomaNegoda.Classes.OperationOnDB
 {
     class DBIsTableExist
     {
-        string nameOfDB;
-
-        public DBIsTableExist(string NameOfDB)
-        {
-            nameOfDB = NameOfDB;
-        }
+        public const string nameOfDB = "airport"; //имя БД
 
         public bool IsTableExist(string NameOfTable)//проверяем ест ли таблица в БД
         {
             DBConnection sqlConn = new DBConnection(nameOfDB);
-            DBRequestParam sqlComm = new DBRequestParam();
+            SqlCommand sqlCommand = new SqlCommand("IF NOT EXISTS (SELECT * FROM SYSOBJECTS WHERE NAME=@NAME AND xtype='U') Select 'false' ELSE Select 'true'", sqlConn.GetConnection());
             sqlConn.Open();
-            sqlComm.SetRequest("IF NOT EXISTS (SELECT * FROM SYSOBJECTS WHERE NAME=@NAME AND xtype='U') Select 'false' ELSE Select 'true'");
-            sqlComm.AddParameter("@Name", NameOfTable);
-            sqlComm.SetPropertiesForParameters(sqlConn);
-            if (sqlComm.ExecuteScalar() == "false")
+            sqlCommand.CommandText = "IF NOT EXISTS (SELECT * FROM SYSOBJECTS WHERE NAME=@NAME AND xtype='U') Select 'false' ELSE Select 'true'";
+            sqlCommand.Parameters.AddWithValue("@NAME", NameOfTable);
+            if (sqlCommand.ExecuteScalar().ToString() == "false")
             {
-                MessageBox.Show("Таблицы " + NameOfTable + " НЕТ");
-                sqlComm.ClearParameters();
+                sqlCommand.Parameters.Clear();
                 sqlConn.Close();
                 return false;
             }
             else
             {
-                MessageBox.Show("Таблица " + NameOfTable + " ЕСТЬ");
-                sqlComm.ClearParameters();
+                sqlCommand.Parameters.Clear();
                 sqlConn.Close();
                 return true;
             }

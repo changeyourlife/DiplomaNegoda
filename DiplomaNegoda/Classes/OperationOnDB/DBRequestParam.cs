@@ -35,6 +35,7 @@ namespace DiplomaNegoda.Classes.OperationOnDB
             ClearParameters();
             sqlCommand.Connection = SqlConn.GetConnection();
             sqlCommand = SqlConn.CreateCommand();
+            this.SetRequest(requestText);
         }
 
         public void AddParameter(string NameOfParam, string ValueOfParam)

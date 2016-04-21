@@ -66,6 +66,12 @@
     <Compile Include="Forms\FormCassier.Designer.cs">
       <DependentUpon>FormCassier.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormSellBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSellBooking.Designer.cs">
+      <DependentUpon>FormSellBooking.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\InsertForms\FormAddAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,7 +124,7 @@
     <Compile Include="Other\DataBase.cs" />
     <Compile Include="Other\DBConnection.cs" />
     <Compile Include="Classes\Login.cs" />
-    <Compile Include="Classes\OperationOnDB\DBCreateTableWithTickets.cs" />
+    <Compile Include="Classes\OperationOnDB\DBOperationsWithTableWithTicketsOnFlight.cs" />
     <Compile Include="Classes\OperationOnDB\DBIsTableExist.cs" />
     <Compile Include="Classes\OperationOnDB\DBRequestParam.cs" />
     <Compile Include="Other\OperationsOnTable\RowDelete.cs" />
@@ -225,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormEnter.resx">
       <DependentUpon>FormEnter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSellBooking.resx">
+      <DependentUpon>FormSellBooking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\InsertForms\FormAddAccount.resx">
       <DependentUpon>FormAddAccount.cs</DependentUpon>

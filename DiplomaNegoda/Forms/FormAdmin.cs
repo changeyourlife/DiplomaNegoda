@@ -35,6 +35,9 @@ namespace DiplomaNegoda.Forms
             DGVtickets.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             DGVworkers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
+            tabControl1.SizeMode = TabSizeMode.Fixed;
+            tabControl1.ItemSize = new Size(tabControl1.Width / tabControl1.TabCount - 2, 0);
+
             AviacompaniesSet ObjectAviacompaniesSet = new AviacompaniesSet();
             tabControl1.SelectedIndex = 0;
             RefreshAviacompaniesSetDGV();
