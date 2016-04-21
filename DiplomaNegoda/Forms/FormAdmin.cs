@@ -23,6 +23,18 @@ namespace DiplomaNegoda.Forms
 
         private void FormAdmin_Shown(object sender, EventArgs e)
         {
+            DGVaccounts.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            DGVaviacompanies.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            DGVcities.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            DGVclassPlace.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            DGVflightsArchive.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            DGVflightsCurrent.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            DGVplaceStatus.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            DGVplanes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            DGVpositions.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            DGVtickets.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            DGVworkers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
             AviacompaniesSet ObjectAviacompaniesSet = new AviacompaniesSet();
             tabControl1.SelectedIndex = 0;
             RefreshAviacompaniesSetDGV();

@@ -46,7 +46,13 @@ namespace DiplomaNegoda.Classes.TablesOnlyPK
 
         public void SetCommandTextSelect()
         {
-            sqlComm.CommandText = "SELECT * FROM [" + nameofTable + "]";
+            sqlComm.CommandText =
+                "SELECT AviacompanyID, PlaneID, toID, fromID, GoDateTime, ArriveDateTime, CostOfEcoClass, CostOfBusinessClass, EcoSold, BusSold, AllSold, [Money], AviacompaniesSet.Name AS Авиакомпания, PlanesSet.Model AS Самолёт, citiesTo.Name AS Откуда, citiesFrom.Name AS Куда, GoDateTime AS[Дата и время отправления], ArriveDateTime AS[Дата и время прибытия], CostOfEcoClass AS[Стоимость эконом класса], CostOfBusinessClass AS[Стоимость бизнес класса], EcoSold AS[Продано билетов эконом класса], BusSold AS[Продано биллетов бизнес класса], AllSold AS[Продано всего], [Money] AS[Прибыль]" +
+                " FROM([airport].[dbo].FlightsArchiveSet" +
+                " INNER JOIN[airport].[dbo].AviacompaniesSet ON AviacompaniesSet.Id = FlightsArchiveSet.AviacompanyID)" +
+                " INNER JOIN[airport].[dbo].PlanesSet ON PlanesSet.Id = FlightsArchiveSet.PlaneID" +
+                " INNER JOIN[airport].[dbo].CitiesSet citiesTo ON citiesTo.Id = FlightsArchiveSet.toID" +
+                " INNER JOIN[airport].[dbo].CitiesSet citiesFrom ON citiesFrom.Id = FlightsArchiveSet.fromID";
         }
 
         public void InsertIntoTable(string AviacompanyID, string PlaneID, string toID, string fromID, string GoDateTime, string ArriveDateTime, string CostOfEcoClass, string CostOfBusinessClass) //method INSERT

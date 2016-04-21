@@ -47,13 +47,30 @@ namespace DiplomaNegoda.Classes.TablesOnlyPK
         public void SetCommandTextSelect()
         {
             sqlComm.CommandText =
-                "SELECT AviacompanyID, PlaneID, toID, fromID, GoDateTime, ArriveDateTime, CostOfEcoClass, CostOfBusinessClass, EcoSold, BusSold, AllSold, [Money], AviacompaniesSet.Name AS Авиакомпания, PlanesSet.Model AS Самолёт, citiesTo.Name AS Откуда, citiesFrom.Name AS Куда, GoDateTime AS[Дата и время отправления], ArriveDateTime AS[Дата и время прибытия], CostOfEcoClass AS[Стоимость эконом класса], CostOfBusinessClass AS[Стоимость бизнес класса], EcoSold AS[Продано билетов эконом класса], BusSold AS[Продано биллетов бизнес класса], AllSold AS[Продано всего], [Money] AS[Прибыль]"+
+                "SELECT NumberOfFlight, AviacompanyID, PlaneID, toID, fromID, GoDateTime, ArriveDateTime, CostOfEcoClass, CostOfBusinessClass, EcoSold, BusSold, AllSold, [Money], AviacompaniesSet.Name AS Авиакомпания, PlanesSet.Model AS Самолёт, citiesTo.Name AS Откуда, citiesFrom.Name AS Куда, GoDateTime AS[Дата и время отправления], ArriveDateTime AS[Дата и время прибытия], CostOfEcoClass AS[Стоимость эконом класса], CostOfBusinessClass AS[Стоимость бизнес класса], EcoSold AS[Продано билетов эконом класса], BusSold AS[Продано биллетов бизнес класса], AllSold AS[Продано всего], [Money] AS[Прибыль]"+
                 " FROM([airport].[dbo].FlightsCurrentSet"+
                 " INNER JOIN[airport].[dbo].AviacompaniesSet ON AviacompaniesSet.Id = FlightsCurrentSet.AviacompanyID)"+
                 " INNER JOIN[airport].[dbo].PlanesSet ON PlanesSet.Id = FlightsCurrentSet.PlaneID"+
                 " INNER JOIN[airport].[dbo].CitiesSet citiesTo ON citiesTo.Id = FlightsCurrentSet.toID"+
                 " INNER JOIN[airport].[dbo].CitiesSet citiesFrom ON citiesFrom.Id = FlightsCurrentSet.fromID"
                 ;
+        }
+
+        public void SetCommandTextSelectAllForViewFlights(string godatetime, string godatetimplusone, string fromid, string toid)
+        {
+            sqlComm.CommandText = "SELECT * FROM FlightsCurrentSet WHERE GoDateTime >= @GODATETIME AND GoDateTime <= @GODATETIMEPLUSONE AND fromID = @FROMID AND toID = @TOID";
+            sqlComm.Parameters.Add("@GODATETIME", SqlDbType.VarChar);
+            sqlComm.Parameters["@GODATETIME"].Value = godatetime;
+            sqlComm.Parameters.Add("@GODATETIMEPLUSONE", SqlDbType.VarChar);
+            sqlComm.Parameters["@GODATETIMEPLUSONE"].Value = godatetimplusone;
+            sqlComm.Parameters.Add("@FROMID", SqlDbType.VarChar);
+            sqlComm.Parameters["@FROMID"].Value = fromid;
+            sqlComm.Parameters.Add("@TOID", SqlDbType.VarChar);
+            sqlComm.Parameters["@TOID"].Value = toid;
+            /*sqlConn.Open();
+            sqlComm.ExecuteNonQuery();
+            SQLCOMMclear();
+            sqlConn.Close();*/
         }
 
         public void InsertIntoTable(string AviacompanyID, string PlaneID, string toID, string fromID, string GoDateTime, string ArriveDateTime, string CostOfEcoClass, string CostOfBusinessClass) //method INSERT

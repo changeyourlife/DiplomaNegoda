@@ -42,6 +42,9 @@ namespace DiplomaNegoda
                 else if (arrList[0].GetValue(4).ToString().Equals("2"))
                 {
                     MessageBox.Show("YOU KAS");
+                    FormCassier ObjectFormCassier = new FormCassier();
+                    ObjectFormCassier.Owner = this;
+                    ObjectFormCassier.ShowDialog();
                 }
             else
             {

@@ -760,6 +760,7 @@ namespace DiplomaNegoda.Forms
             DGVaviacompanies.Columns[0].Visible = false;
             DGVaviacompanies.Columns[1].Visible = false;
             DGVaviacompanies.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            DGVaviacompanies.Select();
             return true;
         }
 
@@ -772,6 +773,7 @@ namespace DiplomaNegoda.Forms
             DGVcities.Columns[0].Visible = false;
             DGVcities.Columns[1].Visible = false;
             DGVcities.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            DGVcities.Select();
             return true;
         }
 
@@ -784,6 +786,7 @@ namespace DiplomaNegoda.Forms
             DGVclassPlace.Columns[0].Visible = false;
             DGVclassPlace.Columns[1].Visible = false;
             DGVclassPlace.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            DGVclassPlace.Select();
             return true;
         }
 
@@ -799,6 +802,7 @@ namespace DiplomaNegoda.Forms
             DGVplanes.Columns[3].Visible = false;
             DGVplanes.Columns[4].Visible = false;
             DGVplanes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            DGVplanes.Select();
             return true;
         }
 
@@ -811,6 +815,7 @@ namespace DiplomaNegoda.Forms
             DGVpositions.Columns[0].Visible = false;
             DGVpositions.Columns[1].Visible = false;
             DGVpositions.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            DGVpositions.Select();
             return true;
         }
 
@@ -823,6 +828,7 @@ namespace DiplomaNegoda.Forms
             DGVplaceStatus.Columns[0].Visible = false;
             DGVplaceStatus.Columns[1].Visible = false;
             DGVplaceStatus.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            DGVplaceStatus.Select();
             return true;
         }
 
@@ -838,6 +844,7 @@ namespace DiplomaNegoda.Forms
             DGVaccounts.Columns[3].Visible = false;
             DGVaccounts.Columns[4].Visible = false;
             DGVaccounts.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            DGVaccounts.Select();
             return true;
         }
 
@@ -847,7 +854,7 @@ namespace DiplomaNegoda.Forms
             DGVflightsArchive.AutoGenerateColumns = true;
             ObjectFlightsArchiveSet.SetCommandTextSelect();
             DGVflightsArchive.DataSource = ObjectFlightsArchiveSet.GetTableData(ObjectFlightsArchiveSet.CreateDataReaderVariable());
-            /*DGVflightsArchive.Columns[0].Visible = false;
+            DGVflightsArchive.Columns[0].Visible = false;
             DGVflightsArchive.Columns[1].Visible = false;
             DGVflightsArchive.Columns[2].Visible = false;
             DGVflightsArchive.Columns[3].Visible = false;
@@ -860,7 +867,8 @@ namespace DiplomaNegoda.Forms
             DGVflightsArchive.Columns[10].Visible = false;
             DGVflightsArchive.Columns[11].Visible = false;
             DGVflightsArchive.Columns[12].Visible = false;
-            DGVflightsArchive.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;*/
+            DGVflightsArchive.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            DGVflightsArchive.Select();
             return true;
         }
 
@@ -884,6 +892,7 @@ namespace DiplomaNegoda.Forms
             DGVflightsCurrent.Columns[11].Visible = false;
             DGVflightsCurrent.Columns[12].Visible = false;
             DGVflightsCurrent.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            DGVflightsCurrent.Select();
             return true;
         }
 
@@ -893,6 +902,14 @@ namespace DiplomaNegoda.Forms
             DGVtickets.AutoGenerateColumns = true;
             ObjectTicketsSet.SetCommandTextSelect();
             DGVtickets.DataSource = ObjectTicketsSet.GetTableData(ObjectTicketsSet.CreateDataReaderVariable());
+            DGVtickets.Columns[0].Visible = false;
+            DGVtickets.Columns[1].Visible = false;
+            DGVtickets.Columns[2].Visible = false;
+            DGVtickets.Columns[3].Visible = false;
+            DGVtickets.Columns[4].Visible = false;
+            DGVtickets.Columns[5].Visible = false;
+            DGVtickets.Columns[6].Visible = false;
+            DGVtickets.Select();
             return true;
         }
 
@@ -902,6 +919,13 @@ namespace DiplomaNegoda.Forms
             DGVworkers.AutoGenerateColumns = true;
             ObjectWorkersSet.SetCommandTextSelect();
             DGVworkers.DataSource = ObjectWorkersSet.GetTableData(ObjectWorkersSet.CreateDataReaderVariable());
+            DGVworkers.Columns[0].Visible = false;
+            DGVworkers.Columns[1].Visible = false;
+            DGVworkers.Columns[2].Visible = false;
+            DGVworkers.Columns[3].Visible = false;
+            DGVworkers.Columns[4].Visible = false;
+            DGVworkers.Columns[5].Visible = false;
+            DGVworkers.Select();
             return true;
         }
 

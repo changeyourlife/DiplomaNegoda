@@ -47,7 +47,7 @@ namespace DiplomaNegoda.Classes.TablesOnlyPK
         public void SetCommandTextSelect()
         {
             sqlComm.CommandText =
-                "SELECT [AccountsSet].[Id], [AccountsSet].[WorkerID], [AccountsSet].[Login], [AccountsSet].[Password], [AccountsSet].[PositionID], [WorkersSet].FIO AS [ФИО], [Login] AS Логин, [Password] AS Пароль, [PositionsSet].[Name] AS Должность"+
+                "SELECT [AccountsSet].[Id], [AccountsSet].[WorkerID], [AccountsSet].[Login], [AccountsSet].[Password], [AccountsSet].[PositionID], [WorkersSet].FIO AS [ФИО], [Login] AS Логин, [Password] AS Пароль, [PositionsSet].[Name] AS [Право доступа]"+
                 " FROM ([airport].[dbo].[AccountsSet]"+
                 " INNER JOIN [airport].[dbo].[WorkersSet] ON [WorkersSet].[ID] = [airport].[dbo].[AccountsSet].[WorkerID])"+
                 " INNER JOIN[airport].[dbo].[PositionsSet] ON [PositionsSet].[Id] = [airport].[dbo].[AccountsSet].PositionID"

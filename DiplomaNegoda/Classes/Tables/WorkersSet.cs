@@ -46,7 +46,11 @@ namespace DiplomaNegoda.Classes.TablesOnlyPK
 
         public void SetCommandTextSelect()
         {
-            sqlComm.CommandText = "SELECT * FROM [" + nameofTable + "]";
+            sqlComm.CommandText =
+                "SELECT[airport].[dbo].WorkersSet.Id, FIO, BornDate, PositionID, ArriveDateOfWorker, ContactData, FIO AS[ФИО], BornDate AS[Дата рождения], PositionsSet.Name AS[Название должности], ArriveDateOfWorker[Дата зачисления на работу], ContactData AS[Контактные данные] "+
+                "FROM([airport].[dbo].WorkersSet "+
+                "INNER JOIN[airport].[dbo].PositionsSet ON PositionsSet.Id = WorkersSet.PositionID)"
+                ;
         }
 
         public void InsertIntoTable(string FIO, string BornDate, string PositionID, string ArriveDateOfWorker, string ContactData) //method INSERT

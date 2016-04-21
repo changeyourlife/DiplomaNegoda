@@ -60,7 +60,7 @@
             this.textBoxLogin.Name = "textBoxLogin";
             this.textBoxLogin.Size = new System.Drawing.Size(251, 20);
             this.textBoxLogin.TabIndex = 2;
-            this.textBoxLogin.Text = "admin";
+            this.textBoxLogin.Text = "kas";
             // 
             // textBoxPassword
             // 
@@ -68,7 +68,7 @@
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(251, 20);
             this.textBoxPassword.TabIndex = 3;
-            this.textBoxPassword.Text = "admin";
+            this.textBoxPassword.Text = "kas";
             // 
             // ButtonEnter
             // 

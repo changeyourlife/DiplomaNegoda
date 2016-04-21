@@ -46,7 +46,12 @@ namespace DiplomaNegoda.Classes.TablesOnlyPK
 
         public void SetCommandTextSelect()
         {
-            sqlComm.CommandText = "SELECT * FROM [" + nameofTable + "]";
+            sqlComm.CommandText =
+                "SELECT NumOfTicket, NumOfPlace, FlightID, ClassOfPlaceID OfPlaceID, Cost, FIO, PersonalDataSpecial, NumOfTicket AS[Номер билета], NumOfPlace AS[Номер места], FlightID AS[Номер рейса], citiesFROM.Name AS[Куда], citiesTO.Name AS[Откуда], [dbo].[ClassPlaceSet].Name AS[Клас места], Cost AS[Стоимость], FIO AS[ФИО], PersonalDataSpecial AS[Персональные данные] " +
+                "FROM([airport].[dbo].TicketsSet " +
+                "INNER JOIN[airport].[dbo].ClassPlaceSet ON TicketsSet.ClassOfPlaceID = ClassPlaceSet.Id) " +
+                "INNER JOIN[airport].[dbo].CitiesSet citiesTO ON citiesTO.Id = (SELECT toID FROM FlightsCurrentSet WHERE NumberOfFlight = TicketsSet.FlightID) " +
+                "INNER JOIN[airport].[dbo].CitiesSet citiesFROM ON citiesFROM.Id = (SELECT fromID FROM FlightsCurrentSet WHERE NumberOfFlight = TicketsSet.FlightID)";
         }
 
         public void InsertIntoTable(string NumOfPlace, string FlightID, string ClassOfPlaceID, string Cost, string FIO, string PersonalDataSpecial) //method INSERT
