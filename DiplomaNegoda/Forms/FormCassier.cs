@@ -68,7 +68,8 @@ namespace DiplomaNegoda.Forms
                     DateTime.Parse(DGVflightsCurrentSet[6, DGVflightsCurrentSet.CurrentCellAddress.Y].Value.ToString()).ToShortDateString(),
                     DateTime.Parse(DGVflightsCurrentSet[6, DGVflightsCurrentSet.CurrentCellAddress.Y].Value.ToString()).ToShortTimeString(),
                     DGVflightsCurrentSet[7, DGVflightsCurrentSet.CurrentCellAddress.Y].Value.ToString(),
-                    DGVflightsCurrentSet[8, DGVflightsCurrentSet.CurrentCellAddress.Y].Value.ToString()
+                    DGVflightsCurrentSet[8, DGVflightsCurrentSet.CurrentCellAddress.Y].Value.ToString(),
+                    nameOfTableForExist
                     )
                     ;
                 ObjectFormSellBooking.Owner = this;
@@ -99,7 +100,8 @@ namespace DiplomaNegoda.Forms
                     DateTime.Parse(DGVflightsCurrentSet[6, DGVflightsCurrentSet.CurrentCellAddress.Y].Value.ToString()).ToShortDateString(),
                     DateTime.Parse(DGVflightsCurrentSet[6, DGVflightsCurrentSet.CurrentCellAddress.Y].Value.ToString()).ToShortTimeString(),
                     DGVflightsCurrentSet[7, DGVflightsCurrentSet.CurrentCellAddress.Y].Value.ToString(),
-                    DGVflightsCurrentSet[8, DGVflightsCurrentSet.CurrentCellAddress.Y].Value.ToString()
+                    DGVflightsCurrentSet[8, DGVflightsCurrentSet.CurrentCellAddress.Y].Value.ToString(),
+                    nameOfTableForExist
                     )
                     ;
                 ObjectFormSellBooking.Owner = this;
