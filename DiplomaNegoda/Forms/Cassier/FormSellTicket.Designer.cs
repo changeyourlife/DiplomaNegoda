@@ -38,11 +38,11 @@
             // LabelFIO
             // 
             this.LabelFIO.AutoSize = true;
-            this.LabelFIO.Location = new System.Drawing.Point(94, 9);
+            this.LabelFIO.Location = new System.Drawing.Point(110, 9);
             this.LabelFIO.Name = "LabelFIO";
-            this.LabelFIO.Size = new System.Drawing.Size(53, 13);
+            this.LabelFIO.Size = new System.Drawing.Size(37, 13);
             this.LabelFIO.TabIndex = 0;
-            this.LabelFIO.Text = "LabelFIO:";
+            this.LabelFIO.Text = "ФИО:";
             // 
             // TextBoxFIO
             // 
@@ -54,11 +54,11 @@
             // LabelPersonalDataSpecial
             // 
             this.LabelPersonalDataSpecial.AutoSize = true;
-            this.LabelPersonalDataSpecial.Location = new System.Drawing.Point(12, 35);
+            this.LabelPersonalDataSpecial.Location = new System.Drawing.Point(20, 35);
             this.LabelPersonalDataSpecial.Name = "LabelPersonalDataSpecial";
-            this.LabelPersonalDataSpecial.Size = new System.Drawing.Size(135, 13);
+            this.LabelPersonalDataSpecial.Size = new System.Drawing.Size(127, 13);
             this.LabelPersonalDataSpecial.TabIndex = 2;
-            this.LabelPersonalDataSpecial.Text = "LabelPersonalDataSpecial:";
+            this.LabelPersonalDataSpecial.Text = "Персональные данные:";
             // 
             // TextBoxPersonalDataSpecial
             // 
@@ -73,7 +73,7 @@
             this.ButtonSellTicket.Name = "ButtonSellTicket";
             this.ButtonSellTicket.Size = new System.Drawing.Size(461, 39);
             this.ButtonSellTicket.TabIndex = 4;
-            this.ButtonSellTicket.Text = "Sell Ticket";
+            this.ButtonSellTicket.Text = "Продать";
             this.ButtonSellTicket.UseVisualStyleBackColor = true;
             this.ButtonSellTicket.Click += new System.EventHandler(this.ButtonSellTicket_Click);
             // 
@@ -88,7 +88,7 @@
             this.Controls.Add(this.TextBoxFIO);
             this.Controls.Add(this.LabelFIO);
             this.Name = "FormSellTicket";
-            this.Text = "FormSellTicket";
+            this.Text = "Продать билет";
             this.ResumeLayout(false);
             this.PerformLayout();
 

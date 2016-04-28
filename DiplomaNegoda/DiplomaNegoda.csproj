@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\DBLookUpComboBox.cs" />
+    <Compile Include="Classes\OperationOnDB\ChangeStatusOfTicketSet.cs" />
     <Compile Include="Classes\Tables\AccountsSet.cs" />
     <Compile Include="Classes\Tables\FlightsArchiveSet.cs" />
     <Compile Include="Classes\Tables\FlightsCurrentSet.cs" />
@@ -73,11 +74,11 @@
     <Compile Include="Forms\FormCassier.Designer.cs">
       <DependentUpon>FormCassier.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormSellBooking.cs">
+    <Compile Include="Forms\FormSellingReservationing.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormSellBooking.Designer.cs">
-      <DependentUpon>FormSellBooking.cs</DependentUpon>
+    <Compile Include="Forms\FormSellingReservationing.Designer.cs">
+      <DependentUpon>FormSellingReservationing.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\InsertForms\FormAddAccount.cs">
       <SubType>Form</SubType>
@@ -242,8 +243,8 @@
     <EmbeddedResource Include="Forms\FormEnter.resx">
       <DependentUpon>FormEnter.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormSellBooking.resx">
-      <DependentUpon>FormSellBooking.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormSellingReservationing.resx">
+      <DependentUpon>FormSellingReservationing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\InsertForms\FormAddAccount.resx">
       <DependentUpon>FormAddAccount.cs</DependentUpon>

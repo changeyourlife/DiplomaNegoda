@@ -139,6 +139,36 @@ namespace DiplomaNegoda.Classes.TablesOnlyPK
             sqlConn.Close();
         }
 
+        public void SoldEco(string iD, int Money)
+        {
+            sqlComm = sqlConn.CreateCommand();
+            sqlComm.CommandText = @"UPDATE [" + nameofTable + "]" +
+                "SET EcoSold=EcoSold+1, Money=Money+@MONEY WHERE NumberOfFlight=@ID";
+            sqlComm.Parameters.Add("@ID", SqlDbType.VarChar);
+            sqlComm.Parameters["@ID"].Value = iD;
+            sqlComm.Parameters.Add("@MONEY", SqlDbType.VarChar);
+            sqlComm.Parameters["@MONEY"].Value = Money;
+            sqlConn.Open();
+            sqlComm.ExecuteNonQuery();
+            SQLCOMMclear();
+            sqlConn.Close();
+        }
+
+        public void SoldBus(string iD, int Money)
+        {
+            sqlComm = sqlConn.CreateCommand();
+            sqlComm.CommandText = @"UPDATE [" + nameofTable + "]" +
+                "SET BusSold=BusSold+1, Money=Money+@MONEY WHERE NumberOfFlight=@ID";
+            sqlComm.Parameters.Add("@ID", SqlDbType.VarChar);
+            sqlComm.Parameters["@ID"].Value = iD;
+            sqlComm.Parameters.Add("@MONEY", SqlDbType.VarChar);
+            sqlComm.Parameters["@MONEY"].Value = Money;
+            sqlConn.Open();
+            sqlComm.ExecuteNonQuery();
+            SQLCOMMclear();
+            sqlConn.Close();
+        }
+
         public void DeleteFromTable(string iD) //method DELETE
         {
             sqlComm.CommandText = @"DELETE FROM [" + nameofTable + "] WHERE NumberOfFlight=@ID";

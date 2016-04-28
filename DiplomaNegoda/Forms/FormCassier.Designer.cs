@@ -134,7 +134,7 @@
             this.Controls.Add(this.DateTimePickerDataOut);
             this.Controls.Add(this.LabelDataOut);
             this.Name = "FormCassier";
-            this.Text = "FormCassier";
+            this.Text = "Выбор рейса";
             this.Shown += new System.EventHandler(this.FormCassier_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.DGVflightsCurrentSet)).EndInit();
             this.ResumeLayout(false);

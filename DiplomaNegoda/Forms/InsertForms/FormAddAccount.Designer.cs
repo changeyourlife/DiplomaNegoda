@@ -43,11 +43,11 @@
             // LabelWorker
             // 
             this.LabelWorker.AutoSize = true;
-            this.LabelWorker.Location = new System.Drawing.Point(12, 9);
+            this.LabelWorker.Location = new System.Drawing.Point(-3, 9);
             this.LabelWorker.Name = "LabelWorker";
-            this.LabelWorker.Size = new System.Drawing.Size(45, 13);
+            this.LabelWorker.Size = new System.Drawing.Size(58, 13);
             this.LabelWorker.TabIndex = 0;
-            this.LabelWorker.Text = "Worker:";
+            this.LabelWorker.Text = "Работник:";
             // 
             // ComboBoxWorker
             // 
@@ -61,29 +61,29 @@
             // LabelLogin
             // 
             this.LabelLogin.AutoSize = true;
-            this.LabelLogin.Location = new System.Drawing.Point(19, 36);
+            this.LabelLogin.Location = new System.Drawing.Point(14, 36);
             this.LabelLogin.Name = "LabelLogin";
-            this.LabelLogin.Size = new System.Drawing.Size(36, 13);
+            this.LabelLogin.Size = new System.Drawing.Size(41, 13);
             this.LabelLogin.TabIndex = 2;
-            this.LabelLogin.Text = "Login:";
+            this.LabelLogin.Text = "Логин:";
             // 
             // LabelPassword
             // 
             this.LabelPassword.AutoSize = true;
-            this.LabelPassword.Location = new System.Drawing.Point(1, 62);
+            this.LabelPassword.Location = new System.Drawing.Point(7, 62);
             this.LabelPassword.Name = "LabelPassword";
-            this.LabelPassword.Size = new System.Drawing.Size(56, 13);
+            this.LabelPassword.Size = new System.Drawing.Size(48, 13);
             this.LabelPassword.TabIndex = 3;
-            this.LabelPassword.Text = "Password:";
+            this.LabelPassword.Text = "Пароль:";
             // 
             // LabelPosition
             // 
             this.LabelPosition.AutoSize = true;
-            this.LabelPosition.Location = new System.Drawing.Point(8, 88);
+            this.LabelPosition.Location = new System.Drawing.Point(1, 88);
             this.LabelPosition.Name = "LabelPosition";
-            this.LabelPosition.Size = new System.Drawing.Size(47, 13);
+            this.LabelPosition.Size = new System.Drawing.Size(54, 13);
             this.LabelPosition.TabIndex = 4;
-            this.LabelPosition.Text = "Position:";
+            this.LabelPosition.Text = "Позиция:";
             // 
             // TextBoxLogin
             // 
@@ -114,7 +114,7 @@
             this.ButtonAddAccount.Name = "ButtonAddAccount";
             this.ButtonAddAccount.Size = new System.Drawing.Size(75, 23);
             this.ButtonAddAccount.TabIndex = 8;
-            this.ButtonAddAccount.Text = "Add";
+            this.ButtonAddAccount.Text = "Добавить";
             this.ButtonAddAccount.UseVisualStyleBackColor = true;
             this.ButtonAddAccount.Click += new System.EventHandler(this.ButtonAddAccount_Click);
             // 
@@ -124,7 +124,7 @@
             this.ButtonClose.Name = "ButtonClose";
             this.ButtonClose.Size = new System.Drawing.Size(75, 23);
             this.ButtonClose.TabIndex = 9;
-            this.ButtonClose.Text = "Close";
+            this.ButtonClose.Text = "Закрыть";
             this.ButtonClose.UseVisualStyleBackColor = true;
             // 
             // FormAddAccount
@@ -143,7 +143,7 @@
             this.Controls.Add(this.ComboBoxWorker);
             this.Controls.Add(this.LabelWorker);
             this.Name = "FormAddAccount";
-            this.Text = "FormAddAccount";
+            this.Text = "Добавить аккаунт";
             this.Shown += new System.EventHandler(this.FormAddAccount_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();

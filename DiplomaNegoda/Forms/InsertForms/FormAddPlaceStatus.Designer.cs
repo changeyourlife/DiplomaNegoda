@@ -40,7 +40,7 @@
             this.ButtonCloseForm.Name = "ButtonCloseForm";
             this.ButtonCloseForm.Size = new System.Drawing.Size(75, 23);
             this.ButtonCloseForm.TabIndex = 19;
-            this.ButtonCloseForm.Text = "Close";
+            this.ButtonCloseForm.Text = "Закрыть";
             this.ButtonCloseForm.UseVisualStyleBackColor = true;
             // 
             // ButtonAddTicketStatus
@@ -49,15 +49,15 @@
             this.ButtonAddTicketStatus.Name = "ButtonAddTicketStatus";
             this.ButtonAddTicketStatus.Size = new System.Drawing.Size(75, 23);
             this.ButtonAddTicketStatus.TabIndex = 18;
-            this.ButtonAddTicketStatus.Text = "Add";
+            this.ButtonAddTicketStatus.Text = "Добавить";
             this.ButtonAddTicketStatus.UseVisualStyleBackColor = true;
             this.ButtonAddTicketStatus.Click += new System.EventHandler(this.ButtonAddTicketStatus_Click);
             // 
             // TextBoxName
             // 
-            this.TextBoxName.Location = new System.Drawing.Point(59, 6);
+            this.TextBoxName.Location = new System.Drawing.Point(78, 6);
             this.TextBoxName.Name = "TextBoxName";
-            this.TextBoxName.Size = new System.Drawing.Size(244, 20);
+            this.TextBoxName.Size = new System.Drawing.Size(225, 20);
             this.TextBoxName.TabIndex = 17;
             // 
             // LabelName
@@ -65,11 +65,11 @@
             this.LabelName.AutoSize = true;
             this.LabelName.Location = new System.Drawing.Point(12, 9);
             this.LabelName.Name = "LabelName";
-            this.LabelName.Size = new System.Drawing.Size(38, 13);
+            this.LabelName.Size = new System.Drawing.Size(60, 13);
             this.LabelName.TabIndex = 16;
-            this.LabelName.Text = "Name:";
+            this.LabelName.Text = "Название:";
             // 
-            // FormAddTicketStatus
+            // FormAddPlaceStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -78,8 +78,8 @@
             this.Controls.Add(this.ButtonAddTicketStatus);
             this.Controls.Add(this.TextBoxName);
             this.Controls.Add(this.LabelName);
-            this.Name = "FormAddTicketStatus";
-            this.Text = "AddTicketStatus";
+            this.Name = "FormAddPlaceStatus";
+            this.Text = "Добавить статус места";
             this.ResumeLayout(false);
             this.PerformLayout();
 

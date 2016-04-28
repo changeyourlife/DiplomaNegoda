@@ -39,15 +39,15 @@
             this.LabelName.AutoSize = true;
             this.LabelName.Location = new System.Drawing.Point(9, 9);
             this.LabelName.Name = "LabelName";
-            this.LabelName.Size = new System.Drawing.Size(38, 13);
+            this.LabelName.Size = new System.Drawing.Size(60, 13);
             this.LabelName.TabIndex = 0;
-            this.LabelName.Text = "Name:";
+            this.LabelName.Text = "Название:";
             // 
             // TextBoxName
             // 
-            this.TextBoxName.Location = new System.Drawing.Point(56, 6);
+            this.TextBoxName.Location = new System.Drawing.Point(75, 6);
             this.TextBoxName.Name = "TextBoxName";
-            this.TextBoxName.Size = new System.Drawing.Size(244, 20);
+            this.TextBoxName.Size = new System.Drawing.Size(225, 20);
             this.TextBoxName.TabIndex = 1;
             // 
             // ButtonAddAviacompany
@@ -56,7 +56,7 @@
             this.ButtonAddAviacompany.Name = "ButtonAddAviacompany";
             this.ButtonAddAviacompany.Size = new System.Drawing.Size(75, 23);
             this.ButtonAddAviacompany.TabIndex = 2;
-            this.ButtonAddAviacompany.Text = "Add";
+            this.ButtonAddAviacompany.Text = "Добавить";
             this.ButtonAddAviacompany.UseVisualStyleBackColor = true;
             this.ButtonAddAviacompany.Click += new System.EventHandler(this.ButtonAddAviacompany_Click);
             // 
@@ -66,10 +66,10 @@
             this.ButtonCloseForm.Name = "ButtonCloseForm";
             this.ButtonCloseForm.Size = new System.Drawing.Size(75, 23);
             this.ButtonCloseForm.TabIndex = 3;
-            this.ButtonCloseForm.Text = "Close";
+            this.ButtonCloseForm.Text = "Закрыть";
             this.ButtonCloseForm.UseVisualStyleBackColor = true;
             // 
-            // AddAviacompany
+            // FormAddAviacompany
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -78,9 +78,9 @@
             this.Controls.Add(this.ButtonAddAviacompany);
             this.Controls.Add(this.TextBoxName);
             this.Controls.Add(this.LabelName);
-            this.Name = "AddAviacompany";
+            this.Name = "FormAddAviacompany";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddAviacompany";
+            this.Text = "Добавить авиакомпанию";
             this.Shown += new System.EventHandler(this.AddAviacompany_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();

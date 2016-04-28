@@ -51,133 +51,137 @@
             // LabelAviacompanyID
             // 
             this.LabelAviacompanyID.AutoSize = true;
-            this.LabelAviacompanyID.Location = new System.Drawing.Point(12, 9);
+            this.LabelAviacompanyID.Location = new System.Drawing.Point(71, 9);
             this.LabelAviacompanyID.Name = "LabelAviacompanyID";
-            this.LabelAviacompanyID.Size = new System.Drawing.Size(111, 13);
+            this.LabelAviacompanyID.Size = new System.Drawing.Size(85, 13);
             this.LabelAviacompanyID.TabIndex = 0;
-            this.LabelAviacompanyID.Text = "LabelAviacompanyID:";
+            this.LabelAviacompanyID.Text = "Авиакомпания:";
             // 
             // LabelPlaneID
             // 
             this.LabelPlaneID.AutoSize = true;
-            this.LabelPlaneID.Location = new System.Drawing.Point(49, 39);
+            this.LabelPlaneID.Location = new System.Drawing.Point(102, 39);
             this.LabelPlaneID.Name = "LabelPlaneID";
-            this.LabelPlaneID.Size = new System.Drawing.Size(74, 13);
+            this.LabelPlaneID.Size = new System.Drawing.Size(54, 13);
             this.LabelPlaneID.TabIndex = 1;
-            this.LabelPlaneID.Text = "LabelPlaneID:";
+            this.LabelPlaneID.Text = "Самолёт:";
             // 
             // LabeltoID
             // 
             this.LabeltoID.AutoSize = true;
-            this.LabeltoID.Location = new System.Drawing.Point(67, 69);
+            this.LabeltoID.Location = new System.Drawing.Point(122, 69);
             this.LabeltoID.Name = "LabeltoID";
-            this.LabeltoID.Size = new System.Drawing.Size(56, 13);
+            this.LabeltoID.Size = new System.Drawing.Size(34, 13);
             this.LabeltoID.TabIndex = 2;
-            this.LabeltoID.Text = "LabeltoID:";
+            this.LabeltoID.Text = "Куда:";
             // 
             // LabelfromID
             // 
             this.LabelfromID.AutoSize = true;
-            this.LabelfromID.Location = new System.Drawing.Point(56, 99);
+            this.LabelfromID.Location = new System.Drawing.Point(110, 99);
             this.LabelfromID.Name = "LabelfromID";
-            this.LabelfromID.Size = new System.Drawing.Size(67, 13);
+            this.LabelfromID.Size = new System.Drawing.Size(46, 13);
             this.LabelfromID.TabIndex = 3;
-            this.LabelfromID.Text = "LabelfromID:";
+            this.LabelfromID.Text = "Откуда:";
             // 
             // LabelGoDateTime
             // 
             this.LabelGoDateTime.AutoSize = true;
-            this.LabelGoDateTime.Location = new System.Drawing.Point(27, 129);
+            this.LabelGoDateTime.Location = new System.Drawing.Point(52, 131);
             this.LabelGoDateTime.Name = "LabelGoDateTime";
-            this.LabelGoDateTime.Size = new System.Drawing.Size(96, 13);
+            this.LabelGoDateTime.Size = new System.Drawing.Size(104, 13);
             this.LabelGoDateTime.TabIndex = 4;
-            this.LabelGoDateTime.Text = "LabelGoDateTime:";
+            this.LabelGoDateTime.Text = "Дата отправления:";
             // 
             // LabelArriveDateTime
             // 
             this.LabelArriveDateTime.AutoSize = true;
-            this.LabelArriveDateTime.Location = new System.Drawing.Point(14, 159);
+            this.LabelArriveDateTime.Location = new System.Drawing.Point(68, 162);
             this.LabelArriveDateTime.Name = "LabelArriveDateTime";
-            this.LabelArriveDateTime.Size = new System.Drawing.Size(109, 13);
+            this.LabelArriveDateTime.Size = new System.Drawing.Size(88, 13);
             this.LabelArriveDateTime.TabIndex = 5;
-            this.LabelArriveDateTime.Text = "LabelArriveDateTime:";
+            this.LabelArriveDateTime.Text = "Дата прибытия:";
             // 
             // LabelCostOfEcoClass
             // 
             this.LabelCostOfEcoClass.AutoSize = true;
             this.LabelCostOfEcoClass.Location = new System.Drawing.Point(11, 189);
             this.LabelCostOfEcoClass.Name = "LabelCostOfEcoClass";
-            this.LabelCostOfEcoClass.Size = new System.Drawing.Size(112, 13);
+            this.LabelCostOfEcoClass.Size = new System.Drawing.Size(145, 13);
             this.LabelCostOfEcoClass.TabIndex = 6;
-            this.LabelCostOfEcoClass.Text = "LabelCostOfEcoClass:";
+            this.LabelCostOfEcoClass.Text = "Стоимость эконом-класса:";
             // 
             // CostOfBusinessClass
             // 
             this.CostOfBusinessClass.AutoSize = true;
-            this.CostOfBusinessClass.Location = new System.Drawing.Point(14, 219);
+            this.CostOfBusinessClass.Location = new System.Drawing.Point(7, 219);
             this.CostOfBusinessClass.Name = "CostOfBusinessClass";
-            this.CostOfBusinessClass.Size = new System.Drawing.Size(109, 13);
+            this.CostOfBusinessClass.Size = new System.Drawing.Size(149, 13);
             this.CostOfBusinessClass.TabIndex = 7;
-            this.CostOfBusinessClass.Text = "CostOfBusinessClass:";
+            this.CostOfBusinessClass.Text = "Стоимость бизнесс-класса:";
             // 
             // ComboBoxAviacompanyID
             // 
+            this.ComboBoxAviacompanyID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxAviacompanyID.FormattingEnabled = true;
-            this.ComboBoxAviacompanyID.Location = new System.Drawing.Point(129, 6);
+            this.ComboBoxAviacompanyID.Location = new System.Drawing.Point(162, 6);
             this.ComboBoxAviacompanyID.Name = "ComboBoxAviacompanyID";
-            this.ComboBoxAviacompanyID.Size = new System.Drawing.Size(200, 21);
+            this.ComboBoxAviacompanyID.Size = new System.Drawing.Size(167, 21);
             this.ComboBoxAviacompanyID.TabIndex = 8;
             // 
             // ComboBoxPlaneID
             // 
+            this.ComboBoxPlaneID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxPlaneID.FormattingEnabled = true;
-            this.ComboBoxPlaneID.Location = new System.Drawing.Point(129, 36);
+            this.ComboBoxPlaneID.Location = new System.Drawing.Point(162, 36);
             this.ComboBoxPlaneID.Name = "ComboBoxPlaneID";
-            this.ComboBoxPlaneID.Size = new System.Drawing.Size(200, 21);
+            this.ComboBoxPlaneID.Size = new System.Drawing.Size(167, 21);
             this.ComboBoxPlaneID.TabIndex = 9;
             // 
             // ComboBoxtoID
             // 
+            this.ComboBoxtoID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxtoID.FormattingEnabled = true;
-            this.ComboBoxtoID.Location = new System.Drawing.Point(129, 66);
+            this.ComboBoxtoID.Location = new System.Drawing.Point(162, 66);
             this.ComboBoxtoID.Name = "ComboBoxtoID";
-            this.ComboBoxtoID.Size = new System.Drawing.Size(200, 21);
+            this.ComboBoxtoID.Size = new System.Drawing.Size(167, 21);
             this.ComboBoxtoID.TabIndex = 10;
             // 
             // ComboBoxfromID
             // 
+            this.ComboBoxfromID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxfromID.FormattingEnabled = true;
-            this.ComboBoxfromID.Location = new System.Drawing.Point(129, 96);
+            this.ComboBoxfromID.Location = new System.Drawing.Point(162, 96);
             this.ComboBoxfromID.Name = "ComboBoxfromID";
-            this.ComboBoxfromID.Size = new System.Drawing.Size(200, 21);
+            this.ComboBoxfromID.Size = new System.Drawing.Size(167, 21);
             this.ComboBoxfromID.TabIndex = 11;
             // 
             // DateTimePickerGoDateTime
             // 
-            this.DateTimePickerGoDateTime.Location = new System.Drawing.Point(129, 125);
+            this.DateTimePickerGoDateTime.Location = new System.Drawing.Point(162, 125);
             this.DateTimePickerGoDateTime.Name = "DateTimePickerGoDateTime";
-            this.DateTimePickerGoDateTime.Size = new System.Drawing.Size(200, 20);
+            this.DateTimePickerGoDateTime.Size = new System.Drawing.Size(167, 20);
             this.DateTimePickerGoDateTime.TabIndex = 12;
             // 
             // DateTimePickerArriveDateTime
             // 
-            this.DateTimePickerArriveDateTime.Location = new System.Drawing.Point(129, 156);
+            this.DateTimePickerArriveDateTime.Location = new System.Drawing.Point(162, 156);
             this.DateTimePickerArriveDateTime.Name = "DateTimePickerArriveDateTime";
-            this.DateTimePickerArriveDateTime.Size = new System.Drawing.Size(200, 20);
+            this.DateTimePickerArriveDateTime.Size = new System.Drawing.Size(167, 20);
             this.DateTimePickerArriveDateTime.TabIndex = 13;
             // 
             // TextBoxCostOfEcoClass
             // 
-            this.TextBoxCostOfEcoClass.Location = new System.Drawing.Point(129, 186);
+            this.TextBoxCostOfEcoClass.Location = new System.Drawing.Point(162, 186);
             this.TextBoxCostOfEcoClass.Name = "TextBoxCostOfEcoClass";
-            this.TextBoxCostOfEcoClass.Size = new System.Drawing.Size(200, 20);
+            this.TextBoxCostOfEcoClass.Size = new System.Drawing.Size(167, 20);
             this.TextBoxCostOfEcoClass.TabIndex = 14;
             // 
             // TextBoxCostOfBusinessClass
             // 
-            this.TextBoxCostOfBusinessClass.Location = new System.Drawing.Point(129, 216);
+            this.TextBoxCostOfBusinessClass.Location = new System.Drawing.Point(162, 216);
             this.TextBoxCostOfBusinessClass.Name = "TextBoxCostOfBusinessClass";
-            this.TextBoxCostOfBusinessClass.Size = new System.Drawing.Size(200, 20);
+            this.TextBoxCostOfBusinessClass.Size = new System.Drawing.Size(167, 20);
             this.TextBoxCostOfBusinessClass.TabIndex = 15;
             // 
             // ButtonAddFlightCurrent
@@ -186,7 +190,7 @@
             this.ButtonAddFlightCurrent.Name = "ButtonAddFlightCurrent";
             this.ButtonAddFlightCurrent.Size = new System.Drawing.Size(75, 23);
             this.ButtonAddFlightCurrent.TabIndex = 16;
-            this.ButtonAddFlightCurrent.Text = "Add";
+            this.ButtonAddFlightCurrent.Text = "Добавить";
             this.ButtonAddFlightCurrent.UseVisualStyleBackColor = true;
             this.ButtonAddFlightCurrent.Click += new System.EventHandler(this.ButtonAddFlightCurrent_Click);
             // 
@@ -196,7 +200,7 @@
             this.ButtonClose.Name = "ButtonClose";
             this.ButtonClose.Size = new System.Drawing.Size(75, 23);
             this.ButtonClose.TabIndex = 17;
-            this.ButtonClose.Text = "Close";
+            this.ButtonClose.Text = "Закрыть";
             this.ButtonClose.UseVisualStyleBackColor = true;
             // 
             // FormAddFlightCurrent
@@ -223,7 +227,7 @@
             this.Controls.Add(this.LabelPlaneID);
             this.Controls.Add(this.LabelAviacompanyID);
             this.Name = "FormAddFlightCurrent";
-            this.Text = "FormAddFlightCurrent";
+            this.Text = "Добавить рейс";
             this.Shown += new System.EventHandler(this.FormAddFlightCurrent_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();

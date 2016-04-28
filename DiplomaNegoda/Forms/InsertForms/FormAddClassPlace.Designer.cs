@@ -40,7 +40,7 @@
             this.ButtonClose.Name = "ButtonClose";
             this.ButtonClose.Size = new System.Drawing.Size(75, 23);
             this.ButtonClose.TabIndex = 27;
-            this.ButtonClose.Text = "Close";
+            this.ButtonClose.Text = "Закрыть";
             this.ButtonClose.UseVisualStyleBackColor = true;
             // 
             // ButtonAddClassPlace
@@ -49,15 +49,15 @@
             this.ButtonAddClassPlace.Name = "ButtonAddClassPlace";
             this.ButtonAddClassPlace.Size = new System.Drawing.Size(75, 23);
             this.ButtonAddClassPlace.TabIndex = 26;
-            this.ButtonAddClassPlace.Text = "Add";
+            this.ButtonAddClassPlace.Text = "Добавить";
             this.ButtonAddClassPlace.UseVisualStyleBackColor = true;
             this.ButtonAddClassPlace.Click += new System.EventHandler(this.ButtonAddClassPlace_Click);
             // 
             // TextBoxName
             // 
-            this.TextBoxName.Location = new System.Drawing.Point(57, 6);
+            this.TextBoxName.Location = new System.Drawing.Point(78, 6);
             this.TextBoxName.Name = "TextBoxName";
-            this.TextBoxName.Size = new System.Drawing.Size(371, 20);
+            this.TextBoxName.Size = new System.Drawing.Size(350, 20);
             this.TextBoxName.TabIndex = 25;
             // 
             // LabelName
@@ -65,9 +65,9 @@
             this.LabelName.AutoSize = true;
             this.LabelName.Location = new System.Drawing.Point(12, 9);
             this.LabelName.Name = "LabelName";
-            this.LabelName.Size = new System.Drawing.Size(38, 13);
+            this.LabelName.Size = new System.Drawing.Size(60, 13);
             this.LabelName.TabIndex = 24;
-            this.LabelName.Text = "Name:";
+            this.LabelName.Text = "Название:";
             // 
             // FormAddClassPlace
             // 
@@ -79,7 +79,7 @@
             this.Controls.Add(this.TextBoxName);
             this.Controls.Add(this.LabelName);
             this.Name = "FormAddClassPlace";
-            this.Text = "AddClassPlace";
+            this.Text = "Добавить класс места";
             this.ResumeLayout(false);
             this.PerformLayout();
 

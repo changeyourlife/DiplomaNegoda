@@ -34,6 +34,7 @@
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.ButtonEnter = new System.Windows.Forms.Button();
             this.ButtonClose = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -90,11 +91,22 @@
             this.ButtonClose.UseVisualStyleBackColor = true;
             this.ButtonClose.Click += new System.EventHandler(this.ButtonClose_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(121, 94);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormEnter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(323, 129);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.ButtonClose);
             this.Controls.Add(this.ButtonEnter);
             this.Controls.Add(this.textBoxPassword);
@@ -118,6 +130,7 @@
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Button ButtonEnter;
         private System.Windows.Forms.Button ButtonClose;
+        private System.Windows.Forms.Button button1;
     }
 }
 

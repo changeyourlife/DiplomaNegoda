@@ -40,70 +40,70 @@
             // 
             // ButtonClose
             // 
-            this.ButtonClose.Location = new System.Drawing.Point(442, 92);
+            this.ButtonClose.Location = new System.Drawing.Point(442, 91);
             this.ButtonClose.Name = "ButtonClose";
             this.ButtonClose.Size = new System.Drawing.Size(75, 23);
             this.ButtonClose.TabIndex = 15;
-            this.ButtonClose.Text = "Close";
+            this.ButtonClose.Text = "Закрыть";
             this.ButtonClose.UseVisualStyleBackColor = true;
             // 
             // ButtonAddPlane
             // 
-            this.ButtonAddPlane.Location = new System.Drawing.Point(15, 92);
+            this.ButtonAddPlane.Location = new System.Drawing.Point(38, 92);
             this.ButtonAddPlane.Name = "ButtonAddPlane";
             this.ButtonAddPlane.Size = new System.Drawing.Size(75, 23);
             this.ButtonAddPlane.TabIndex = 14;
-            this.ButtonAddPlane.Text = "Add";
+            this.ButtonAddPlane.Text = "Добавить";
             this.ButtonAddPlane.UseVisualStyleBackColor = true;
             this.ButtonAddPlane.Click += new System.EventHandler(this.ButtonAddPlane_Click);
             // 
             // TextBoxCountOfPlacesBusiness
             // 
-            this.TextBoxCountOfPlacesBusiness.Location = new System.Drawing.Point(141, 58);
+            this.TextBoxCountOfPlacesBusiness.Location = new System.Drawing.Point(193, 58);
             this.TextBoxCountOfPlacesBusiness.Name = "TextBoxCountOfPlacesBusiness";
             this.TextBoxCountOfPlacesBusiness.Size = new System.Drawing.Size(72, 20);
             this.TextBoxCountOfPlacesBusiness.TabIndex = 13;
             // 
             // TextBoxCountOfPlacesEco
             // 
-            this.TextBoxCountOfPlacesEco.Location = new System.Drawing.Point(141, 32);
+            this.TextBoxCountOfPlacesEco.Location = new System.Drawing.Point(193, 32);
             this.TextBoxCountOfPlacesEco.Name = "TextBoxCountOfPlacesEco";
             this.TextBoxCountOfPlacesEco.Size = new System.Drawing.Size(72, 20);
             this.TextBoxCountOfPlacesEco.TabIndex = 12;
             // 
             // TextBoxModel
             // 
-            this.TextBoxModel.Location = new System.Drawing.Point(141, 6);
+            this.TextBoxModel.Location = new System.Drawing.Point(193, 6);
             this.TextBoxModel.Name = "TextBoxModel";
-            this.TextBoxModel.Size = new System.Drawing.Size(376, 20);
+            this.TextBoxModel.Size = new System.Drawing.Size(324, 20);
             this.TextBoxModel.TabIndex = 11;
             // 
             // LabelCountOfPlacesBusiness
             // 
             this.LabelCountOfPlacesBusiness.AutoSize = true;
-            this.LabelCountOfPlacesBusiness.Location = new System.Drawing.Point(12, 61);
+            this.LabelCountOfPlacesBusiness.Location = new System.Drawing.Point(35, 61);
             this.LabelCountOfPlacesBusiness.Name = "LabelCountOfPlacesBusiness";
-            this.LabelCountOfPlacesBusiness.Size = new System.Drawing.Size(123, 13);
+            this.LabelCountOfPlacesBusiness.Size = new System.Drawing.Size(150, 13);
             this.LabelCountOfPlacesBusiness.TabIndex = 10;
-            this.LabelCountOfPlacesBusiness.Text = "CountOfPlacesBusiness:";
+            this.LabelCountOfPlacesBusiness.Text = "Кол-во мест бизнес-класса:";
             // 
             // LabelCountOfPlacesEco
             // 
             this.LabelCountOfPlacesEco.AutoSize = true;
             this.LabelCountOfPlacesEco.Location = new System.Drawing.Point(35, 35);
             this.LabelCountOfPlacesEco.Name = "LabelCountOfPlacesEco";
-            this.LabelCountOfPlacesEco.Size = new System.Drawing.Size(100, 13);
+            this.LabelCountOfPlacesEco.Size = new System.Drawing.Size(152, 13);
             this.LabelCountOfPlacesEco.TabIndex = 9;
-            this.LabelCountOfPlacesEco.Text = "CountOfPlacesEco:";
+            this.LabelCountOfPlacesEco.Text = "Кол-во мест эконом-класса:";
             // 
             // LabelModel
             // 
             this.LabelModel.AutoSize = true;
-            this.LabelModel.Location = new System.Drawing.Point(96, 9);
+            this.LabelModel.Location = new System.Drawing.Point(136, 9);
             this.LabelModel.Name = "LabelModel";
-            this.LabelModel.Size = new System.Drawing.Size(39, 13);
+            this.LabelModel.Size = new System.Drawing.Size(49, 13);
             this.LabelModel.TabIndex = 8;
-            this.LabelModel.Text = "Model:";
+            this.LabelModel.Text = "Модель:";
             // 
             // FormAddPlane
             // 
