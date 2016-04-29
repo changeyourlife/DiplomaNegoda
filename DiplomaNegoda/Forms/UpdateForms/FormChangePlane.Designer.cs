@@ -41,47 +41,47 @@
             // LabelModel
             // 
             this.LabelModel.AutoSize = true;
-            this.LabelModel.Location = new System.Drawing.Point(96, 9);
+            this.LabelModel.Location = new System.Drawing.Point(113, 10);
             this.LabelModel.Name = "LabelModel";
-            this.LabelModel.Size = new System.Drawing.Size(39, 13);
+            this.LabelModel.Size = new System.Drawing.Size(49, 13);
             this.LabelModel.TabIndex = 0;
-            this.LabelModel.Text = "Model:";
+            this.LabelModel.Text = "Модель:";
             // 
             // LabelCountOfPlacesEco
             // 
             this.LabelCountOfPlacesEco.AutoSize = true;
-            this.LabelCountOfPlacesEco.Location = new System.Drawing.Point(35, 35);
+            this.LabelCountOfPlacesEco.Location = new System.Drawing.Point(12, 36);
             this.LabelCountOfPlacesEco.Name = "LabelCountOfPlacesEco";
-            this.LabelCountOfPlacesEco.Size = new System.Drawing.Size(100, 13);
+            this.LabelCountOfPlacesEco.Size = new System.Drawing.Size(152, 13);
             this.LabelCountOfPlacesEco.TabIndex = 1;
-            this.LabelCountOfPlacesEco.Text = "CountOfPlacesEco:";
+            this.LabelCountOfPlacesEco.Text = "Кол-во мест эконом-класса:";
             // 
             // LabelCountOfPlacesBusiness
             // 
             this.LabelCountOfPlacesBusiness.AutoSize = true;
-            this.LabelCountOfPlacesBusiness.Location = new System.Drawing.Point(12, 61);
+            this.LabelCountOfPlacesBusiness.Location = new System.Drawing.Point(12, 62);
             this.LabelCountOfPlacesBusiness.Name = "LabelCountOfPlacesBusiness";
-            this.LabelCountOfPlacesBusiness.Size = new System.Drawing.Size(123, 13);
+            this.LabelCountOfPlacesBusiness.Size = new System.Drawing.Size(150, 13);
             this.LabelCountOfPlacesBusiness.TabIndex = 2;
-            this.LabelCountOfPlacesBusiness.Text = "CountOfPlacesBusiness:";
+            this.LabelCountOfPlacesBusiness.Text = "Кол-во мест бизнес-класса:";
             // 
             // TextBoxModel
             // 
-            this.TextBoxModel.Location = new System.Drawing.Point(141, 6);
+            this.TextBoxModel.Location = new System.Drawing.Point(170, 7);
             this.TextBoxModel.Name = "TextBoxModel";
-            this.TextBoxModel.Size = new System.Drawing.Size(376, 20);
+            this.TextBoxModel.Size = new System.Drawing.Size(324, 20);
             this.TextBoxModel.TabIndex = 3;
             // 
             // TextBoxCountOfPlacesEco
             // 
-            this.TextBoxCountOfPlacesEco.Location = new System.Drawing.Point(141, 32);
+            this.TextBoxCountOfPlacesEco.Location = new System.Drawing.Point(170, 33);
             this.TextBoxCountOfPlacesEco.Name = "TextBoxCountOfPlacesEco";
             this.TextBoxCountOfPlacesEco.Size = new System.Drawing.Size(72, 20);
             this.TextBoxCountOfPlacesEco.TabIndex = 4;
             // 
             // TextBoxCountOfPlacesBusiness
             // 
-            this.TextBoxCountOfPlacesBusiness.Location = new System.Drawing.Point(141, 58);
+            this.TextBoxCountOfPlacesBusiness.Location = new System.Drawing.Point(170, 59);
             this.TextBoxCountOfPlacesBusiness.Name = "TextBoxCountOfPlacesBusiness";
             this.TextBoxCountOfPlacesBusiness.Size = new System.Drawing.Size(72, 20);
             this.TextBoxCountOfPlacesBusiness.TabIndex = 5;
@@ -92,24 +92,24 @@
             this.ButtonChangePlane.Name = "ButtonChangePlane";
             this.ButtonChangePlane.Size = new System.Drawing.Size(75, 23);
             this.ButtonChangePlane.TabIndex = 6;
-            this.ButtonChangePlane.Text = "Change";
+            this.ButtonChangePlane.Text = "Изменить";
             this.ButtonChangePlane.UseVisualStyleBackColor = true;
             this.ButtonChangePlane.Click += new System.EventHandler(this.ButtonChangePlane_Click);
             // 
             // ButtonClose
             // 
-            this.ButtonClose.Location = new System.Drawing.Point(442, 92);
+            this.ButtonClose.Location = new System.Drawing.Point(419, 92);
             this.ButtonClose.Name = "ButtonClose";
             this.ButtonClose.Size = new System.Drawing.Size(75, 23);
             this.ButtonClose.TabIndex = 7;
-            this.ButtonClose.Text = "Close";
+            this.ButtonClose.Text = "Закрыть";
             this.ButtonClose.UseVisualStyleBackColor = true;
             // 
             // FormChangePlane
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(533, 126);
+            this.ClientSize = new System.Drawing.Size(505, 126);
             this.Controls.Add(this.ButtonClose);
             this.Controls.Add(this.ButtonChangePlane);
             this.Controls.Add(this.TextBoxCountOfPlacesBusiness);
@@ -119,7 +119,7 @@
             this.Controls.Add(this.LabelCountOfPlacesEco);
             this.Controls.Add(this.LabelModel);
             this.Name = "FormChangePlane";
-            this.Text = "ChangePlane";
+            this.Text = "Изменить самолёт";
             this.ResumeLayout(false);
             this.PerformLayout();
 

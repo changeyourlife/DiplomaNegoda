@@ -63,8 +63,8 @@ namespace DiplomaNegoda
             Application.Exit();
         }
 
-        private Excel.Sheets excelsheets;
-        private Excel.Worksheet excelworksheet;
+        //private Excel.Sheets excelsheets;
+        //private Excel.Worksheet excelworksheet;
         public Excel.Range Cells { get; private set; }
 
         private void button1_Click(object sender, EventArgs e)

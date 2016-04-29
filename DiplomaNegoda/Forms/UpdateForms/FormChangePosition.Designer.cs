@@ -40,7 +40,7 @@
             this.ButtonCloseForm.Name = "ButtonCloseForm";
             this.ButtonCloseForm.Size = new System.Drawing.Size(75, 23);
             this.ButtonCloseForm.TabIndex = 11;
-            this.ButtonCloseForm.Text = "Close";
+            this.ButtonCloseForm.Text = "Закрыть";
             this.ButtonCloseForm.UseVisualStyleBackColor = true;
             // 
             // ButtonChangePosition
@@ -49,15 +49,15 @@
             this.ButtonChangePosition.Name = "ButtonChangePosition";
             this.ButtonChangePosition.Size = new System.Drawing.Size(75, 23);
             this.ButtonChangePosition.TabIndex = 10;
-            this.ButtonChangePosition.Text = "Change";
+            this.ButtonChangePosition.Text = "Изменить";
             this.ButtonChangePosition.UseVisualStyleBackColor = true;
             this.ButtonChangePosition.Click += new System.EventHandler(this.ButtonChangePosition_Click);
             // 
             // TextBoxName
             // 
-            this.TextBoxName.Location = new System.Drawing.Point(59, 6);
+            this.TextBoxName.Location = new System.Drawing.Point(78, 6);
             this.TextBoxName.Name = "TextBoxName";
-            this.TextBoxName.Size = new System.Drawing.Size(244, 20);
+            this.TextBoxName.Size = new System.Drawing.Size(225, 20);
             this.TextBoxName.TabIndex = 9;
             // 
             // LabelName
@@ -65,9 +65,9 @@
             this.LabelName.AutoSize = true;
             this.LabelName.Location = new System.Drawing.Point(12, 9);
             this.LabelName.Name = "LabelName";
-            this.LabelName.Size = new System.Drawing.Size(38, 13);
+            this.LabelName.Size = new System.Drawing.Size(60, 13);
             this.LabelName.TabIndex = 8;
-            this.LabelName.Text = "Name:";
+            this.LabelName.Text = "Название:";
             // 
             // FormChangePosition
             // 
@@ -79,7 +79,7 @@
             this.Controls.Add(this.TextBoxName);
             this.Controls.Add(this.LabelName);
             this.Name = "FormChangePosition";
-            this.Text = "ChangePosition";
+            this.Text = "Изменить должность";
             this.ResumeLayout(false);
             this.PerformLayout();
 

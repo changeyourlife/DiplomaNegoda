@@ -119,7 +119,7 @@
             this.Controls.Add(this.LabelCountOfPlacesEco);
             this.Controls.Add(this.LabelModel);
             this.Name = "FormAddPlane";
-            this.Text = "AddPlane";
+            this.Text = "Добавить самолёт";
             this.ResumeLayout(false);
             this.PerformLayout();
 

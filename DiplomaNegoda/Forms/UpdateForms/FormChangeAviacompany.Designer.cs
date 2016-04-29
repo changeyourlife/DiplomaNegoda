@@ -40,7 +40,7 @@
             this.ButtonCloseForm.Name = "ButtonCloseForm";
             this.ButtonCloseForm.Size = new System.Drawing.Size(75, 23);
             this.ButtonCloseForm.TabIndex = 7;
-            this.ButtonCloseForm.Text = "Close";
+            this.ButtonCloseForm.Text = "Закрыть";
             this.ButtonCloseForm.UseVisualStyleBackColor = true;
             // 
             // ButtonUpdateAviacompany
@@ -49,15 +49,15 @@
             this.ButtonUpdateAviacompany.Name = "ButtonUpdateAviacompany";
             this.ButtonUpdateAviacompany.Size = new System.Drawing.Size(75, 23);
             this.ButtonUpdateAviacompany.TabIndex = 6;
-            this.ButtonUpdateAviacompany.Text = "Change";
+            this.ButtonUpdateAviacompany.Text = "Изменить";
             this.ButtonUpdateAviacompany.UseVisualStyleBackColor = true;
             this.ButtonUpdateAviacompany.Click += new System.EventHandler(this.ButtonUpdateAviacompany_Click);
             // 
             // TextBoxName
             // 
-            this.TextBoxName.Location = new System.Drawing.Point(59, 6);
+            this.TextBoxName.Location = new System.Drawing.Point(78, 6);
             this.TextBoxName.Name = "TextBoxName";
-            this.TextBoxName.Size = new System.Drawing.Size(244, 20);
+            this.TextBoxName.Size = new System.Drawing.Size(225, 20);
             this.TextBoxName.TabIndex = 5;
             // 
             // LabelName
@@ -65,9 +65,9 @@
             this.LabelName.AutoSize = true;
             this.LabelName.Location = new System.Drawing.Point(12, 9);
             this.LabelName.Name = "LabelName";
-            this.LabelName.Size = new System.Drawing.Size(38, 13);
+            this.LabelName.Size = new System.Drawing.Size(60, 13);
             this.LabelName.TabIndex = 4;
-            this.LabelName.Text = "Name:";
+            this.LabelName.Text = "Название:";
             // 
             // FormChangeAviacompany
             // 
@@ -80,7 +80,7 @@
             this.Controls.Add(this.LabelName);
             this.Name = "FormChangeAviacompany";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ChangeAviacompany";
+            this.Text = "Изменить авиакомпанию";
             this.Shown += new System.EventHandler(this.FormChangeAviacompany_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();

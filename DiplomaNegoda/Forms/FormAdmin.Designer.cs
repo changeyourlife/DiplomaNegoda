@@ -141,7 +141,7 @@ namespace DiplomaNegoda.Forms
             this.TabAviacompaniesSet.Padding = new System.Windows.Forms.Padding(3);
             this.TabAviacompaniesSet.Size = new System.Drawing.Size(1132, 415);
             this.TabAviacompaniesSet.TabIndex = 0;
-            this.TabAviacompaniesSet.Text = "Aviacompanies";
+            this.TabAviacompaniesSet.Text = "Авиакомпании";
             this.TabAviacompaniesSet.UseVisualStyleBackColor = true;
             // 
             // ButtonDeleteAviacompany
@@ -150,7 +150,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonDeleteAviacompany.Name = "ButtonDeleteAviacompany";
             this.ButtonDeleteAviacompany.Size = new System.Drawing.Size(285, 61);
             this.ButtonDeleteAviacompany.TabIndex = 3;
-            this.ButtonDeleteAviacompany.Text = "Delete Aviacompany";
+            this.ButtonDeleteAviacompany.Text = "Удалить";
             this.ButtonDeleteAviacompany.UseVisualStyleBackColor = true;
             this.ButtonDeleteAviacompany.Click += new System.EventHandler(this.ButtonDeleteAviacompany_Click);
             // 
@@ -160,7 +160,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonChangeAviacompany.Name = "ButtonChangeAviacompany";
             this.ButtonChangeAviacompany.Size = new System.Drawing.Size(285, 61);
             this.ButtonChangeAviacompany.TabIndex = 2;
-            this.ButtonChangeAviacompany.Text = "Change Aviacompany";
+            this.ButtonChangeAviacompany.Text = "Изменить";
             this.ButtonChangeAviacompany.UseVisualStyleBackColor = true;
             this.ButtonChangeAviacompany.Click += new System.EventHandler(this.ButtonChangeAviacompany_Click);
             // 
@@ -170,7 +170,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonAddAviacompany.Name = "ButtonAddAviacompany";
             this.ButtonAddAviacompany.Size = new System.Drawing.Size(285, 61);
             this.ButtonAddAviacompany.TabIndex = 1;
-            this.ButtonAddAviacompany.Text = "Add Aviacompany";
+            this.ButtonAddAviacompany.Text = "Добавить";
             this.ButtonAddAviacompany.UseVisualStyleBackColor = true;
             this.ButtonAddAviacompany.Click += new System.EventHandler(this.ButtonAddAviacompany_Click);
             // 
@@ -193,7 +193,7 @@ namespace DiplomaNegoda.Forms
             this.TabCitiesSet.Padding = new System.Windows.Forms.Padding(3);
             this.TabCitiesSet.Size = new System.Drawing.Size(1132, 415);
             this.TabCitiesSet.TabIndex = 1;
-            this.TabCitiesSet.Text = "Cities";
+            this.TabCitiesSet.Text = "Города";
             this.TabCitiesSet.UseVisualStyleBackColor = true;
             // 
             // ButtonDeleteCity
@@ -202,7 +202,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonDeleteCity.Name = "ButtonDeleteCity";
             this.ButtonDeleteCity.Size = new System.Drawing.Size(285, 61);
             this.ButtonDeleteCity.TabIndex = 7;
-            this.ButtonDeleteCity.Text = "Delete City";
+            this.ButtonDeleteCity.Text = "Удалить";
             this.ButtonDeleteCity.UseVisualStyleBackColor = true;
             this.ButtonDeleteCity.Click += new System.EventHandler(this.ButtonDeleteCity_Click);
             // 
@@ -212,7 +212,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonChangeCity.Name = "ButtonChangeCity";
             this.ButtonChangeCity.Size = new System.Drawing.Size(285, 61);
             this.ButtonChangeCity.TabIndex = 6;
-            this.ButtonChangeCity.Text = "Change City";
+            this.ButtonChangeCity.Text = "Изменить";
             this.ButtonChangeCity.UseVisualStyleBackColor = true;
             this.ButtonChangeCity.Click += new System.EventHandler(this.ButtonChangeCity_Click);
             // 
@@ -222,7 +222,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonAddCity.Name = "ButtonAddCity";
             this.ButtonAddCity.Size = new System.Drawing.Size(285, 61);
             this.ButtonAddCity.TabIndex = 5;
-            this.ButtonAddCity.Text = "Add City";
+            this.ButtonAddCity.Text = "Добавить";
             this.ButtonAddCity.UseVisualStyleBackColor = true;
             this.ButtonAddCity.Click += new System.EventHandler(this.ButtonAddCity_Click);
             // 
@@ -245,7 +245,7 @@ namespace DiplomaNegoda.Forms
             this.TabClassPlaceSet.Padding = new System.Windows.Forms.Padding(3);
             this.TabClassPlaceSet.Size = new System.Drawing.Size(1132, 415);
             this.TabClassPlaceSet.TabIndex = 2;
-            this.TabClassPlaceSet.Text = "ClassPlace";
+            this.TabClassPlaceSet.Text = "Классы места";
             this.TabClassPlaceSet.UseVisualStyleBackColor = true;
             // 
             // ButtonDeleteClassPlace
@@ -254,7 +254,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonDeleteClassPlace.Name = "ButtonDeleteClassPlace";
             this.ButtonDeleteClassPlace.Size = new System.Drawing.Size(285, 61);
             this.ButtonDeleteClassPlace.TabIndex = 11;
-            this.ButtonDeleteClassPlace.Text = "Delete Class Place";
+            this.ButtonDeleteClassPlace.Text = "Удалить";
             this.ButtonDeleteClassPlace.UseVisualStyleBackColor = true;
             this.ButtonDeleteClassPlace.Click += new System.EventHandler(this.ButtonDeleteClassPlace_Click);
             // 
@@ -264,7 +264,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonChangeClassPlace.Name = "ButtonChangeClassPlace";
             this.ButtonChangeClassPlace.Size = new System.Drawing.Size(285, 61);
             this.ButtonChangeClassPlace.TabIndex = 10;
-            this.ButtonChangeClassPlace.Text = "Change Class Place";
+            this.ButtonChangeClassPlace.Text = "Изменить";
             this.ButtonChangeClassPlace.UseVisualStyleBackColor = true;
             this.ButtonChangeClassPlace.Click += new System.EventHandler(this.ButtonChangeClassPlace_Click);
             // 
@@ -274,7 +274,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonAddClassPlace.Name = "ButtonAddClassPlace";
             this.ButtonAddClassPlace.Size = new System.Drawing.Size(285, 61);
             this.ButtonAddClassPlace.TabIndex = 9;
-            this.ButtonAddClassPlace.Text = "Add Class Place";
+            this.ButtonAddClassPlace.Text = "Добавить";
             this.ButtonAddClassPlace.UseVisualStyleBackColor = true;
             this.ButtonAddClassPlace.Click += new System.EventHandler(this.ButtonAddClassPlace_Click);
             // 
@@ -297,7 +297,7 @@ namespace DiplomaNegoda.Forms
             this.TabPlanesSet.Padding = new System.Windows.Forms.Padding(3);
             this.TabPlanesSet.Size = new System.Drawing.Size(1132, 415);
             this.TabPlanesSet.TabIndex = 3;
-            this.TabPlanesSet.Text = "Planes";
+            this.TabPlanesSet.Text = "Самолёты";
             this.TabPlanesSet.UseVisualStyleBackColor = true;
             // 
             // ButtonDeletePlane
@@ -306,7 +306,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonDeletePlane.Name = "ButtonDeletePlane";
             this.ButtonDeletePlane.Size = new System.Drawing.Size(285, 61);
             this.ButtonDeletePlane.TabIndex = 15;
-            this.ButtonDeletePlane.Text = "Delete Plane";
+            this.ButtonDeletePlane.Text = "Удалить";
             this.ButtonDeletePlane.UseVisualStyleBackColor = true;
             this.ButtonDeletePlane.Click += new System.EventHandler(this.ButtonDeletePlane_Click);
             // 
@@ -316,7 +316,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonChangePlane.Name = "ButtonChangePlane";
             this.ButtonChangePlane.Size = new System.Drawing.Size(285, 61);
             this.ButtonChangePlane.TabIndex = 14;
-            this.ButtonChangePlane.Text = "Change Plane";
+            this.ButtonChangePlane.Text = "Изменить";
             this.ButtonChangePlane.UseVisualStyleBackColor = true;
             this.ButtonChangePlane.Click += new System.EventHandler(this.ButtonChangePlane_Click);
             // 
@@ -326,7 +326,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonAddPlane.Name = "ButtonAddPlane";
             this.ButtonAddPlane.Size = new System.Drawing.Size(285, 61);
             this.ButtonAddPlane.TabIndex = 13;
-            this.ButtonAddPlane.Text = "Add Plane";
+            this.ButtonAddPlane.Text = "Добавить";
             this.ButtonAddPlane.UseVisualStyleBackColor = true;
             this.ButtonAddPlane.Click += new System.EventHandler(this.ButtonAddPlane_Click);
             // 
@@ -349,7 +349,7 @@ namespace DiplomaNegoda.Forms
             this.TabPositionsSet.Padding = new System.Windows.Forms.Padding(3);
             this.TabPositionsSet.Size = new System.Drawing.Size(1132, 415);
             this.TabPositionsSet.TabIndex = 4;
-            this.TabPositionsSet.Text = "Positions";
+            this.TabPositionsSet.Text = "Должности";
             this.TabPositionsSet.UseVisualStyleBackColor = true;
             // 
             // ButtonDeletePosition
@@ -358,7 +358,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonDeletePosition.Name = "ButtonDeletePosition";
             this.ButtonDeletePosition.Size = new System.Drawing.Size(285, 61);
             this.ButtonDeletePosition.TabIndex = 19;
-            this.ButtonDeletePosition.Text = "Delete Position";
+            this.ButtonDeletePosition.Text = "Удалить";
             this.ButtonDeletePosition.UseVisualStyleBackColor = true;
             this.ButtonDeletePosition.Click += new System.EventHandler(this.ButtonDeletePosition_Click);
             // 
@@ -368,7 +368,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonChangePosition.Name = "ButtonChangePosition";
             this.ButtonChangePosition.Size = new System.Drawing.Size(285, 61);
             this.ButtonChangePosition.TabIndex = 18;
-            this.ButtonChangePosition.Text = "Change Position";
+            this.ButtonChangePosition.Text = "Изменить";
             this.ButtonChangePosition.UseVisualStyleBackColor = true;
             this.ButtonChangePosition.Click += new System.EventHandler(this.ButtonChangePosition_Click);
             // 
@@ -378,7 +378,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonAddPosition.Name = "ButtonAddPosition";
             this.ButtonAddPosition.Size = new System.Drawing.Size(285, 61);
             this.ButtonAddPosition.TabIndex = 17;
-            this.ButtonAddPosition.Text = "Add Position";
+            this.ButtonAddPosition.Text = "Добавить";
             this.ButtonAddPosition.UseVisualStyleBackColor = true;
             this.ButtonAddPosition.Click += new System.EventHandler(this.ButtonAddPosition_Click);
             // 
@@ -401,7 +401,7 @@ namespace DiplomaNegoda.Forms
             this.TabPlaceStatusSet.Padding = new System.Windows.Forms.Padding(3);
             this.TabPlaceStatusSet.Size = new System.Drawing.Size(1132, 415);
             this.TabPlaceStatusSet.TabIndex = 5;
-            this.TabPlaceStatusSet.Text = "PlaceStatus";
+            this.TabPlaceStatusSet.Text = "Статус места";
             this.TabPlaceStatusSet.UseVisualStyleBackColor = true;
             // 
             // ButtonDeletePlaceStatus
@@ -410,7 +410,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonDeletePlaceStatus.Name = "ButtonDeletePlaceStatus";
             this.ButtonDeletePlaceStatus.Size = new System.Drawing.Size(285, 61);
             this.ButtonDeletePlaceStatus.TabIndex = 23;
-            this.ButtonDeletePlaceStatus.Text = "Delete Ticket Status";
+            this.ButtonDeletePlaceStatus.Text = "Удалить";
             this.ButtonDeletePlaceStatus.UseVisualStyleBackColor = true;
             this.ButtonDeletePlaceStatus.Click += new System.EventHandler(this.ButtonDeleteTicketStatus_Click);
             // 
@@ -420,7 +420,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonChangePlaceStatus.Name = "ButtonChangePlaceStatus";
             this.ButtonChangePlaceStatus.Size = new System.Drawing.Size(285, 61);
             this.ButtonChangePlaceStatus.TabIndex = 22;
-            this.ButtonChangePlaceStatus.Text = "Change Ticket Status";
+            this.ButtonChangePlaceStatus.Text = "Изменить";
             this.ButtonChangePlaceStatus.UseVisualStyleBackColor = true;
             this.ButtonChangePlaceStatus.Click += new System.EventHandler(this.ButtonChangeTicketStatus_Click);
             // 
@@ -430,7 +430,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonAddPlaceStatus.Name = "ButtonAddPlaceStatus";
             this.ButtonAddPlaceStatus.Size = new System.Drawing.Size(285, 61);
             this.ButtonAddPlaceStatus.TabIndex = 21;
-            this.ButtonAddPlaceStatus.Text = "Add Ticket Status";
+            this.ButtonAddPlaceStatus.Text = "Добавить";
             this.ButtonAddPlaceStatus.UseVisualStyleBackColor = true;
             this.ButtonAddPlaceStatus.Click += new System.EventHandler(this.ButtonAddTicketStatus_Click);
             // 
@@ -453,7 +453,7 @@ namespace DiplomaNegoda.Forms
             this.TabAccountsSet.Padding = new System.Windows.Forms.Padding(3);
             this.TabAccountsSet.Size = new System.Drawing.Size(1132, 415);
             this.TabAccountsSet.TabIndex = 6;
-            this.TabAccountsSet.Text = "Accounts";
+            this.TabAccountsSet.Text = "Аккаунты";
             this.TabAccountsSet.UseVisualStyleBackColor = true;
             // 
             // ButtonDeleteAccount
@@ -462,7 +462,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonDeleteAccount.Name = "ButtonDeleteAccount";
             this.ButtonDeleteAccount.Size = new System.Drawing.Size(285, 61);
             this.ButtonDeleteAccount.TabIndex = 27;
-            this.ButtonDeleteAccount.Text = "Delete Account";
+            this.ButtonDeleteAccount.Text = "Удалить";
             this.ButtonDeleteAccount.UseVisualStyleBackColor = true;
             this.ButtonDeleteAccount.Click += new System.EventHandler(this.ButtonDeleteAccount_Click);
             // 
@@ -472,7 +472,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonChangeAccount.Name = "ButtonChangeAccount";
             this.ButtonChangeAccount.Size = new System.Drawing.Size(285, 61);
             this.ButtonChangeAccount.TabIndex = 26;
-            this.ButtonChangeAccount.Text = "Change Account";
+            this.ButtonChangeAccount.Text = "Изменить";
             this.ButtonChangeAccount.UseVisualStyleBackColor = true;
             this.ButtonChangeAccount.Click += new System.EventHandler(this.ButtonChangeAccount_Click);
             // 
@@ -482,7 +482,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonAddAccount.Name = "ButtonAddAccount";
             this.ButtonAddAccount.Size = new System.Drawing.Size(285, 61);
             this.ButtonAddAccount.TabIndex = 25;
-            this.ButtonAddAccount.Text = "Add Account";
+            this.ButtonAddAccount.Text = "Добавить";
             this.ButtonAddAccount.UseVisualStyleBackColor = true;
             this.ButtonAddAccount.Click += new System.EventHandler(this.ButtonAddAccount_Click);
             // 
@@ -503,7 +503,7 @@ namespace DiplomaNegoda.Forms
             this.TabFlightsArchiveSet.Padding = new System.Windows.Forms.Padding(3);
             this.TabFlightsArchiveSet.Size = new System.Drawing.Size(1132, 415);
             this.TabFlightsArchiveSet.TabIndex = 7;
-            this.TabFlightsArchiveSet.Text = "FlightsArchive";
+            this.TabFlightsArchiveSet.Text = "Архив рейсов";
             this.TabFlightsArchiveSet.UseVisualStyleBackColor = true;
             // 
             // ButtonDeleteFlightArchive
@@ -512,7 +512,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonDeleteFlightArchive.Name = "ButtonDeleteFlightArchive";
             this.ButtonDeleteFlightArchive.Size = new System.Drawing.Size(1120, 61);
             this.ButtonDeleteFlightArchive.TabIndex = 31;
-            this.ButtonDeleteFlightArchive.Text = "Delete FlightArchive row";
+            this.ButtonDeleteFlightArchive.Text = "Удалить";
             this.ButtonDeleteFlightArchive.UseVisualStyleBackColor = true;
             this.ButtonDeleteFlightArchive.Click += new System.EventHandler(this.ButtonDeleteFlightArchive_Click);
             // 
@@ -535,7 +535,7 @@ namespace DiplomaNegoda.Forms
             this.TabFlightsCurrentSet.Padding = new System.Windows.Forms.Padding(3);
             this.TabFlightsCurrentSet.Size = new System.Drawing.Size(1132, 415);
             this.TabFlightsCurrentSet.TabIndex = 8;
-            this.TabFlightsCurrentSet.Text = "FlightsCurrent";
+            this.TabFlightsCurrentSet.Text = "Рейсы";
             this.TabFlightsCurrentSet.UseVisualStyleBackColor = true;
             // 
             // ButtonDeleteFlightAccount
@@ -544,7 +544,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonDeleteFlightAccount.Name = "ButtonDeleteFlightAccount";
             this.ButtonDeleteFlightAccount.Size = new System.Drawing.Size(285, 61);
             this.ButtonDeleteFlightAccount.TabIndex = 31;
-            this.ButtonDeleteFlightAccount.Text = "Delete FlightCurrent";
+            this.ButtonDeleteFlightAccount.Text = "Удалить";
             this.ButtonDeleteFlightAccount.UseVisualStyleBackColor = true;
             this.ButtonDeleteFlightAccount.Click += new System.EventHandler(this.ButtonDeleteFlightAccount_Click);
             // 
@@ -554,7 +554,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonChangeFlightCurrent.Name = "ButtonChangeFlightCurrent";
             this.ButtonChangeFlightCurrent.Size = new System.Drawing.Size(285, 61);
             this.ButtonChangeFlightCurrent.TabIndex = 30;
-            this.ButtonChangeFlightCurrent.Text = "Change FlightCurrent";
+            this.ButtonChangeFlightCurrent.Text = "Изменить";
             this.ButtonChangeFlightCurrent.UseVisualStyleBackColor = true;
             this.ButtonChangeFlightCurrent.Click += new System.EventHandler(this.ButtonChangeFlightCurrent_Click);
             // 
@@ -564,7 +564,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonAddFlightCurrent.Name = "ButtonAddFlightCurrent";
             this.ButtonAddFlightCurrent.Size = new System.Drawing.Size(285, 61);
             this.ButtonAddFlightCurrent.TabIndex = 29;
-            this.ButtonAddFlightCurrent.Text = "Add FlightCurrent";
+            this.ButtonAddFlightCurrent.Text = "Добавить";
             this.ButtonAddFlightCurrent.UseVisualStyleBackColor = true;
             this.ButtonAddFlightCurrent.Click += new System.EventHandler(this.ButtonAddFlightCurrent_Click);
             // 
@@ -587,7 +587,7 @@ namespace DiplomaNegoda.Forms
             this.TabTicketsSet.Padding = new System.Windows.Forms.Padding(3);
             this.TabTicketsSet.Size = new System.Drawing.Size(1132, 415);
             this.TabTicketsSet.TabIndex = 9;
-            this.TabTicketsSet.Text = "Tickets";
+            this.TabTicketsSet.Text = "Билеты";
             this.TabTicketsSet.UseVisualStyleBackColor = true;
             // 
             // ButtonDeleteTicket
@@ -596,7 +596,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonDeleteTicket.Name = "ButtonDeleteTicket";
             this.ButtonDeleteTicket.Size = new System.Drawing.Size(285, 61);
             this.ButtonDeleteTicket.TabIndex = 35;
-            this.ButtonDeleteTicket.Text = "Delete Ticket";
+            this.ButtonDeleteTicket.Text = "Удалить";
             this.ButtonDeleteTicket.UseVisualStyleBackColor = true;
             this.ButtonDeleteTicket.Click += new System.EventHandler(this.ButtonDeleteTicket_Click);
             // 
@@ -606,7 +606,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonChangeTicket.Name = "ButtonChangeTicket";
             this.ButtonChangeTicket.Size = new System.Drawing.Size(285, 61);
             this.ButtonChangeTicket.TabIndex = 34;
-            this.ButtonChangeTicket.Text = "Change Ticket";
+            this.ButtonChangeTicket.Text = "Изменить";
             this.ButtonChangeTicket.UseVisualStyleBackColor = true;
             this.ButtonChangeTicket.Click += new System.EventHandler(this.ButtonChangeTicket_Click);
             // 
@@ -616,7 +616,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonAddTicket.Name = "ButtonAddTicket";
             this.ButtonAddTicket.Size = new System.Drawing.Size(285, 61);
             this.ButtonAddTicket.TabIndex = 33;
-            this.ButtonAddTicket.Text = "Add Ticket";
+            this.ButtonAddTicket.Text = "Добавить";
             this.ButtonAddTicket.UseVisualStyleBackColor = true;
             this.ButtonAddTicket.Click += new System.EventHandler(this.ButtonAddTicket_Click);
             // 
@@ -639,7 +639,7 @@ namespace DiplomaNegoda.Forms
             this.TabWorkersSet.Padding = new System.Windows.Forms.Padding(3);
             this.TabWorkersSet.Size = new System.Drawing.Size(1132, 415);
             this.TabWorkersSet.TabIndex = 10;
-            this.TabWorkersSet.Text = "Workers";
+            this.TabWorkersSet.Text = "Рабочие";
             this.TabWorkersSet.UseVisualStyleBackColor = true;
             // 
             // ButtonDeleteWorker
@@ -648,7 +648,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonDeleteWorker.Name = "ButtonDeleteWorker";
             this.ButtonDeleteWorker.Size = new System.Drawing.Size(285, 61);
             this.ButtonDeleteWorker.TabIndex = 39;
-            this.ButtonDeleteWorker.Text = "Delete Worker";
+            this.ButtonDeleteWorker.Text = "Удалить";
             this.ButtonDeleteWorker.UseVisualStyleBackColor = true;
             this.ButtonDeleteWorker.Click += new System.EventHandler(this.ButtonDeleteWorker_Click);
             // 
@@ -658,7 +658,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonChangeWorker.Name = "ButtonChangeWorker";
             this.ButtonChangeWorker.Size = new System.Drawing.Size(285, 61);
             this.ButtonChangeWorker.TabIndex = 38;
-            this.ButtonChangeWorker.Text = "Change Worker";
+            this.ButtonChangeWorker.Text = "Изменить";
             this.ButtonChangeWorker.UseVisualStyleBackColor = true;
             this.ButtonChangeWorker.Click += new System.EventHandler(this.ButtonChangeWorker_Click);
             // 
@@ -668,7 +668,7 @@ namespace DiplomaNegoda.Forms
             this.ButtonAddWorker.Name = "ButtonAddWorker";
             this.ButtonAddWorker.Size = new System.Drawing.Size(285, 61);
             this.ButtonAddWorker.TabIndex = 37;
-            this.ButtonAddWorker.Text = "Add Worker";
+            this.ButtonAddWorker.Text = "Добавить";
             this.ButtonAddWorker.UseVisualStyleBackColor = true;
             this.ButtonAddWorker.Click += new System.EventHandler(this.ButtonAddWorker_Click);
             // 
@@ -688,7 +688,7 @@ namespace DiplomaNegoda.Forms
             this.Controls.Add(this.tabControl1);
             this.Name = "FormAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormAdmin";
+            this.Text = "Администратор";
             this.Shown += new System.EventHandler(this.FormAdmin_Shown);
             this.tabControl1.ResumeLayout(false);
             this.TabAviacompaniesSet.ResumeLayout(false);

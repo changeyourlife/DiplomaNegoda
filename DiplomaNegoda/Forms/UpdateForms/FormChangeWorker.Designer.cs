@@ -44,9 +44,9 @@
             // 
             // DateTimePickerBornDate
             // 
-            this.DateTimePickerBornDate.Location = new System.Drawing.Point(89, 32);
+            this.DateTimePickerBornDate.Location = new System.Drawing.Point(157, 32);
             this.DateTimePickerBornDate.Name = "DateTimePickerBornDate";
-            this.DateTimePickerBornDate.Size = new System.Drawing.Size(406, 20);
+            this.DateTimePickerBornDate.Size = new System.Drawing.Size(338, 20);
             this.DateTimePickerBornDate.TabIndex = 24;
             // 
             // ButtonClose
@@ -55,93 +55,93 @@
             this.ButtonClose.Name = "ButtonClose";
             this.ButtonClose.Size = new System.Drawing.Size(75, 23);
             this.ButtonClose.TabIndex = 23;
-            this.ButtonClose.Text = "Close";
+            this.ButtonClose.Text = "Закрыть";
             this.ButtonClose.UseVisualStyleBackColor = true;
             // 
             // ButtonChangeWorker
             // 
-            this.ButtonChangeWorker.Location = new System.Drawing.Point(16, 137);
+            this.ButtonChangeWorker.Location = new System.Drawing.Point(14, 137);
             this.ButtonChangeWorker.Name = "ButtonChangeWorker";
             this.ButtonChangeWorker.Size = new System.Drawing.Size(75, 23);
             this.ButtonChangeWorker.TabIndex = 22;
-            this.ButtonChangeWorker.Text = "Change";
+            this.ButtonChangeWorker.Text = "Изменить";
             this.ButtonChangeWorker.UseVisualStyleBackColor = true;
             this.ButtonChangeWorker.Click += new System.EventHandler(this.ButtonChangeWorker_Click);
             // 
             // TextBoxContactData
             // 
-            this.TextBoxContactData.Location = new System.Drawing.Point(89, 111);
+            this.TextBoxContactData.Location = new System.Drawing.Point(157, 111);
             this.TextBoxContactData.Name = "TextBoxContactData";
-            this.TextBoxContactData.Size = new System.Drawing.Size(406, 20);
+            this.TextBoxContactData.Size = new System.Drawing.Size(338, 20);
             this.TextBoxContactData.TabIndex = 21;
             // 
             // DateTimePickerArriveDate
             // 
-            this.DateTimePickerArriveDate.Location = new System.Drawing.Point(89, 85);
+            this.DateTimePickerArriveDate.Location = new System.Drawing.Point(157, 85);
             this.DateTimePickerArriveDate.Name = "DateTimePickerArriveDate";
-            this.DateTimePickerArriveDate.Size = new System.Drawing.Size(406, 20);
+            this.DateTimePickerArriveDate.Size = new System.Drawing.Size(338, 20);
             this.DateTimePickerArriveDate.TabIndex = 20;
             // 
             // ComboBoxPositionID
             // 
             this.ComboBoxPositionID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxPositionID.FormattingEnabled = true;
-            this.ComboBoxPositionID.Location = new System.Drawing.Point(89, 58);
+            this.ComboBoxPositionID.Location = new System.Drawing.Point(157, 58);
             this.ComboBoxPositionID.Name = "ComboBoxPositionID";
-            this.ComboBoxPositionID.Size = new System.Drawing.Size(406, 21);
+            this.ComboBoxPositionID.Size = new System.Drawing.Size(338, 21);
             this.ComboBoxPositionID.TabIndex = 19;
             // 
             // TextBoxFIO
             // 
-            this.TextBoxFIO.Location = new System.Drawing.Point(89, 6);
+            this.TextBoxFIO.Location = new System.Drawing.Point(157, 6);
             this.TextBoxFIO.Name = "TextBoxFIO";
-            this.TextBoxFIO.Size = new System.Drawing.Size(406, 20);
+            this.TextBoxFIO.Size = new System.Drawing.Size(338, 20);
             this.TextBoxFIO.TabIndex = 18;
             // 
             // LabelContactData
             // 
             this.LabelContactData.AutoSize = true;
-            this.LabelContactData.Location = new System.Drawing.Point(13, 114);
+            this.LabelContactData.Location = new System.Drawing.Point(39, 114);
             this.LabelContactData.Name = "LabelContactData";
-            this.LabelContactData.Size = new System.Drawing.Size(70, 13);
+            this.LabelContactData.Size = new System.Drawing.Size(112, 13);
             this.LabelContactData.TabIndex = 17;
-            this.LabelContactData.Text = "ContactData:";
+            this.LabelContactData.Text = "Контактные данные:";
             // 
             // LabelArriveDate
             // 
             this.LabelArriveDate.AutoSize = true;
-            this.LabelArriveDate.Location = new System.Drawing.Point(23, 88);
+            this.LabelArriveDate.Location = new System.Drawing.Point(11, 88);
             this.LabelArriveDate.Name = "LabelArriveDate";
-            this.LabelArriveDate.Size = new System.Drawing.Size(60, 13);
+            this.LabelArriveDate.Size = new System.Drawing.Size(140, 13);
             this.LabelArriveDate.TabIndex = 16;
-            this.LabelArriveDate.Text = "ArriveDate:";
+            this.LabelArriveDate.Text = "Дата прибытия на работу:";
             // 
             // LabelPositionID
             // 
             this.LabelPositionID.AutoSize = true;
-            this.LabelPositionID.Location = new System.Drawing.Point(25, 61);
+            this.LabelPositionID.Location = new System.Drawing.Point(83, 61);
             this.LabelPositionID.Name = "LabelPositionID";
-            this.LabelPositionID.Size = new System.Drawing.Size(58, 13);
+            this.LabelPositionID.Size = new System.Drawing.Size(68, 13);
             this.LabelPositionID.TabIndex = 15;
-            this.LabelPositionID.Text = "PositionID:";
+            this.LabelPositionID.Text = "Должность:";
             // 
             // LabelBornDate
             // 
             this.LabelBornDate.AutoSize = true;
-            this.LabelBornDate.Location = new System.Drawing.Point(28, 35);
+            this.LabelBornDate.Location = new System.Drawing.Point(62, 35);
             this.LabelBornDate.Name = "LabelBornDate";
-            this.LabelBornDate.Size = new System.Drawing.Size(55, 13);
+            this.LabelBornDate.Size = new System.Drawing.Size(89, 13);
             this.LabelBornDate.TabIndex = 14;
-            this.LabelBornDate.Text = "BornDate:";
+            this.LabelBornDate.Text = "Дата рождения:";
             // 
             // LabelFIO
             // 
             this.LabelFIO.AutoSize = true;
-            this.LabelFIO.Location = new System.Drawing.Point(56, 9);
+            this.LabelFIO.Location = new System.Drawing.Point(114, 9);
             this.LabelFIO.Name = "LabelFIO";
-            this.LabelFIO.Size = new System.Drawing.Size(27, 13);
+            this.LabelFIO.Size = new System.Drawing.Size(37, 13);
             this.LabelFIO.TabIndex = 13;
-            this.LabelFIO.Text = "FIO:";
+            this.LabelFIO.Text = "ФИО:";
             // 
             // FormChangeWorker
             // 
@@ -161,7 +161,7 @@
             this.Controls.Add(this.LabelBornDate);
             this.Controls.Add(this.LabelFIO);
             this.Name = "FormChangeWorker";
-            this.Text = "FormChangeWorker";
+            this.Text = "Изменить работника";
             this.Shown += new System.EventHandler(this.FormChangeWorker_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();

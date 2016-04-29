@@ -19,6 +19,31 @@ namespace DiplomaNegoda.Forms.UpdateForms
         Classes.DBLookUpComboBox ObjectDBLUCBCitiesFromSet = new Classes.DBLookUpComboBox();
         public string iDRow, aviacompanyID, planeID, toID, fromID, goDateTime, arriveDateTime, costOfEcoClass, costOfBusinessClass;
 
+        private void DateTimePickerGoDateTime_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ComboBoxfromID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ComboBoxtoID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ComboBoxPlaneID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ComboBoxAviacompanyID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void ButtonChangeFlightCurrent_Click(object sender, EventArgs e)
         {
             //update row in DB

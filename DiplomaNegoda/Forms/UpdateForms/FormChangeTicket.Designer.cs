@@ -50,7 +50,7 @@
             this.ButtonClose.Name = "ButtonClose";
             this.ButtonClose.Size = new System.Drawing.Size(75, 23);
             this.ButtonClose.TabIndex = 27;
-            this.ButtonClose.Text = "Close";
+            this.ButtonClose.Text = "Закрыть";
             this.ButtonClose.UseVisualStyleBackColor = true;
             // 
             // ButtonChangeTicket
@@ -59,7 +59,7 @@
             this.ButtonChangeTicket.Name = "ButtonChangeTicket";
             this.ButtonChangeTicket.Size = new System.Drawing.Size(75, 23);
             this.ButtonChangeTicket.TabIndex = 26;
-            this.ButtonChangeTicket.Text = "Change";
+            this.ButtonChangeTicket.Text = "Изменить";
             this.ButtonChangeTicket.UseVisualStyleBackColor = true;
             this.ButtonChangeTicket.Click += new System.EventHandler(this.ButtonChangeTicket_Click);
             // 
@@ -112,54 +112,54 @@
             this.LabelPesonalDataSpecial.AutoSize = true;
             this.LabelPesonalDataSpecial.Location = new System.Drawing.Point(9, 204);
             this.LabelPesonalDataSpecial.Name = "LabelPesonalDataSpecial";
-            this.LabelPesonalDataSpecial.Size = new System.Drawing.Size(132, 13);
+            this.LabelPesonalDataSpecial.Size = new System.Drawing.Size(127, 13);
             this.LabelPesonalDataSpecial.TabIndex = 19;
-            this.LabelPesonalDataSpecial.Text = "LabelPesonalDataSpecial:";
+            this.LabelPesonalDataSpecial.Text = "Персональные данные:";
             // 
             // LabelFIO
             // 
             this.LabelFIO.AutoSize = true;
-            this.LabelFIO.Location = new System.Drawing.Point(88, 165);
+            this.LabelFIO.Location = new System.Drawing.Point(99, 165);
             this.LabelFIO.Name = "LabelFIO";
-            this.LabelFIO.Size = new System.Drawing.Size(53, 13);
+            this.LabelFIO.Size = new System.Drawing.Size(37, 13);
             this.LabelFIO.TabIndex = 18;
-            this.LabelFIO.Text = "LabelFIO:";
+            this.LabelFIO.Text = "ФИО:";
             // 
             // LabelCost
             // 
             this.LabelCost.AutoSize = true;
-            this.LabelCost.Location = new System.Drawing.Point(84, 126);
+            this.LabelCost.Location = new System.Drawing.Point(71, 126);
             this.LabelCost.Name = "LabelCost";
-            this.LabelCost.Size = new System.Drawing.Size(57, 13);
+            this.LabelCost.Size = new System.Drawing.Size(65, 13);
             this.LabelCost.TabIndex = 17;
-            this.LabelCost.Text = "LabelCost:";
+            this.LabelCost.Text = "Стоимость:";
             // 
             // LabelClassOfPlaceID
             // 
             this.LabelClassOfPlaceID.AutoSize = true;
-            this.LabelClassOfPlaceID.Location = new System.Drawing.Point(31, 87);
+            this.LabelClassOfPlaceID.Location = new System.Drawing.Point(61, 87);
             this.LabelClassOfPlaceID.Name = "LabelClassOfPlaceID";
-            this.LabelClassOfPlaceID.Size = new System.Drawing.Size(110, 13);
+            this.LabelClassOfPlaceID.Size = new System.Drawing.Size(75, 13);
             this.LabelClassOfPlaceID.TabIndex = 16;
-            this.LabelClassOfPlaceID.Text = "LabelClassOfPlaceID:";
+            this.LabelClassOfPlaceID.Text = "Класс места:";
             // 
             // LabelFlightID
             // 
             this.LabelFlightID.AutoSize = true;
-            this.LabelFlightID.Location = new System.Drawing.Point(69, 48);
+            this.LabelFlightID.Location = new System.Drawing.Point(59, 48);
             this.LabelFlightID.Name = "LabelFlightID";
-            this.LabelFlightID.Size = new System.Drawing.Size(72, 13);
+            this.LabelFlightID.Size = new System.Drawing.Size(77, 13);
             this.LabelFlightID.TabIndex = 15;
-            this.LabelFlightID.Text = "LabelFlightID:";
+            this.LabelFlightID.Text = "Номер рейса:";
             // 
             // LabelNumOfPlace
             // 
             this.LabelNumOfPlace.AutoSize = true;
-            this.LabelNumOfPlace.Location = new System.Drawing.Point(45, 9);
+            this.LabelNumOfPlace.Location = new System.Drawing.Point(58, 9);
             this.LabelNumOfPlace.Name = "LabelNumOfPlace";
-            this.LabelNumOfPlace.Size = new System.Drawing.Size(96, 13);
+            this.LabelNumOfPlace.Size = new System.Drawing.Size(78, 13);
             this.LabelNumOfPlace.TabIndex = 14;
-            this.LabelNumOfPlace.Text = "LabelNumOfPlace:";
+            this.LabelNumOfPlace.Text = "Номер места:";
             // 
             // FormChangeTicket
             // 

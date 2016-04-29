@@ -40,7 +40,7 @@
             this.ButtonClose.Name = "ButtonClose";
             this.ButtonClose.Size = new System.Drawing.Size(75, 23);
             this.ButtonClose.TabIndex = 23;
-            this.ButtonClose.Text = "Close";
+            this.ButtonClose.Text = "Закрыть";
             this.ButtonClose.UseVisualStyleBackColor = true;
             // 
             // ButtonChangeCity
@@ -49,15 +49,15 @@
             this.ButtonChangeCity.Name = "ButtonChangeCity";
             this.ButtonChangeCity.Size = new System.Drawing.Size(75, 23);
             this.ButtonChangeCity.TabIndex = 22;
-            this.ButtonChangeCity.Text = "Change";
+            this.ButtonChangeCity.Text = "Изменить";
             this.ButtonChangeCity.UseVisualStyleBackColor = true;
             this.ButtonChangeCity.Click += new System.EventHandler(this.ButtonChangeCity_Click);
             // 
             // TextBoxName
             // 
-            this.TextBoxName.Location = new System.Drawing.Point(57, 6);
+            this.TextBoxName.Location = new System.Drawing.Point(78, 6);
             this.TextBoxName.Name = "TextBoxName";
-            this.TextBoxName.Size = new System.Drawing.Size(371, 20);
+            this.TextBoxName.Size = new System.Drawing.Size(350, 20);
             this.TextBoxName.TabIndex = 21;
             // 
             // LabelName
@@ -65,9 +65,9 @@
             this.LabelName.AutoSize = true;
             this.LabelName.Location = new System.Drawing.Point(12, 9);
             this.LabelName.Name = "LabelName";
-            this.LabelName.Size = new System.Drawing.Size(38, 13);
+            this.LabelName.Size = new System.Drawing.Size(60, 13);
             this.LabelName.TabIndex = 20;
-            this.LabelName.Text = "Name:";
+            this.LabelName.Text = "Название:";
             // 
             // FormChangeCity
             // 
@@ -79,7 +79,7 @@
             this.Controls.Add(this.TextBoxName);
             this.Controls.Add(this.LabelName);
             this.Name = "FormChangeCity";
-            this.Text = "ChangeCity";
+            this.Text = "Изменить город";
             this.ResumeLayout(false);
             this.PerformLayout();
 

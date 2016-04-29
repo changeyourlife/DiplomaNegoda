@@ -15,8 +15,8 @@ namespace DiplomaNegoda.Forms.Cassier
 {
     public partial class FormSellTicket : Form
     {
-        private Excel.Sheets excelsheets;
-        private Excel.Worksheet excelworksheet;
+        //private Excel.Sheets excelsheets;
+        //private Excel.Worksheet excelworksheet;
         public Excel.Range Cells { get; private set; }
         FlightsCurrentSet ObjectFlightsCurrentSet = new FlightsCurrentSet();
         TicketsSet ObjectTicketsSet = new TicketsSet();
