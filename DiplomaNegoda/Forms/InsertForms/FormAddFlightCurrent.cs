@@ -25,8 +25,6 @@ namespace DiplomaNegoda.Forms.InsertForms
 
         private void ButtonAddFlightCurrent_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show(TextBoxFIO.Text+" "+ DateTimePickerBornDate.Value.ToString()+ " " + DateTimePickerArriveDate.Value.ToString() + " " + TextBoxContactData.Text);
-
             //insert in DB
             FlightsCurrentSet ObjectFlightsCurrentSet = new FlightsCurrentSet();
             ObjectFlightsCurrentSet.InsertIntoTable(ObjectDBLUCBAviacompaniesSet.iD[ComboBoxAviacompanyID.SelectedIndex], ObjectDBLUCBPlanesSet.iD[ComboBoxPlaneID.SelectedIndex], ObjectDBLUCBCitiesToSet.iD[ComboBoxtoID.SelectedIndex], ObjectDBLUCBCitiesFromSet.iD[ComboBoxfromID.SelectedIndex], DateTimePickerGoDateTime.Value.ToString(), DateTimePickerArriveDateTime.Value.ToString(), TextBoxCostOfEcoClass.Text, TextBoxCostOfBusinessClass.Text);

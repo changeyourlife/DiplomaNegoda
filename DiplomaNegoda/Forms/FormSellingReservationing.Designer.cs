@@ -37,7 +37,6 @@ namespace DiplomaNegoda.Forms
             this.ButtonSell = new System.Windows.Forms.Button();
             this.DGVlistOfPlacesSellNow = new System.Windows.Forms.DataGridView();
             this.LabelListOfPlaces = new System.Windows.Forms.Label();
-            this.LabelCost = new System.Windows.Forms.Label();
             this.TabPageSellReservation = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
             this.DGVlistOfPlacesSellLater = new System.Windows.Forms.DataGridView();
@@ -45,6 +44,7 @@ namespace DiplomaNegoda.Forms
             this.TabPageSoldPlaces = new System.Windows.Forms.TabPage();
             this.DGVlistOfPlacesSold = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.LabelCost = new System.Windows.Forms.Label();
             this.LabelPrice = new System.Windows.Forms.Label();
             this.ComboBoxClassOfPlace = new System.Windows.Forms.ComboBox();
             this.LabelClassOfPlace = new System.Windows.Forms.Label();
@@ -139,15 +139,6 @@ namespace DiplomaNegoda.Forms
             this.LabelListOfPlaces.TabIndex = 19;
             this.LabelListOfPlaces.Text = "Список мест:";
             // 
-            // LabelCost
-            // 
-            this.LabelCost.AutoSize = true;
-            this.LabelCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabelCost.Location = new System.Drawing.Point(388, 131);
-            this.LabelCost.Name = "LabelCost";
-            this.LabelCost.Size = new System.Drawing.Size(0, 13);
-            this.LabelCost.TabIndex = 18;
-            // 
             // TabPageSellReservation
             // 
             this.TabPageSellReservation.Controls.Add(this.button1);
@@ -167,7 +158,7 @@ namespace DiplomaNegoda.Forms
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(108, 249);
             this.button1.TabIndex = 24;
-            this.button1.Text = "Sell";
+            this.button1.Text = "Продать";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -217,6 +208,15 @@ namespace DiplomaNegoda.Forms
             this.label2.Size = new System.Drawing.Size(75, 13);
             this.label2.TabIndex = 21;
             this.label2.Text = "Список мест:";
+            // 
+            // LabelCost
+            // 
+            this.LabelCost.AutoSize = true;
+            this.LabelCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabelCost.Location = new System.Drawing.Point(388, 131);
+            this.LabelCost.Name = "LabelCost";
+            this.LabelCost.Size = new System.Drawing.Size(0, 13);
+            this.LabelCost.TabIndex = 18;
             // 
             // LabelPrice
             // 

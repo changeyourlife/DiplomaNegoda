@@ -43,12 +43,32 @@ namespace DiplomaNegoda.Forms
             DGVflightsCurrentSet.AutoGenerateColumns = true;
             ObjectFlightsCurrentSet.SetCommandTextSelectAllForViewFlights(DateTimePickerDataOut.Value.ToShortDateString(), DateTimePickerDataOut.Value.AddDays(1).ToShortDateString(), ObjectDBLUCBCitiesSetFROM.iD[ComboBoxCityFROM.SelectedIndex], ObjectDBLUCBCitiesSetTO.iD[ComboBoxCityTO.SelectedIndex]);
             DGVflightsCurrentSet.DataSource = ObjectFlightsCurrentSet.GetTableData(ObjectFlightsCurrentSet.CreateDataReaderVariable());
+
+            DGVflightsCurrentSet.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
             DGVflightsCurrentSet.Select();
         }
 
         private void ButtonSearch_Click(object sender, EventArgs e)
         {
             ShowFlightsByParams();
+            if (DGVflightsCurrentSet.Columns.GetColumnCount(DataGridViewElementStates.None) > 0)
+            {
+                DGVflightsCurrentSet.Columns[0].Visible = false;
+                DGVflightsCurrentSet.Columns[1].Visible = false;
+                DGVflightsCurrentSet.Columns[2].Visible = false;
+                DGVflightsCurrentSet.Columns[3].Visible = false;
+                DGVflightsCurrentSet.Columns[4].Visible = false;
+                DGVflightsCurrentSet.Columns[5].Visible = false;
+                DGVflightsCurrentSet.Columns[6].Visible = false;
+                DGVflightsCurrentSet.Columns[7].Visible = false;
+                DGVflightsCurrentSet.Columns[8].Visible = false;
+                DGVflightsCurrentSet.Columns[9].Visible = false;
+                DGVflightsCurrentSet.Columns[10].Visible = false;
+                DGVflightsCurrentSet.Columns[11].Visible = false;
+                DGVflightsCurrentSet.Columns[12].Visible = false;
+                DGVflightsCurrentSet.Columns[13].Visible = false;
+                DGVflightsCurrentSet.Columns[14].Visible = false;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

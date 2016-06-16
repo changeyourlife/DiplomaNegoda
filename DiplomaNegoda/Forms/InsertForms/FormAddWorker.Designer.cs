@@ -123,7 +123,7 @@
             this.ButtonAddWorker.Name = "ButtonAddWorker";
             this.ButtonAddWorker.Size = new System.Drawing.Size(75, 23);
             this.ButtonAddWorker.TabIndex = 10;
-            this.ButtonAddWorker.Text = "Add";
+            this.ButtonAddWorker.Text = "Добавить";
             this.ButtonAddWorker.UseVisualStyleBackColor = true;
             this.ButtonAddWorker.Click += new System.EventHandler(this.ButtonAddWorker_Click);
             // 
@@ -133,7 +133,7 @@
             this.ButtonClose.Name = "ButtonClose";
             this.ButtonClose.Size = new System.Drawing.Size(75, 23);
             this.ButtonClose.TabIndex = 11;
-            this.ButtonClose.Text = "Close";
+            this.ButtonClose.Text = "Закрыть";
             this.ButtonClose.UseVisualStyleBackColor = true;
             // 
             // DateTimePickerBornDate

@@ -93,7 +93,6 @@ namespace DiplomaNegoda.Classes
             {
                 NameOfComboBox.Items.Add(textInComboBox[i]);
             }
-
         }
 
         public int ReturnIndexOfElementID(string IDValueOfCell)

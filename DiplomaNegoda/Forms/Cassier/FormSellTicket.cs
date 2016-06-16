@@ -43,35 +43,6 @@ namespace DiplomaNegoda.Forms.Cassier
 
         private void ButtonSellTicket_Click(object sender, EventArgs e)
         {
-            /*Excel.Application application = new Excel.Application();
-            Object missing = Type.Missing;
-            //добавили книгу
-            application.Workbooks.Add(missing);
-            Excel.Worksheet sheet = (Excel.Worksheet)application.ActiveSheet;
-            //вписываем текст
-            sheet.Cells[1, 1] = "hi!";
-            ((Excel.Range)sheet.Columns).ColumnWidth = 15;
-            //жирность
-            (sheet.Cells[1, 1] as Excel.Range).Font.Bold = true;
-            //размер шрифта
-            (sheet.Cells[1, 1] as Excel.Range).Font.Size = 16;
-            //название шрифта
-            (sheet.Cells[1, 1] as Excel.Range).Font.Name = "Times New Roman";
-            //стиль границы
-            (sheet.Cells[1, 1] as Excel.Range).Borders[Excel.XlBordersIndex.xlEdgeBottom].LineStyle = Excel.XlLineStyle.xlDouble;
-            //толщина границы
-            (sheet.Cells[1, 1] as Excel.Range).Borders[Excel.XlBordersIndex.xlEdgeBottom].Weight = Excel.XlBorderWeight.xlMedium;
-            //выравнивание по горизонтали
-            (sheet.Cells[1, 1] as Excel.Range).HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
-            //выравнивание по вертикали
-            (sheet.Cells[1, 1] as Excel.Range).VerticalAlignment = Excel.XlVAlign.xlVAlignCenter;
-            //объединение ячеек
-            Excel.Range oRange;
-
-            oRange = sheet.Range[sheet.Cells[1, 1], sheet.Cells[4,4]];
-            oRange.Merge(Type.Missing);
-            application.Visible = true;*/
-
             //1меняем статус места  на продано
             ChangeStatusOfTicketSet ObjectChangeStatusOfTicketSet = new ChangeStatusOfTicketSet(nameOfTable, numOfPlace);
             ObjectChangeStatusOfTicketSet.UpdateRowInTableSell();

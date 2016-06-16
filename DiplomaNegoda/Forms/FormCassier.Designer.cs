@@ -69,7 +69,7 @@
             // ComboBoxCityFROM
             // 
             this.ComboBoxCityFROM.FormattingEnabled = true;
-            this.ComboBoxCityFROM.Location = new System.Drawing.Point(326, 5);
+            this.ComboBoxCityFROM.Location = new System.Drawing.Point(326, 32);
             this.ComboBoxCityFROM.Name = "ComboBoxCityFROM";
             this.ComboBoxCityFROM.Size = new System.Drawing.Size(453, 21);
             this.ComboBoxCityFROM.TabIndex = 3;
@@ -77,7 +77,7 @@
             // ComboBoxCityTO
             // 
             this.ComboBoxCityTO.FormattingEnabled = true;
-            this.ComboBoxCityTO.Location = new System.Drawing.Point(326, 32);
+            this.ComboBoxCityTO.Location = new System.Drawing.Point(326, 6);
             this.ComboBoxCityTO.Name = "ComboBoxCityTO";
             this.ComboBoxCityTO.Size = new System.Drawing.Size(453, 21);
             this.ComboBoxCityTO.TabIndex = 5;
